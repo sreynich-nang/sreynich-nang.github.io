@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sreynich-nang</title>
 
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+<!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+
+<!-- Swiper CSS for carousel in project section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <style>
       body {
@@ -100,19 +94,12 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
+<!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" style="color: #65a6f0" href="#"
-          >Nang Sreynich</a
-        >
+        <a class="navbar-brand fw-bold" style="color: #65a6f0" href="#">Nang Sreynich</a>
 
-        <button
-          class="navbar-toggler ms-auto me-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav"
-        >
+        <button class="navbar-toggler ms-auto me-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
           <span class="d-inline d-lg-none">Menu</span>
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -127,9 +114,7 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/random-notes.html"
-                >Random Notes</a
-              >
+              <a class="nav-link" href="pages/random-notes.html">Random Notes</a>
             </li>
           </ul>
         </div>
@@ -313,16 +298,14 @@
       }
     </style>
 
+<!-- HOME -->
     <section id="home" class="min-vh-100">
       <div class="container py-5">
         <div class="row flex-column flex-lg-row align-items-center">
+          
           <!-- LEFT SIDE -->
           <div class="col-lg-5 text-center pt-5 d-none d-lg-block mb-5">
-            <img
-              src="justme.webp"
-              class="profile-img img-fluid"
-              alt="Profile"
-            />
+            <img src="justme.webp" class="profile-img img-fluid" alt="Profile"/>
           </div>
 
           <!-- RIGHT SIDE -->
@@ -343,32 +326,19 @@
             </a>
 
             <!-- Social Links -->
-            <div
-              class="social-links mt-3 d-flex gap-3 justify-content-lg-start justify-content-center"
-            >
-              <a
-                href="https://www.linkedin.com/in/sreynich-nang/"
-                target="_blank"
-                class="social-icon"
-              >
+            <div class="social-links mt-3 d-flex gap-3 justify-content-lg-start justify-content-center">
+              <a href="https://www.linkedin.com/in/sreynich-nang/" target="_blank" class="social-icon">
                 <i class="bi bi-linkedin"></i>
               </a>
 
-              <a
-                href="https://github.com/sreynich-nang"
-                target="_blank"
-                class="social-icon"
-              >
+              <a href="https://github.com/sreynich-nang" target="_blank" class="social-icon">
                 <i class="bi bi-github"></i>
               </a>
             </div>
 
             <!-- Inspiration Card -->
             <div class="inspiration-card mt-4">
-              <div
-                class="inspiration-divider"
-                style="background-color: #93c5fd"
-              ></div>
+              <div class="inspiration-divider" style="background-color: #93c5fd"></div>
 
               <h3>Something has its own reason to exist!</h3>
 
@@ -391,8 +361,10 @@
       </div>
     </section>
 
+<!-- ABOUT -->
     <section id="about" class="about-section min-vh-100 p-3 mb-5">
-      <h3 class="fw-bold display-6 text-center mt-5">About Me</h3>
+      <h2 class="fw-bold display-6 text-center mt-5">About Me</h2>
+
       <p class="section-intro text-center mx-auto mt-4">
         I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
         how technology can be used with data, especially in system development,
@@ -404,26 +376,23 @@
       </p>
 
       <!-- <div class="container" style=" margin-bottom: 40px">
-    </div> -->
+      </div> -->
 
       <div class="container mb-5 mb-lg-0">
         <div class="row g-0 about-card align-items-stretch">
           <div class="col-md-12 col-lg-6 border-end border-dark border-opacity-25">
-            <img
-              src="flowdata.jpg"
-              alt="Sample Image"
-              class="about-card-image object-fit-fill"
-            />
+            <img src="flowdata.jpg" alt="Sample Image" class="about-card-image object-fit-fill"/>
           </div>
-          <div
-            class="col-md-12 col-lg-6 about-card-content d-flex flex-column justify-content-center"
-          >
+
+          <div class="col-md-12 col-lg-6 about-card-content d-flex flex-column justify-content-center">
             <h3>Me in Data Development</h3>
+
             <ul>
               <li>How I approach problems in data</li>
               <li>Why I love working with data</li>
               <li>How data shapes my thinking</li>
             </ul>
+            
             <div>
               <button class="btn btn-primary-soft">
                 Explore Data Projects
@@ -433,7 +402,7 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container mt-1">
         <div class="row g-0 about-card align-items-stretch">
           <div class="col-md-12 col-lg-6 border-end border-dark order-2 order-lg-1 border-opacity-25">
             <div
@@ -464,106 +433,317 @@
       </div>
     </section>
 
+<!-- JOURNEY -->
     <section id="journey" class="min-vh-100">
-      <div class="container py-5">
-        <h2 class="text-center fw-bold mt-5">My Journey</h2>
-
-        <p class="text-center mt-5">
-          This is the journey section, where I will share my journey, things
-          that I have been through, and things that I have learned from those
-          experiences.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects" class="min-vh-100">
-      <div class="container py-5">
-        <h2 class="text-center fw-bold mt-5">My Projects</h2>
-
-        <p class="text-center mt-5">
-          This is the projects section, where I will share my projects, things
-          that I have been working on, and things that I have learned from those
-          projects.
-        </p>
-      </div>
-    </section>
-
     <style>
-      .hero-video {
-        width: 100%;
-        max-width: 800px;
-        aspect-ratio: 16 / 9; /* keeps proper height */
-        margin: 10px;
-        position: relative;
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      .timeline-row {
+        align-items: start !important;
       }
 
-      /* iframe fills full container */
-      .hero-video iframe {
-        width: 100%;
+      .timeline-col {
+        position: relative;
+        align-self: stretch;
+      }
+
+      .timeline-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 100%;
-        border: 0;
+        position: relative;
+      }
+
+      .timeline-dot {
+        width: 20px;
+        height: 20px;
+        background-color: #333;
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .timeline-line {
+        width: 3px;
+        position: absolute;
+        top: 28px;
+        bottom: -3.5rem; /* Extend past row bottom (3rem) + next dot margin-top (0.5rem) */
+        background-color: #ccc;
+        z-index: 1;
+      }
+
+      .timeline-row:last-child .timeline-line {
+        display: none;
+      }
+
+      /* Mobile & Tablet Styles (< 992px) */
+      @media (max-width: 991.98px) {
+        .timeline-row {
+          position: relative !important;
+          padding-left: 40px !important;
+        }
+
+        .timeline-col {
+          position: absolute !important;
+          left: 0 !important;
+          top: 0 !important;
+          bottom: 0 !important;
+          width: 40px !important;
+          padding: 0 !important;
+        }
+
+        .timeline-line {
+          bottom: -2.5rem !important; /* Extend past mobile row bottom (2rem) + next dot margin-top (0.5rem) */
+        }
       }
     </style>
 
-    <div class="container d-none d-lg-flex justify-content-center">
-      <div class="hero-video border">
-        <iframe
-          src="https://www.youtube.com/embed/5kJP7rWwP6M?autoplay=1&mute=1&rel=0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        >
-        </iframe>
-      </div>
-    </div>
+          <div class="container">
+        <h2 class="text-center mb-5">My Journey</h2>
 
-    <section id="about" class="d-flex align-items-center">
-      <!-- <div class="container">
-          <h2 class="fw-bold display-6 text-center">About Me</h2>
-          <p class="text-muted text-center">
-              I’m a developer focused on AI systems, databases,
-              and modern web applications.
-          </p>
-      </div> -->
-    </section>
+        <!-- ================= ITEM 1 ================= -->
+        <div class="row align-items-center mb-5 timeline-row">
+          <!-- Date -->
+          <div class="col-lg-5 text-lg-end order-2 order-lg-1 timeline-date">
+            <h5 class="fw-bold mb-1">July 2026</h5>
+            <p class="text-muted mb-0">Graduation</p>
+          </div>
 
-    <div class="container my-4">
-      <div class="d-flex flex-lg-row flex-column align-items-stretch gap-4">
-        <!-- LEFT (VIDEO) -->
-        <div class="d-none d-lg-flex ps-5">
-          <div class="w-100 h-100">
-            <iframe
-              src="https://www.youtube.com/embed/5kJP7rWwP6M?autoplay=1&mute=1&rel=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
+          <!-- Timeline -->
+          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
+            <div class="timeline-center text-center">
+              <div class="timeline-dot mx-auto"></div>
+              <div class="timeline-line mx-auto"></div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="col-lg-5 order-3 timeline-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Bachelor of Data Science</h5>
+
+                <p class="card-text">
+                  Completed my degree with interests in Artificial Intelligence,
+                  System Development, Automation, and Data Analytics.
+                </p>
+
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- MIDDLE -->
-        <div class="middle-box flex-fill border">Middle Column</div>
+        <!-- ================= ITEM 2 ================= -->
+        <div class="row align-items-center mb-5 timeline-row">
+          <!-- Card -->
+          <div class="col-lg-5 order-3 order-lg-1 timeline-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Marketing Internship</h5>
 
-        <!-- RIGHT -->
-        <div class="right-box flex-fill d-none d-lg-flex border">
-          Right Column
+                <p class="card-text">
+                  Worked with ONiON Mobility on branding, customer engagement,
+                  and digital marketing campaigns.
+                </p>
+
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
+            <div class="timeline-center text-center">
+              <div class="timeline-dot mx-auto"></div>
+              <div class="timeline-line mx-auto"></div>
+            </div>
+          </div>
+
+          <!-- Date -->
+          <div class="col-lg-5 order-2 order-lg-3 timeline-date">
+            <h5 class="fw-bold mb-1">August 2024</h5>
+
+            <p class="text-muted mb-0">Internship</p>
+          </div>
+        </div>
+
+        <!-- ================= ITEM 3 ================= -->
+        <div class="row align-items-center mb-5 timeline-row">
+          <!-- Date -->
+          <div class="col-lg-5 text-lg-end order-2 order-lg-1 timeline-date">
+            <h5 class="fw-bold mb-1">October 2024</h5>
+
+            <p class="text-muted mb-0">Volunteer</p>
+          </div>
+
+          <!-- Timeline -->
+          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
+            <div class="timeline-center text-center">
+              <div class="timeline-dot mx-auto"></div>
+              <div class="timeline-line mx-auto"></div>
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="col-lg-5 order-3 timeline-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Youth Education Support</h5>
+
+                <p class="card-text">
+                  Conducted digital literacy, Scratch programming, and
+                  leadership workshops for high school students.
+                </p>
+
+                <button class="btn btn-primary">Read More</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container my-4">
-      <div class="d-flex flex-lg-row flex-column align-items-stretch gap-4">
-        <div class="flex-fill border">Column 1</div>
-        <div class="flex-fill border">Column 2</div>
-        <div class="flex-fill border">Column 3</div>
+
+    </section>
+
+<!-- PROJECTS -->
+    <section id="projects" class="about-section min-vh-100 p-3 mb-5">
+      <h2 class="fw-bold display-6 text-center mt-5">My Projects</h2>
+      <p class="section-intro text-center mx-auto mt-4">
+        I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
+        how technology can be used with data, especially in system development,
+        automation, and gaining insights.
+      </p>
+      <p class="section-intro text-center mx-auto mt-3">
+        Two things that I will share here are my random thoughts and the
+        projects that have shaped how I work today.
+      </p>
+
+      <div class="container">
+
+          
+
+          <div class="swiper mySwiper">
+
+              <div class="swiper-wrapper">
+
+                  <!-- Card 1 -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <!-- <img src="https://picsum.photos/500/300?1"> -->
+                          <img src="meme1.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Project One</h5>
+                              <p>
+                                  Description of your project goes here.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <!-- <img src="https://picsum.photos/500/300?2"> -->
+                          <img src="meme1.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Project Two</h5>
+                              <p>
+                                  Description of your project goes here.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <!-- <img src="https://picsum.photos/500/300?3"> -->
+                          <img src="meme1.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Project Three</h5>
+                              <p>
+                                  Description of your project goes here.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <!-- <img src="https://picsum.photos/500/300?4"> -->
+                          <img src="meme1.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Project Four</h5>
+                              <p>
+                                  Description of your project goes here.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <!-- <img src="https://picsum.photos/500/300?5"> -->
+                          <img src="meme1.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Project Five</h5>
+                              <p>
+                                  Description of your project goes here.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="swiper-pagination position-relative mt-4"></div>
+
+          </div>
+
       </div>
-    </div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+
+      // Initialize Swiper (our sliding cards tool)
+      const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,      // 1 card at a time on mobile
+          spaceBetween: 25,      // space between cards in pixels
+          loop: true,            // keep repeat cards in a loop forever
+          speed: 2000,           // timer
+
+          // Slide automatically
+          autoplay: {
+              delay: 2500,       // Slide to the next card every 2.5 seconds (2500ms)
+              disableOnInteraction: false, // Keep sliding even if user clicks a card
+          },
+
+          // Navigation dots at the bottom
+          pagination: {
+              el: ".swiper-pagination", // Connects to the dots element
+              clickable: true,          // Lets user click the dots to switch cards
+          },
+
+          // Show more cards on bigger screens
+          breakpoints: {
+              768: {
+                  slidesPerView: 2, // Show 2 cards on tablets 
+              },
+              992: {
+                  slidesPerView: 3, // Show 3 cards on desktop
+              }
+          }
+      });
+
+      </script>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
