@@ -61,9 +61,9 @@ body {
 }
 
 .btn-outline-soft:hover {
-  background: var(--primary-soft-color);
-  border-color: var(--primary-soft-color);
-  color: var(--dark-color);
+  background: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+  color: #ffffff;
 }
 
 .social-icon {
