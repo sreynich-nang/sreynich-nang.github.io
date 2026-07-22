@@ -33,14 +33,19 @@
             return `<a href="${badgeUrl}" class="sec-journey-badge">${badge.text}</a>`;
           }).join('');
 
+          // Create achievements list
+          const achievementsHtml = item.achievements.map(ach => {
+            return `<li class="mb-1">${ach}</li>`;
+          }).join('');
+
           let rowHtml = '';
           if (isEven) {
-            // Date Left, Card Right on desktop
+            // Place Left, Card Right on desktop
             rowHtml = `
               <div class="row align-items-center mb-5 sec-journey-timeline-row">
-                <!-- Date -->
+                <!-- Place / Subtitle -->
                 <div class="col-lg-5 text-lg-end order-2 order-lg-1 sec-journey-timeline-date">
-                  <h5 class="fw-bold mb-1">${item.date}</h5>
+                  <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
                   <p class="text-muted mb-0">${item.subtitle}</p>
                 </div>
 
@@ -54,11 +59,23 @@
 
                 <!-- Card -->
                 <div class="col-lg-5 order-3 sec-journey-timeline-card">
-                  <div class="card shadow-sm">
-                    <div class="card-body">
-                      <h5 class="card-title">${item.title}</h5>
-                      <p class="card-text">${item.description}</p>
-                      <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
+                  <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                        <div>
+                          <h4 class="fw-bold mb-1" style="color: #0f172a;">${item.title}</h4>
+                        </div>
+                        <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
+                      </div>
+                      
+                      <p class="card-text text-secondary mb-4">${item.description}</p>
+                      
+                      <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
+                      <ul class="text-secondary ps-3 mb-4">
+                        ${achievementsHtml}
+                      </ul>
+
+                      <div class="pt-3 border-top d-flex flex-wrap gap-2">
                         ${badgesHtml}
                       </div>
                     </div>
@@ -67,16 +84,28 @@
               </div>
             `;
           } else {
-            // Card Left, Date Right on desktop
+            // Card Left, Place Right on desktop
             rowHtml = `
               <div class="row align-items-center mb-5 sec-journey-timeline-row">
                 <!-- Card -->
                 <div class="col-lg-5 order-3 order-lg-1 sec-journey-timeline-card">
-                  <div class="card shadow-sm">
-                    <div class="card-body">
-                      <h5 class="card-title">${item.title}</h5>
-                      <p class="card-text">${item.description}</p>
-                      <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
+                  <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+                    <div class="card-body p-4">
+                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                        <div>
+                          <h4 class="fw-bold mb-1" style="color: #0f172a;">${item.title}</h4>
+                        </div>
+                        <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
+                      </div>
+                      
+                      <p class="card-text text-secondary mb-4">${item.description}</p>
+                      
+                      <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
+                      <ul class="text-secondary ps-3 mb-4">
+                        ${achievementsHtml}
+                      </ul>
+
+                      <div class="pt-3 border-top d-flex flex-wrap gap-2">
                         ${badgesHtml}
                       </div>
                     </div>
@@ -91,9 +120,9 @@
                   </div>
                 </div>
 
-                <!-- Date -->
+                <!-- Place / Subtitle -->
                 <div class="col-lg-5 order-2 order-lg-3 sec-journey-timeline-date">
-                  <h5 class="fw-bold mb-1">${item.date}</h5>
+                  <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
                   <p class="text-muted mb-0">${item.subtitle}</p>
                 </div>
               </div>

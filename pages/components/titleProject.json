@@ -1,86 +1,94 @@
 [
   {
     "id": 1,
-    "title": "Multi-agent-chatbot at Bamnang",
-    "description": "An intelligent multi-agent conversational AI system designed to handle complex queries and tasks.",
+    "title": "UniSeek (SDG Education MVP)",
+    "description": "A 9-month MVP web app connecting Cambodian high school students with university mentors for scheduled one-on-one sessions. Handled BA, UI/UX, Frontend, Backend, and Database Design roles.",
     "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=1"
+    "exploreUrl": "pages/projects/p1.html?id=1",
+    "details": "<h3>Project Overview</h3><p>UniSeek is a 9-month MVP initiative supporting the SDG goal in education. It is a web app that helps Cambodian high school students connect with university mentors through scheduled one-on-one sessions.</p><h3 class='mt-4 mb-3'>My Roles & Accomplishments:</h3><ul class='text-secondary'><li class='mb-2'><strong>Business Analyst:</strong> Using Trello, assisted in assigning tasks to teammates, helped define core problems and solutions, conducted user research, and designed surveys.</li><li class='mb-2'><strong>UX/UI Designer:</strong> Using Figma, mapped user journeys, designed wireframes, and designed the visual experience for the survey and booking schedules.</li><li class='mb-2'><strong>Frontend Developer:</strong> Using Next.js, built the mentor dashboard and survey page, defined the file structure, and managed state payloads.</li><li class='mb-2'><strong>Backend Developer:</strong> Using NestJS, developed logic to analyze survey results and generate a ranked recommendation list of top Cambodian universities.</li><li><strong>Database Designer:</strong> Using PostgreSQL, designed relational database schemas for the entire application.</li></ul>"
   },
   {
     "id": 2,
-    "title": "Major-recommendation at Bamnang",
-    "description": "A smart recommendation engine helping students find matching majors based on interests and skills.",
+    "title": "Multi-agent-chatbot at Bamnang",
+    "description": "An intelligent multi-agent conversational AI system designed to handle complex queries and tasks.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=2"
   },
   {
     "id": 3,
-    "title": "OCR + automated cleaning table data",
-    "description": "High-accuracy optical character recognition pipeline combined with automated tabular data cleaning.",
+    "title": "Major-recommendation at Bamnang",
+    "description": "A smart recommendation engine helping students find matching majors based on interests and skills.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=3"
   },
   {
     "id": 4,
-    "title": "NextStep",
-    "description": "An innovative career path mapping and skill tracking application for professional development.",
+    "title": "OCR + automated cleaning table data",
+    "description": "High-accuracy optical character recognition pipeline combined with automated tabular data cleaning.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=4"
   },
   {
     "id": 5,
-    "title": "Chhnang khmer",
-    "description": "A cultural database and application focused on traditional Cambodian pottery and crafts.",
+    "title": "NextStep",
+    "description": "An innovative career path mapping and skill tracking application for professional development.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=5"
   },
   {
     "id": 6,
-    "title": "Voice recognition",
-    "description": "Advanced speech-to-text processing system tailored for Khmer language and regional accents.",
+    "title": "Chhnang khmer",
+    "description": "A cultural database and application focused on traditional Cambodian pottery and crafts.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=6"
   },
   {
     "id": 7,
-    "title": "NLP product review analysis with ML classification",
-    "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
+    "title": "Voice recognition",
+    "description": "Advanced speech-to-text processing system tailored for Khmer language and regional accents.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=7"
   },
   {
     "id": 8,
-    "title": "ML project",
-    "description": "Predictive analytics and modeling for real-world decision making using supervised learning.",
+    "title": "NLP product review analysis with ML classification",
+    "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=8"
   },
   {
     "id": 9,
-    "title": "RAG chatbot",
-    "description": "Retrieval-Augmented Generation system enabling context-aware semantic searches over custom knowledge bases.",
+    "title": "ML project",
+    "description": "Predictive analytics and modeling for real-world decision making using supervised learning.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=9"
   },
   {
     "id": 10,
-    "title": "MCP with SDK-gemini",
-    "description": "Model Context Protocol integration leveraging Gemini SDK for extended tool usage and data fetching.",
+    "title": "RAG chatbot",
+    "description": "Retrieval-Augmented Generation system enabling context-aware semantic searches over custom knowledge bases.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=10"
   },
   {
     "id": 11,
-    "title": "Soil analysis",
-    "description": "Data-driven agricultural analysis tool identifying soil nutrients, properties, and crop suitability.",
+    "title": "MCP with SDK-gemini",
+    "description": "Model Context Protocol integration leveraging Gemini SDK for extended tool usage and data fetching.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=11"
   },
   {
     "id": 12,
+    "title": "Soil analysis",
+    "description": "Data-driven agricultural analysis tool identifying soil nutrients, properties, and crop suitability.",
+    "imageUrl": "assets/images/meme1.jpg",
+    "exploreUrl": "pages/projects/p1.html?id=12"
+  },
+  {
+    "id": 13,
     "title": "Branding awareness analysis",
     "description": "Social media listening and brand sentiment tracking dashboard using natural language processing.",
     "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=12"
+    "exploreUrl": "pages/projects/p1.html?id=13"
   }
 ]

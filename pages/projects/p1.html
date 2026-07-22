@@ -54,7 +54,7 @@
           </div>
           <div class="col-lg-6 text-center">
             <div class="rounded-4 overflow-hidden shadow-lg border border-light-subtle">
-              <img id="project-img" src="../../assets/images/meme1.jpg" class="img-fluid object-fit-cover w-100" style="max-height: 400px;" alt="Project Image">
+              <img id="project-img" src="../../assets/images/meme1.jpg" class="img-fluid object-fit-cover w-100" style="max-height: 500px;" alt="Project Image">
             </div>
           </div>
         </div>
@@ -114,7 +114,11 @@
               const project = data.find(p => p.id === projectId);
               if (project) {
                 document.getElementById('project-title').textContent = project.title;
-                document.getElementById('project-desc').textContent = project.description + " Full implementation details, architectural choices, and technical writeups are currently being prepared for this showcase.";
+                if (project.details) {
+                  document.getElementById('project-desc').innerHTML = project.details;
+                } else {
+                  document.getElementById('project-desc').textContent = project.description + " Full implementation details, architectural choices, and technical writeups are currently being prepared for this showcase.";
+                }
                 
                 // Adjust image URL for subpage directory depth
                 let imgUrl = project.imageUrl;
