@@ -13,6 +13,11 @@
   --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for fixed navbar */
+}
+
 body {
   font-family: var(--font-family);
   background: var(--light-color);

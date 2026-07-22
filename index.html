@@ -345,15 +345,34 @@
                 </div>
               `;
             }
+            if (callback) callback();
           });
       }
 
+      // Track loaded components to scroll to hash anchor after DOM stabilizes
+      let loadedCount = 0;
+      const totalComponents = 5;
+      function checkScrollToHash() {
+        loadedCount++;
+        if (loadedCount === totalComponents) {
+          const hash = window.location.hash;
+          if (hash) {
+            const target = document.querySelector(hash);
+            if (target) {
+              setTimeout(() => {
+                target.scrollIntoView({ behavior: 'smooth' });
+              }, 150);
+            }
+          }
+        }
+      }
+
       // Load all dynamic layout components
-      loadComponent('pages/components/nav.html', 'navbar-placeholder');
-      loadComponent('pages/components/footer.html', 'footer-placeholder');
-      loadComponent('pages/components/testimonial.html', 'testimonials-placeholder');
-      loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder');
-      loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder');
+      loadComponent('pages/components/nav.html', 'navbar-placeholder', checkScrollToHash);
+      loadComponent('pages/components/footer.html', 'footer-placeholder', checkScrollToHash);
+      loadComponent('pages/components/testimonial.html', 'testimonials-placeholder', checkScrollToHash);
+      loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder', checkScrollToHash);
+      loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder', checkScrollToHash);
     </script>
 
     <!-- Swiper JS -->
