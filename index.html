@@ -32,361 +32,26 @@
     <!-- Devicon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-        background: #f8fafc;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-
-      #footer-placeholder {
-        margin-top: auto; /* Push footer to the bottom of the viewport */
-      }
-
-      #home h1 {
-        color: #ffffff;
-      }
-
-      #home .text-muted {
-        color: #cbd5e1 !important;
-      }
-
-      #home .btn-outline-primary {
-        color: #ffffff;
-        border-color: #93c5fd;
-      }
-
-      #home .btn-outline-primary:hover {
-        background: #93c5fd;
-        color: #0f172a;
-        border-color: #93c5fd;
-      }
-
-      .social-icon {
-        color: #e2e8f0;
-      }
-
-      .social-icon:hover {
-        color: #ffffff;
-      }
-
-      @media (max-width: 768px) {
-        .hero h1 {
-          font-size: 2.2rem;
-        }
-      }
-
-      .profile-img {
-        object-fit: cover;
-        border-radius: 16px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Testimonials Styling */
-      .testimonials-section {
-        background: #ffffff;
-        padding: 60px 0;
-      }
-      .testimonial-item {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 20px;
-      }
-      .testimonial-item .testimonial-img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        border: 4px solid #eff6ff;
-        margin-bottom: 20px;
-        object-fit: cover;
-        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-      }
-      .testimonial-item h3 {
-        font-size: 1.25rem;
-        font-weight: 700;
-        margin: 10px 0 5px 0;
-        color: #0f172a;
-      }
-      .testimonial-item h4 {
-        font-size: 0.9rem;
-        color: #64748b;
-        margin: 0 0 15px 0;
-        font-weight: 500;
-      }
-      .testimonial-item p {
-        font-style: italic;
-        margin: 0 auto 20px auto;
-        color: #475569;
-        font-size: 1.1rem;
-        line-height: 1.8;
-      }
-      .testimonial-item .quote-icon-left,
-      .testimonial-item .quote-icon-right {
-        color: #bfdbfe;
-        font-size: 1.5rem;
-        line-height: 0;
-        vertical-align: middle;
-        display: inline-block;
-      }
-      .testimonial-item .quote-icon-left {
-        margin-right: 6px;
-      }
-      .testimonial-item .quote-icon-right {
-        margin-left: 6px;
-        transform: rotate(180deg);
-      }
-
-      /* Tech Stacks Section Styles */
-      .tech-stacks-section {
-        background: #f8fafc;
-        padding: 80px 0;
-      }
-      .filter-btn {
-        background: #ffffff;
-        color: #475569;
-        border: 1px solid #e2e8f0;
-        padding: 8px 22px;
-        border-radius: 30px;
-        font-weight: 600;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
-        margin: 6px;
-      }
-      .filter-btn.active, .filter-btn:hover {
-        background: #65a6f0;
-        color: #ffffff;
-        border-color: #65a6f0;
-        box-shadow: 0 4px 12px rgba(101, 166, 240, 0.2);
-      }
-      .tech-badge-item {
-        transition: opacity 0.3s ease, transform 0.3s ease;
-      }
-      .tech-badge-card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 12px;
-        padding: 15px 20px;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
-      }
-      .tech-badge-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-        border-color: #cbd5e1;
-      }
-      .tech-badge-card i {
-        font-size: 1.8rem;
-        color: #475569;
-        transition: color 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .tech-badge-card:hover i {
-        color: #65a6f0;
-      }
-      .tech-badge-name {
-        font-weight: 600;
-        color: #1e293b;
-        font-size: 0.95rem;
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <!-- Placeholder for navbar component -->
     <div id="navbar-placeholder"></div>
 
-    <style>
-      #home {
-        position: relative;
-        min-height: 100vh;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-      }
 
-      /* Background Image */
-      #home::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-image: url("image2.webp");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        filter: blur(100px);
-        transform: scale(1.1);
-        z-index: -2;
-      }
-
-      /* Overlay */
-      #home::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(255, 255, 255, 0.25);
-        z-index: -1;
-      }
-
-      /* Content */
-      #home .container {
-        position: relative;
-        z-index: 1;
-      }
-
-      /* Social Icons */
-      .social-icon {
-        font-size: 1.8rem;
-        transition: all 0.3s ease;
-      }
-
-      .social-icon:hover {
-        transform: translateY(-3px);
-      }
-
-      /* Inspiration Card */
-      .inspiration-card {
-        padding: 2rem;
-        border-radius: 20px;
-
-        /* Transparent white */
-        background: rgba(255, 255, 255, 0.15);
-
-        /* Blur whatever is behind the card */
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-
-        border: 1px solid rgba(255, 255, 255, 0.25);
-
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      }
-
-      .inspiration-divider {
-        width: 60px;
-        height: 4px;
-        background: #0d6efd;
-        border-radius: 20px;
-        margin-bottom: 1rem;
-      }
-
-      .inspiration-card h3 {
-        font-weight: 700;
-        margin-bottom: 1rem;
-        color: #ffffff;
-      }
-
-      .inspiration-card p {
-        color: #cbd5e1;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-      }
-
-      .about-section {
-        background: #f8fafc;
-      }
-
-      .about-section .section-intro {
-        max-width: 760px;
-        color: #475569;
-      }
-
-      .about-card {
-        background: #ffffff;
-        border: 0;
-        border-radius: 24px;
-        overflow: hidden;
-        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-      }
-
-      .about-card-image {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        min-height: 320px;
-      }
-
-      .about-card-content {
-        padding: 2.25rem;
-      }
-
-      .about-card-content h3 {
-        color: #0f172a;
-        margin-bottom: 0.75rem;
-      }
-
-      .about-card-content p,
-      .about-card-content li {
-        color: #475569;
-        line-height: 1.8;
-      }
-
-      .about-card-content ul {
-        padding-left: 1.25rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .about-card-content li + li {
-        margin-top: 0.35rem;
-      }
-
-      .btn-primary-soft {
-        background: #93c5fd;
-        border-color: #93c5fd;
-        color: #0f172a;
-        border-radius: 999px;
-        padding: 0.75rem 1.35rem;
-        font-weight: 600;
-      }
-
-      .btn-primary-soft:hover {
-        background: #60a5fa;
-        border-color: #60a5fa;
-        color: #ffffff;
-      }
-
-      .btn-outline-soft {
-        border-color: #93c5fd;
-        color: #0f172a;
-        border-radius: 999px;
-        padding: 0.75rem 1.35rem;
-        font-weight: 600;
-      }
-
-      .btn-outline-soft:hover {
-        background: #93c5fd;
-        border-color: #93c5fd;
-        color: #0f172a;
-      }
-
-      @media (max-width: 991px) {
-        .inspiration-card {
-          margin-top: 2rem;
-          text-align: center;
-        }
-
-        .inspiration-divider {
-          margin: 0 auto 1rem;
-        }
-      }
-    </style>
 
     <!-- HOME -->
-    <section id="home" class="min-vh-100">
-      <div class="container py-5">
+    <section id="home" class="sec-home">
+      <div class="container py-5 sec-home-container">
         <div class="row flex-column flex-lg-row align-items-center">
           <!-- LEFT SIDE -->
           <div class="col-lg-5 text-center pt-5 d-none d-lg-block mb-5">
             <img
-              src="justme.webp"
-              class="profile-img img-fluid"
+              src="assets/images/justme.webp"
+              class="sec-home-profile-img img-fluid"
               alt="Profile"
             />
           </div>
@@ -431,9 +96,9 @@
             </div>
 
             <!-- Inspiration Card -->
-            <div class="inspiration-card mt-4">
+            <div class="sec-home-inspiration mt-4">
               <div
-                class="inspiration-divider"
+                class="sec-home-inspiration-divider"
                 style="background-color: #93c5fd"
               ></div>
 
@@ -459,33 +124,33 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about-section min-vh-100 p-3 mb-5">
+    <section id="about" class="sec-about min-vh-100 p-3 mb-5">
       <h2 class="fw-bold display-6 text-center mt-5">About Me</h2>
 
-      <p class="section-intro text-center mx-auto mt-4">
+      <p class="sec-about-intro text-center mx-auto mt-4">
         I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
         how technology can be used with data, especially in system development,
         automation, and gaining insights.
       </p>
-      <p class="section-intro text-center mx-auto mt-3">
+      <p class="sec-about-intro text-center mx-auto mt-3">
         Two things that I will share here are my random thoughts and the
         projects that have shaped how I work today.
       </p>
 
       <div class="container mb-5 mb-lg-0">
-        <div class="row g-0 about-card align-items-stretch">
+        <div class="row g-0 sec-about-card align-items-stretch">
           <div
             class="col-md-12 col-lg-6 border-end border-dark border-opacity-25"
           >
             <img
-              src="flowdata.jpg"
+              src="assets/images/flowdata.jpg"
               alt="Sample Image"
-              class="about-card-image object-fit-fill"
+              class="sec-about-card-img object-fit-fill"
             />
           </div>
 
           <div
-            class="col-md-12 col-lg-6 about-card-content d-flex flex-column justify-content-center"
+            class="col-md-12 col-lg-6 sec-about-card-content d-flex flex-column justify-content-center"
           >
             <h3>Me in Data Development</h3>
 
@@ -505,12 +170,12 @@
       </div>
 
       <div class="container mt-1">
-        <div class="row g-0 about-card align-items-stretch">
+        <div class="row g-0 sec-about-card align-items-stretch">
           <div
             class="col-md-12 col-lg-6 border-end border-dark order-2 order-lg-1 border-opacity-25"
           >
             <div
-              class="about-card-content d-flex flex-column justify-content-center h-100"
+              class="sec-about-card-content d-flex flex-column justify-content-center h-100"
             >
               <h3>Me in System Development</h3>
               <ul>
@@ -529,9 +194,9 @@
 
           <div class="col-lg-6 order-1 order-lg-2">
             <img
-              src="whysystem.jpg"
+              src="assets/images/whysystem.jpg"
               alt="Sample Image"
-              class="about-card-image object-fit-fill"
+              class="sec-about-card-img object-fit-fill"
             />
           </div>
         </div>
@@ -539,247 +204,19 @@
     </section>
 
     <!-- JOURNEY -->
-    <section id="journey" class="about-section min-vh-100 p-3 mb-5">
-      <style>
-        .timeline-row {
-          align-items: start !important;
-        }
-
-        .timeline-col {
-          position: relative;
-          align-self: stretch;
-        }
-
-        .timeline-center {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          height: 100%;
-          position: relative;
-        }
-
-        .timeline-dot {
-          width: 20px;
-          height: 20px;
-          background-color: #333;
-          border-radius: 50%;
-          margin-top: 8px;
-          margin-bottom: 10px;
-          z-index: 2;
-          position: relative;
-        }
-
-        .timeline-line {
-          width: 3px;
-          position: absolute;
-          top: 28px;
-          bottom: -3.5rem; /* Extend past row bottom (3rem) + next dot margin-top (0.5rem) */
-          background-color: #ccc;
-          z-index: 1;
-        }
-
-        .timeline-row:last-child .timeline-line {
-          display: none;
-        }
-
-        /* Mobile & Tablet Styles (< 992px) */
-        @media (max-width: 991.98px) {
-          .timeline-row {
-            position: relative !important;
-            padding-left: 40px !important;
-          }
-
-          .timeline-col {
-            position: absolute !important;
-            left: 0 !important;
-            top: 0 !important;
-            bottom: 0 !important;
-            width: 40px !important;
-            padding: 0 !important;
-          }
-
-          .timeline-line {
-            bottom: -2.5rem !important; /* Extend past mobile row bottom (2rem) + next dot margin-top (0.5rem) */
-          }
-        }
-
-        .journey-badge {
-          display: inline-block;
-          padding: 6px 14px;
-          font-size: 0.85rem;
-          font-weight: 500;
-          color: #475569;
-          background-color: #f8fafc;
-          border: 1px solid #e2e8f0;
-          border-radius: 20px;
-          text-decoration: none;
-          transition: all 0.2s ease-in-out;
-        }
-
-        .journey-badge:hover {
-          background-color: #93c5fd;
-          border-color: #93c5fd;
-          color: #0f172a;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(147, 197, 253, 0.4);
-        }
-      </style>
-
-      <div class="container">
-        <h2 class="fw-bold display-6 text-center mt-5">My Journey</h2>
-
-        <!-- ================= ITEM 1 (Graduation) ================= -->
-        <div class="row align-items-center mb-5 timeline-row">
-          <!-- Date -->
-          <div class="col-lg-5 text-lg-end order-2 order-lg-1 timeline-date">
-            <h5 class="fw-bold mb-1">July 2026</h5>
-            <p class="text-muted mb-0">Graduation & Career</p>
-          </div>
-
-          <!-- Timeline -->
-          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
-            <div class="timeline-center text-center">
-              <div class="timeline-dot mx-auto"></div>
-              <div class="timeline-line mx-auto"></div>
-            </div>
-          </div>
-
-          <!-- Card -->
-          <div class="col-lg-5 order-3 timeline-card">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Me as a Fresh Graduated Student</h5>
-                <p class="card-text">
-                  Completed my Bachelor of Data Science degree with honors, focusing on Artificial Intelligence,
-                  System Development, Automation, and Data Analytics.
-                </p>
-                <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
-                  <a href="pages/journey/p1_freshgraduate.html#sister-of-code" class="journey-badge">me at Sister of Code</a>
-                  <a href="pages/journey/p1_freshgraduate.html#training-python" class="journey-badge">me at training python course to kids at Bamnang</a>
-                  <a href="pages/journey/p1_freshgraduate.html#working-place" class="journey-badge">me at working place at bamnang</a>
-                  <a href="pages/journey/p1_freshgraduate.html#mef" class="journey-badge">me at working at MEF (2025 - present)</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= ITEM 2 (ITC) ================= -->
-        <div class="row align-items-center mb-5 timeline-row">
-          <!-- Card -->
-          <div class="col-lg-5 order-3 order-lg-1 timeline-card">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Me at ITC (2020 - 2025)</h5>
-                <p class="card-text">
-                  Began my academic studies at the Institute of Technology of Cambodia, building strong foundational skills in logic, programming, and sciences.
-                </p>
-                <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
-                  <a href="pages/journey/p3_techpreneur.html" class="journey-badge">me at Techpreneur</a>
-                  <a href="pages/journey/p2_itc.html#each-year" class="journey-badge">me at ITC of each year</a>
-                  <a href="pages/journey/p2_itc.html#life-at-itc" class="journey-badge">life at ITC</a>
-                  <a href="pages/journey/p2_itc.html#aws-course" class="journey-badge">me at AWS short course</a>
-                  <a href="pages/journey/p2_itc.html#korea-data-camp" class="journey-badge">me at Korea Data Camp</a>
-                  <a href="pages/journey/p2_itc.html#internship" class="journey-badge">my intern journey</a>
-                  <a href="pages/journey/p2_itc.html#defense" class="journey-badge">my defense</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Timeline -->
-          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
-            <div class="timeline-center text-center">
-              <div class="timeline-dot mx-auto"></div>
-              <div class="timeline-line mx-auto"></div>
-            </div>
-          </div>
-
-          <!-- Date -->
-          <div class="col-lg-5 order-2 order-lg-3 timeline-date">
-            <h5 class="fw-bold mb-1">2020 - 2025</h5>
-            <p class="text-muted mb-0">Engineering Studies</p>
-          </div>
-        </div>
-
-        <!-- ================= ITEM 3 (IFL) ================= -->
-        <div class="row align-items-center mb-5 timeline-row">
-          <!-- Date -->
-          <div class="col-lg-5 text-lg-end order-2 order-lg-1 timeline-date">
-            <h5 class="fw-bold mb-1">2021 - 2025</h5>
-            <p class="text-muted mb-0">Language Education</p>
-          </div>
-
-          <!-- Timeline -->
-          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
-            <div class="timeline-center text-center">
-              <div class="timeline-dot mx-auto"></div>
-              <div class="timeline-line mx-auto"></div>
-            </div>
-          </div>
-
-          <!-- Card -->
-          <div class="col-lg-5 order-3 timeline-card">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Me at IFL (2021 - 2025)</h5>
-                <p class="card-text">
-                  Studied English at the Institute of Foreign Languages, refining my professional communication, academic writing, and public presentation skills.
-                </p>
-                <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
-                  <a href="pages/journey/p4_ifl.html#year3-project" class="journey-badge">project at Year3</a>
-                  <a href="pages/journey/p4_ifl.html#year4-project" class="journey-badge">projectt at Year4</a>
-                  <a href="pages/journey/p4_ifl.html#life-at-ifl" class="journey-badge">life at IFL</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ================= ITEM 4 (Volunteering) ================= -->
-        <div class="row align-items-center mb-5 timeline-row">
-          <!-- Card -->
-          <div class="col-lg-5 order-3 order-lg-1 timeline-card">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Me at Volunteering</h5>
-                <p class="card-text">
-                  Conducted digital literacy, Scratch programming, and leadership workshops for high school students, fostering education and community growth.
-                </p>
-                <div class="mt-3 pt-3 border-top d-flex flex-wrap gap-2">
-                  <a href="pages/journey/p5_volunteer.html#erobot" class="journey-badge">me working at Erobot</a>
-                  <a href="pages/journey/p5_volunteer.html#yes" class="journey-badge">me working at YES</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Timeline -->
-          <div class="col-lg-2 order-1 order-lg-2 timeline-col">
-            <div class="timeline-center text-center">
-              <div class="timeline-dot mx-auto"></div>
-              <div class="timeline-line mx-auto"></div>
-            </div>
-          </div>
-
-          <!-- Date -->
-          <div class="col-lg-5 order-2 order-lg-3 timeline-date">
-            <h5 class="fw-bold mb-1">October 2024</h5>
-            <p class="text-muted mb-0">Volunteer Work</p>
-          </div>
-        </div>
-      </div>
+    <section id="journey" class="sec-about min-vh-100 p-3 mb-5">
+      <div id="journey-placeholder"></div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="about-section py-5">
+    <section id="projects" class="sec-about py-5">
       <h2 class="fw-bold display-6 text-center mt-5">My Projects</h2>
-      <p class="section-intro text-center mx-auto mt-4">
+      <p class="sec-about-intro text-center mx-auto mt-4">
         I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
         how technology can be used with data, especially in system development,
         automation, and gaining insights.
       </p>
-      <p class="section-intro text-center mx-auto mt-3">
+      <p class="sec-about-intro text-center mx-auto mt-3">
         Two things that I will share here are my random thoughts and the
         projects that have shaped how I work today.
       </p>
@@ -791,7 +228,7 @@
             <div class="swiper-slide">
               <div class="card">
                 <!-- <img src="https://picsum.photos/500/300?1"> -->
-                <img src="meme1.jpg" />
+                <img src="assets/images/meme1.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Project One</h5>
                   <p>Description of your project goes here.</p>
@@ -803,7 +240,7 @@
             <div class="swiper-slide">
               <div class="card">
                 <!-- <img src="https://picsum.photos/500/300?2"> -->
-                <img src="meme1.jpg" />
+                <img src="assets/images/meme1.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Project Two</h5>
                   <p>Description of your project goes here.</p>
@@ -815,7 +252,7 @@
             <div class="swiper-slide">
               <div class="card">
                 <!-- <img src="https://picsum.photos/500/300?3"> -->
-                <img src="meme1.jpg" />
+                <img src="assets/images/meme1.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Project Three</h5>
                   <p>Description of your project goes here.</p>
@@ -827,7 +264,7 @@
             <div class="swiper-slide">
               <div class="card">
                 <!-- <img src="https://picsum.photos/500/300?4"> -->
-                <img src="meme1.jpg" />
+                <img src="assets/images/meme1.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Project Four</h5>
                   <p>Description of your project goes here.</p>
@@ -839,7 +276,7 @@
             <div class="swiper-slide">
               <div class="card">
                 <!-- <img src="https://picsum.photos/500/300?5"> -->
-                <img src="meme1.jpg" />
+                <img src="assets/images/meme1.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Project Five</h5>
                   <p>Description of your project goes here.</p>
@@ -854,214 +291,15 @@
     </section>
 
     <!-- My Tech Stacks -->
-    <section id="tech-stacks" class="tech-stacks-section">
-      <div class="container">
-        <h2 class="fw-bold display-6 text-center mb-3">My Tech Stacks</h2>
-        <p class="text-center text-muted mb-5">Click on a category below to filter the technologies I work with.</p>
-        
-        <!-- Filter Buttons -->
-        <div class="d-flex flex-wrap justify-content-center mb-5">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="current-stack">Current Stack</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="data-analyse">Data Analyse</button>
-          <button class="filter-btn" data-filter="data-scientist">Data Scientist</button>
-          <button class="filter-btn" data-filter="nlp">NLP in Text</button>
-        </div>
-
-        <!-- Badges Grid -->
-        <div class="row g-4 justify-content-center">
-          
-          <!-- Python -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="current-stack data-scientist data-analyse nlp">
-            <div class="tech-badge-card">
-              <i class="devicon-python-plain colored"></i>
-              <span class="tech-badge-name">Python</span>
-            </div>
-          </div>
-
-          <!-- SQL -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="current-stack data-analyse">
-            <div class="tech-badge-card">
-              <i class="devicon-mysql-plain colored"></i>
-              <span class="tech-badge-name">SQL</span>
-            </div>
-          </div>
-
-          <!-- Pandas -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="current-stack data-analyse data-scientist">
-            <div class="tech-badge-card">
-              <i class="devicon-pandas-plain colored"></i>
-              <span class="tech-badge-name">Pandas</span>
-            </div>
-          </div>
-
-          <!-- NumPy -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="data-analyse data-scientist">
-            <div class="tech-badge-card">
-              <i class="devicon-numpy-original colored"></i>
-              <span class="tech-badge-name">NumPy</span>
-            </div>
-          </div>
-
-          <!-- TensorFlow -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="data-scientist">
-            <div class="tech-badge-card">
-              <i class="devicon-tensorflow-line colored"></i>
-              <span class="tech-badge-name">TensorFlow</span>
-            </div>
-          </div>
-
-          <!-- PyTorch -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="data-scientist">
-            <div class="tech-badge-card">
-              <i class="devicon-pytorch-original colored"></i>
-              <span class="tech-badge-name">PyTorch</span>
-            </div>
-          </div>
-
-          <!-- Scikit-Learn -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="data-scientist">
-            <div class="tech-badge-card">
-              <i class="devicon-scikitlearn-plain colored"></i>
-              <span class="tech-badge-name">Scikit-Learn</span>
-            </div>
-          </div>
-
-          <!-- Jupyter -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="current-stack data-scientist data-analyse">
-            <div class="tech-badge-card">
-              <i class="devicon-jupyter-plain colored"></i>
-              <span class="tech-badge-name">Jupyter</span>
-            </div>
-          </div>
-
-          <!-- NLTK -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="nlp">
-            <div class="tech-badge-card">
-              <i class="bi bi-chat-text-fill" style="color: #65a6f0;"></i>
-              <span class="tech-badge-name">NLTK</span>
-            </div>
-          </div>
-
-          <!-- spaCy -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="nlp">
-            <div class="tech-badge-card">
-              <i class="bi bi-cpu-fill" style="color: #65a6f0;"></i>
-              <span class="tech-badge-name">spaCy</span>
-            </div>
-          </div>
-
-          <!-- Hugging Face -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="nlp data-scientist">
-            <div class="tech-badge-card">
-              <i class="bi bi-emoji-smile-fill" style="color: #ffcc00;"></i>
-              <span class="tech-badge-name">Hugging Face</span>
-            </div>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="frontend">
-            <div class="tech-badge-card">
-              <i class="devicon-javascript-plain colored"></i>
-              <span class="tech-badge-name">JavaScript</span>
-            </div>
-          </div>
-
-          <!-- React -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="current-stack frontend">
-            <div class="tech-badge-card">
-              <i class="devicon-react-original colored"></i>
-              <span class="tech-badge-name">React.js</span>
-            </div>
-          </div>
-
-          <!-- HTML5 & CSS3 -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="frontend">
-            <div class="tech-badge-card">
-              <i class="devicon-html5-plain colored"></i>
-              <span class="tech-badge-name">HTML5 / CSS3</span>
-            </div>
-          </div>
-
-          <!-- Bootstrap -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="frontend">
-            <div class="tech-badge-card">
-              <i class="devicon-bootstrap-plain colored"></i>
-              <span class="tech-badge-name">Bootstrap</span>
-            </div>
-          </div>
-
-          <!-- PowerBI / Tableau -->
-          <div class="col-6 col-sm-4 col-md-3 tech-badge-item" data-categories="data-analyse">
-            <div class="tech-badge-card">
-              <i class="bi bi-bar-chart-line-fill" style="color: #3b82f6;"></i>
-              <span class="tech-badge-name">PowerBI / Tableau</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <section id="tech-stacks" class="sec-tech">
+      <div id="tech-stacks-placeholder"></div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="testimonials" class="testimonials-section text-center">
-      <div class="container">
-        <h2 class="fw-bold display-6 text-center mb-5">Testimonials</h2>
-        
-        <div class="swiper testimonialsSwiper">
-          <div class="swiper-wrapper">
-            <!-- Slide 1: Lim Kimhoung -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi <span class="text-nowrap">cillum quid.<i class="bi bi-quote quote-icon-right"></i></span></span></p>
-                <img src="images/kimhoung.png" class="testimonial-img" alt="Lim Kimhoung">
-                <h3>Lim Kimhoung</h3>
-                <h4>NBC Officer</h4>
-              </div>
-            </div>
-            <!-- Slide 2: Bong Nary -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet <span class="text-nowrap">legam anim.<i class="bi bi-quote quote-icon-right"></i></span></span></p>
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop" class="testimonial-img" alt="Bong Nary">
-                <h3>Bong Nary</h3>
-                <h4>Senior Developer</h4>
-              </div>
-            </div>
-            <!-- Slide 3: CTO at Bamnang -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis <span class="text-nowrap">sint minim.<i class="bi bi-quote quote-icon-right"></i></span></span></p>
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&auto=format&fit=crop" class="testimonial-img" alt="CTO at Bamnang">
-                <h3>CTO at Bamnang</h3>
-                <h4>Chief Technology Officer</h4>
-              </div>
-            </div>
-            <!-- Slide 4: Bong AI at MEF -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem <span class="text-nowrap">dolore labore.<i class="bi bi-quote quote-icon-right"></i></span></span></p>
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&auto=format&fit=crop" class="testimonial-img" alt="Bong AI at MEF">
-                <h3>Bong AI at MEF</h3>
-                <h4>AI Specialist</h4>
-              </div>
-            </div>
-            <!-- Slide 5: Kru Thea -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p><i class="bi bi-quote quote-icon-left"></i><span>Aliqua id fugiat sint elit fore quem dolore labore. Ipsum anim magna sunt elit fore quem dolore labore. Culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi <span class="text-nowrap">cillum quid.<i class="bi bi-quote quote-icon-right"></i></span></span></p>
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" class="testimonial-img" alt="Kru Thea">
-                <h3>Kru Thea</h3>
-                <h4>Academic Advisor</h4>
-              </div>
-            </div>
-          </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination position-relative mt-4"></div>
-        </div>
-      </div>
+    <section id="testimonials" class="sec-testimonials text-center">
+      <div id="testimonials-placeholder"></div>
     </section>
+
     <!-- Placeholder for footer component -->
     <div id="footer-placeholder"></div>
 
@@ -1069,45 +307,53 @@
 
     <!-- JavaScript to load components -->
     <script>
-      // Load Navbar
-      fetch('pages/components/nav.html')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        })
-        .catch(error => {
-          console.error('Error loading the navbar:', error);
-          document.getElementById('navbar-placeholder').innerHTML = `
-            <div class="alert alert-danger m-3" role="alert">
-              Failed to load navbar component: ${error.message}
-            </div>
-          `;
-        });
+      /**
+       * Dynamically loads an HTML component and inserts it into the specified placeholder.
+       * Executes any nested script tags after insertion.
+       */
+      function loadComponent(url, placeholderId, callback) {
+        fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to load ${url} (${response.statusText})`);
+            }
+            return response.text();
+          })
+          .then(html => {
+            const placeholder = document.getElementById(placeholderId);
+            if (placeholder) {
+              placeholder.innerHTML = html;
+              
+              // Find and execute script tags within the injected HTML
+              const scripts = placeholder.querySelectorAll('script');
+              scripts.forEach(script => {
+                const executionScript = document.createElement('script');
+                executionScript.textContent = script.textContent;
+                document.body.appendChild(executionScript).parentNode.removeChild(executionScript);
+              });
 
-      // Load Footer
-      fetch('pages/components/footer.html')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok: ' + response.statusText);
-          }
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => {
-          console.error('Error loading the footer:', error);
-          document.getElementById('footer-placeholder').innerHTML = `
-            <div class="alert alert-danger m-3" role="alert">
-              Failed to load footer component: ${error.message}
-            </div>
-          `;
-        });
+              if (callback) callback();
+            }
+          })
+          .catch(error => {
+            console.error(`Error loading component [${url}]:`, error);
+            const placeholder = document.getElementById(placeholderId);
+            if (placeholder) {
+              placeholder.innerHTML = `
+                <div class="alert alert-danger m-3" role="alert">
+                  Failed to load component: ${error.message}
+                </div>
+              `;
+            }
+          });
+      }
+
+      // Load all dynamic layout components
+      loadComponent('pages/components/nav.html', 'navbar-placeholder');
+      loadComponent('pages/components/footer.html', 'footer-placeholder');
+      loadComponent('pages/components/testimonial.html', 'testimonials-placeholder');
+      loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder');
+      loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder');
     </script>
 
     <!-- Swiper JS -->
@@ -1144,48 +390,7 @@
         },
       });
 
-      // Initialize Testimonials Swiper
-      const testimonialsSwiper = new Swiper(".testimonialsSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        speed: 1500,
-        autoplay: {
-          delay: 4500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".testimonials-section .swiper-pagination",
-          clickable: true,
-        },
-      });
-
-      // Tech Stacks Filtering
-      document.querySelectorAll('.filter-btn').forEach(button => {
-        button.addEventListener('click', () => {
-          document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-          button.classList.add('active');
-          
-          const filter = button.getAttribute('data-filter');
-          
-          document.querySelectorAll('.tech-badge-item').forEach(item => {
-            const categories = item.getAttribute('data-categories').split(' ');
-            if (filter === 'all' || categories.includes(filter)) {
-              item.style.display = 'block';
-              setTimeout(() => {
-                item.style.opacity = '1';
-                item.style.transform = 'scale(1)';
-              }, 50);
-            } else {
-              item.style.opacity = '0';
-              item.style.transform = 'scale(0.8)';
-              setTimeout(() => {
-                item.style.display = 'none';
-              }, 300);
-            }
-          });
-        });
-      });
+      // Testimonials Swiper removed because only one testimonial is kept.
     </script>
   </body>
 </html>

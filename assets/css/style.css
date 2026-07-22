@@ -1,0 +1,523 @@
+/* ==========================================================================
+   Home Hero Section (.sec-home)
+   ========================================================================== */
+.sec-home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.sec-home h1 {
+  color: #ffffff;
+}
+
+.sec-home .text-muted {
+  color: #cbd5e1 !important;
+}
+
+.sec-home .btn-outline-primary {
+  color: #ffffff;
+  border-color: #93c5fd;
+}
+
+.sec-home .btn-outline-primary:hover {
+  background: #93c5fd;
+  color: #0f172a;
+  border-color: #93c5fd;
+}
+
+.sec-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/image2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(100px);
+  transform: scale(1.1);
+  z-index: -2;
+}
+
+.sec-home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: -1;
+}
+
+.sec-home-container {
+  position: relative;
+  z-index: 1;
+}
+
+.sec-home-profile-img {
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sec-home-inspiration {
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.sec-home-inspiration-divider {
+  width: 60px;
+  height: 4px;
+  background: #0d6efd;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.sec-home-inspiration h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.sec-home-inspiration p {
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-home h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .sec-home-inspiration {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .sec-home-inspiration-divider {
+    margin: 0 auto 1rem;
+  }
+}
+
+/* ==========================================================================
+   About Section (.sec-about)
+   ========================================================================== */
+.sec-about {
+  background: #f8fafc;
+}
+
+.sec-about-intro {
+  max-width: 760px;
+  color: #475569;
+}
+
+.sec-about-card {
+  background: #ffffff;
+  border: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.sec-about-card-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 320px;
+}
+
+.sec-about-card-content {
+  padding: 2.25rem;
+}
+
+.sec-about-card-content h3 {
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.sec-about-card-content p,
+.sec-about-card-content li {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.sec-about-card-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.sec-about-card-content li + li {
+  margin-top: 0.35rem;
+}
+
+/* ==========================================================================
+   Journey Section (.sec-journey)
+   ========================================================================== */
+.sec-journey-timeline-row {
+  align-items: start !important;
+}
+
+.sec-journey-timeline-col {
+  position: relative;
+  align-self: stretch;
+}
+
+.sec-journey-timeline-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.sec-journey-timeline-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  z-index: 2;
+  position: relative;
+}
+
+.sec-journey-timeline-line {
+  width: 3px;
+  position: absolute;
+  top: 28px;
+  bottom: -3.5rem;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.sec-journey-timeline-row:last-child .sec-journey-timeline-line {
+  display: none;
+}
+
+.sec-journey-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-journey-badge:hover {
+  background-color: #93c5fd;
+  border-color: #93c5fd;
+  color: #0f172a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(147, 197, 253, 0.4);
+}
+
+@media (max-width: 991.98px) {
+  .sec-journey-timeline-row {
+    position: relative !important;
+    padding-left: 40px !important;
+  }
+
+  .sec-journey-timeline-col {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 40px !important;
+    padding: 0 !important;
+  }
+
+  .sec-journey-timeline-line {
+    bottom: -2.5rem !important;
+  }
+}
+
+/* ==========================================================================
+   Testimonials Section (.sec-testimonials)
+   ========================================================================== */
+.sec-testimonials {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.sec-testimonials-item {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.sec-testimonials-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #eff6ff;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.sec-testimonials-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 10px 0 5px 0;
+  color: #0f172a;
+}
+
+.sec-testimonials-title {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.sec-testimonials-text {
+  font-style: italic;
+  margin: 0 auto 20px auto;
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.sec-testimonials-quote {
+  color: #bfdbfe;
+  font-size: 1.5rem;
+  line-height: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sec-testimonials-quote-left {
+  margin-right: 6px;
+}
+
+.sec-testimonials-quote-right {
+  margin-left: 6px;
+  transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   Tech Stacks Section (.sec-tech)
+   ========================================================================== */
+.sec-tech {
+  background: #f8fafc;
+  padding: 80px 0;
+}
+
+.sec-tech-filter-btn {
+  background: #ffffff;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin: 6px;
+}
+
+.sec-tech-filter-btn.active, .sec-tech-filter-btn:hover {
+  background: #65a6f0;
+  color: #ffffff;
+  border-color: #65a6f0;
+  box-shadow: 0 4px 12px rgba(101, 166, 240, 0.2);
+}
+
+.sec-tech-badge-item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sec-tech-badge-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.sec-tech-badge-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: #cbd5e1;
+}
+
+.sec-tech-badge-card i {
+  font-size: 1.8rem;
+  color: #475569;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-tech-badge-card:hover i {
+  color: #65a6f0;
+}
+
+.sec-tech-badge-name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Notes Cover Section (.sec-notes-cover)
+   ========================================================================== */
+.sec-notes-cover {
+  position: relative;
+  height: 45vh;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sec-notes-cover-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.pinimg.com/1200x/ef/32/70/ef32703c8af3dd0aefedfe7f978ed356.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(1px);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.sec-notes-cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.55);
+  z-index: 2;
+}
+
+.sec-notes-cover-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.sec-notes-cover-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.sec-notes-cover-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+   Contact Section (.sec-contact)
+   ========================================================================== */
+.sec-contact-info-wrap {
+  border-top: 3px solid #65a6f0;
+}
+
+.sec-contact-info-item {
+  margin-bottom: 30px;
+}
+
+.sec-contact-info-item i {
+  font-size: 20px;
+  color: #65a6f0;
+  background: #eff6ff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sec-contact-info-item:hover i {
+  background: #65a6f0;
+  color: #fff;
+}
+
+.sec-contact-info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.sec-contact-info-item p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+form.sec-contact-email-form {
+  border-top: 3px solid #65a6f0;
+}
+
+form.sec-contact-email-form label {
+  font-weight: 600;
+  color: #334155;
+}
+
+form.sec-contact-email-form .form-control {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border-color: #cbd5e1;
+}
+
+form.sec-contact-email-form .form-control:focus {
+  border-color: #65a6f0;
+  box-shadow: 0 0 0 0.25rem rgba(101, 166, 240, 0.25);
+}
+
+form.sec-contact-email-form button[type="submit"] {
+  background: #65a6f0;
+  border: 0;
+  padding: 12px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+form.sec-contact-email-form button[type="submit"]:hover {
+  background: #1f2937;
+}
+
+form.sec-contact-email-form .loading,
+form.sec-contact-email-form .error-message,
+form.sec-contact-email-form .sent-message {
+  display: none;
+}

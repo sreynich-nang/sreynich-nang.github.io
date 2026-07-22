@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "date": "July 2026",
+    "subtitle": "Graduation & Career",
+    "title": "Me as a Fresh Graduated Student",
+    "description": "Completed my Bachelor of Data Science degree with honors, focusing on Artificial Intelligence, System Development, Automation, and Data Analytics.",
+    "badges": [
+      { "text": "me at Sister of Code", "url": "pages/journey/p1_graduate.html#sister-of-code" },
+      { "text": "me at training python course to kids at Bamnang", "url": "pages/journey/p1_graduate.html#training-python" },
+      { "text": "me at working place at bamnang", "url": "pages/journey/p1_graduate.html#working-place" },
+      { "text": "me at working at MEF (2025 - present)", "url": "pages/journey/p1_graduate.html#mef" }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2020 - 2025",
+    "subtitle": "Engineering Studies",
+    "title": "Me at ITC (2020 - 2025)",
+    "description": "Began my academic studies at the Institute of Technology of Cambodia, building strong foundational skills in logic, programming, and sciences.",
+    "badges": [
+      { "text": "me at Techpreneur", "url": "pages/journey/p3_techpreneur.html" },
+      { "text": "me at ITC of each year", "url": "pages/journey/p2_itc.html#each-year" },
+      { "text": "life at ITC", "url": "pages/journey/p2_itc.html#life-at-itc" },
+      { "text": "me at AWS short course", "url": "pages/journey/p2_itc.html#aws-course" },
+      { "text": "me at Korea Data Camp", "url": "pages/journey/p2_itc.html#korea-data-camp" },
+      { "text": "my intern journey", "url": "pages/journey/p2_itc.html#internship" },
+      { "text": "my defense", "url": "pages/journey/p2_itc.html#defense" }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2021 - 2025",
+    "subtitle": "Language Education",
+    "title": "Me at IFL (2021 - 2025)",
+    "description": "Studied English at the Institute of Foreign Languages, refining my professional communication, academic writing, and public presentation skills.",
+    "badges": [
+      { "text": "project at Year3", "url": "pages/journey/p3_ifl.html#year3-project" },
+      { "text": "projectt at Year4", "url": "pages/journey/p3_ifl.html#year4-project" },
+      { "text": "life at IFL", "url": "pages/journey/p3_ifl.html#life-at-ifl" }
+    ]
+  },
+  {
+    "id": 4,
+    "date": "October 2024",
+    "subtitle": "Volunteer Work",
+    "title": "Me at Volunteering",
+    "description": "Conducted digital literacy, Scratch programming, and leadership workshops for high school students, fostering education and community growth.",
+    "badges": [
+      { "text": "me working at Erobot", "url": "pages/journey/p4_volunteer.html#erobot" },
+      { "text": "me working at YES", "url": "pages/journey/p4_volunteer.html#yes" }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+<div class="container">
+  <h2 class="fw-bold display-6 text-center mb-5">Testimonial</h2>
+  
+  <div class="sec-testimonials-item">
+    <p class="sec-testimonials-text">
+      <i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-left"></i>
+      <span id="testimonial-text"></span>
+    </p>
+    <div class="sec-testimonials-img mx-auto d-flex align-items-center justify-content-center bg-light text-secondary">
+      <i class="bi bi-person-fill" style="font-size: 3rem; line-height: 1;"></i>
+    </div>
+    <h3 id="testimonial-name" class="sec-testimonials-name"></h3>
+    <h4 id="testimonial-role" class="sec-testimonials-title"></h4>
+  </div>
+</div>
+
+<script>
+  (function() {
+    fetch('pages/components/testimnials.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch testimonials JSON');
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data && data.length > 0) {
+          const testimonial = data[0];
+          
+          // Format paragraph breaks
+          const formattedText = testimonial.text.replace(/\n\n/g, '<br><br>');
+          
+          const textEl = document.getElementById('testimonial-text');
+          if (textEl) {
+            // Keep last word and quote icon on same line to prevent lone quote wrapping
+            const words = formattedText.split(' ');
+            if (words.length > 1) {
+              const lastWord = words.pop();
+              const textWithoutLastWord = words.join(' ');
+              textEl.innerHTML = textWithoutLastWord + ` <span class="text-nowrap">${lastWord}<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-right"></i></span>`;
+            } else {
+              textEl.innerHTML = formattedText + `<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-right"></i>`;
+            }
+          }
+          
+          const nameEl = document.getElementById('testimonial-name');
+          if (nameEl) {
+            nameEl.textContent = testimonial.name;
+          }
+          
+          const roleEl = document.getElementById('testimonial-role');
+          if (roleEl) {
+            roleEl.textContent = testimonial.role;
+          }
+        }
+      })
+      .catch(error => {
+        console.error('Error loading testimonial content:', error);
+      });
+  })();
+</script>

@@ -1,0 +1,84 @@
+<div class="container">
+  <h2 class="fw-bold display-6 text-center mb-3">My Tech Stacks</h2>
+  <p class="text-center text-muted mb-5">Click on a category below to filter the technologies I work with.</p>
+  
+  <!-- Filter Buttons -->
+  <div id="tech-filters" class="d-flex flex-wrap justify-content-center mb-5"></div>
+
+  <!-- Badges Grid -->
+  <div id="tech-grid" class="row g-4 justify-content-center"></div>
+</div>
+
+<script>
+  (function() {
+    fetch('pages/components/tech.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch tech JSON');
+        }
+        return response.json();
+      })
+      .then(data => {
+        const filtersContainer = document.getElementById('tech-filters');
+        const gridContainer = document.getElementById('tech-grid');
+        
+        if (!filtersContainer || !gridContainer) return;
+        
+        // 1. Populate filter buttons
+        filtersContainer.innerHTML = data.categories.map(cat => {
+          const activeClass = cat.key === 'all' ? 'active' : '';
+          return `<button class="sec-tech-filter-btn ${activeClass}" data-filter="${cat.key}">${cat.label}</button>`;
+        }).join('');
+
+        // 2. Populate technology grid
+        gridContainer.innerHTML = data.technologies.map(tech => {
+          const categoryString = tech.categories.join(' ');
+          const styleAttr = tech.iconStyle ? `style="${tech.iconStyle}"` : '';
+          
+          return `
+            <div class="col-6 col-sm-4 col-md-3 sec-tech-badge-item" data-categories="${categoryString}">
+              <div class="sec-tech-badge-card">
+                <i class="${tech.iconClass}" ${styleAttr}></i>
+                <span class="sec-tech-badge-name">${tech.name}</span>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        // 3. Attach filter button logic
+        const filterButtons = filtersContainer.querySelectorAll('.sec-tech-filter-btn');
+        const badgeItems = gridContainer.querySelectorAll('.sec-tech-badge-item');
+
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Toggle active state
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            const filter = button.getAttribute('data-filter');
+            
+            // Filter grid items
+            badgeItems.forEach(item => {
+              const categories = item.getAttribute('data-categories').split(' ');
+              if (filter === 'all' || categories.includes(filter)) {
+                item.style.display = 'block';
+                setTimeout(() => {
+                  item.style.opacity = '1';
+                  item.style.transform = 'scale(1)';
+                }, 50);
+              } else {
+                item.style.opacity = '0';
+                item.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                  item.style.display = 'none';
+                }, 300);
+              }
+            });
+          });
+        });
+      })
+      .catch(error => {
+        console.error('Error loading tech stacks content:', error);
+      });
+  })();
+</script>

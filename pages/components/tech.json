@@ -1,0 +1,128 @@
+{
+  "categories": [
+    { "key": "all", "label": "All" },
+    { "key": "current-stack", "label": "Current Stack" },
+    { "key": "frontend", "label": "Frontend" },
+    { "key": "data-analyse", "label": "Data Analyse" },
+    { "key": "data-scientist", "label": "Data Scientist" },
+    { "key": "nlp", "label": "NLP in Text" }
+  ],
+  "technologies": [
+    {
+      "id": 1,
+      "name": "Python",
+      "categories": ["current-stack", "data-scientist", "data-analyse", "nlp"],
+      "iconType": "devicon",
+      "iconClass": "devicon-python-plain colored"
+    },
+    {
+      "id": 2,
+      "name": "SQL",
+      "categories": ["current-stack", "data-analyse"],
+      "iconType": "devicon",
+      "iconClass": "devicon-mysql-plain colored"
+    },
+    {
+      "id": 3,
+      "name": "Pandas",
+      "categories": ["current-stack", "data-analyse", "data-scientist"],
+      "iconType": "devicon",
+      "iconClass": "devicon-pandas-plain colored"
+    },
+    {
+      "id": 4,
+      "name": "NumPy",
+      "categories": ["data-analyse", "data-scientist"],
+      "iconType": "devicon",
+      "iconClass": "devicon-numpy-original colored"
+    },
+    {
+      "id": 5,
+      "name": "TensorFlow",
+      "categories": ["data-scientist"],
+      "iconType": "devicon",
+      "iconClass": "devicon-tensorflow-line colored"
+    },
+    {
+      "id": 6,
+      "name": "PyTorch",
+      "categories": ["data-scientist"],
+      "iconType": "devicon",
+      "iconClass": "devicon-pytorch-original colored"
+    },
+    {
+      "id": 7,
+      "name": "Scikit-Learn",
+      "categories": ["data-scientist"],
+      "iconType": "devicon",
+      "iconClass": "devicon-scikitlearn-plain colored"
+    },
+    {
+      "id": 8,
+      "name": "Jupyter",
+      "categories": ["current-stack", "data-scientist", "data-analyse"],
+      "iconType": "devicon",
+      "iconClass": "devicon-jupyter-plain colored"
+    },
+    {
+      "id": 9,
+      "name": "NLTK",
+      "categories": ["nlp"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-chat-text-fill",
+      "iconStyle": "color: #65a6f0;"
+    },
+    {
+      "id": 10,
+      "name": "spaCy",
+      "categories": ["nlp"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-cpu-fill",
+      "iconStyle": "color: #65a6f0;"
+    },
+    {
+      "id": 11,
+      "name": "Hugging Face",
+      "categories": ["nlp", "data-scientist"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-emoji-smile-fill",
+      "iconStyle": "color: #ffcc00;"
+    },
+    {
+      "id": 12,
+      "name": "JavaScript",
+      "categories": ["frontend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-javascript-plain colored"
+    },
+    {
+      "id": 13,
+      "name": "React.js",
+      "categories": ["current-stack", "frontend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-react-original colored"
+    },
+    {
+      "id": 14,
+      "name": "HTML5 / CSS3",
+      "categories": ["frontend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-html5-plain colored"
+    },
+    {
+      "id": 15,
+      "name": "Bootstrap",
+      "categories": ["frontend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-bootstrap-plain colored"
+    },
+    {
+      "id": 16,
+      "name": "PowerBI / Tableau",
+      "categories": ["data-analyse"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-bar-chart-line-fill",
+      "iconStyle": "color: #3b82f6;"
+    }
+  ]
+}

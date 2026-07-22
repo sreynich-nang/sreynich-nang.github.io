@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Technology",
+    "tag": "learn-tech",
+    "title": "How to learn coding in 2026",
+    "excerpt": "Now you can use natural language like English sentences to generate code. Generative AI can write code, explain code, debug code, and document code. It can build both the frontend and backend. So, if generative AI can do so many of those tasks that traditionally software developers do then what’s left for software developers to do? And is it worth learning how to code now? My answer is still 100%, YES.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "AI & Data",
+    "tag": "learn-data",
+    "title": "The Future of Data Analytics",
+    "excerpt": "Data analytics is evolving rapidly with AI integrations. Automated insights and real-time visualization tools are changing how data is analyzed. Understanding standard analytics models remains a key advantage for developers looking to specialize.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Education",
+    "tag": "learn-tech",
+    "title": "Digital Literacy in Schools",
+    "excerpt": "Teaching Scratch programming and basic web layouts helps students construct logical frameworks early. Emphasizing digital literacy and critical thinking empowers the next generation to be creators, not just consumers.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "Gaining Clarity in Messy Times",
+    "excerpt": "Sometimes the data of our own lives feels chaotic. Approaching problems with curiosity rather than fear can turn complex situations into structural growth. Limits are essential indicators, not roadblocks.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Coding Tips",
+    "tag": "learn-data",
+    "title": "Why I Love Text-Based Datasets",
+    "excerpt": "The messier the data, the more interesting it is. Working on Natural Language Processing (NLP) or cleaning dirty textual records forces creativity and precise algorithm building that structured tables don't require.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Nature & Patterns",
+    "tag": "learn-nature",
+    "title": "Finding Patterns in Nature",
+    "excerpt": "Nature is the ultimate data generator. From the Fibonacci sequence in sunflower seeds to the neural-like paths of river networks, observing ecological patterns teaches us structural balance and optimal routing in code.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "category": "Mindfulness",
+    "tag": "random-thought",
+    "title": "The Art of Slowing Down",
+    "excerpt": "In a world optimized for speed, intentional delay is a superpower. Refactoring code or pausing decisions often saves more time than writing hasty logic. Sometimes doing nothing is progress.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  }
+]
