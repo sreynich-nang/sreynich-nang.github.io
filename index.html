@@ -210,84 +210,7 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="sec-about py-5">
-      <h2 class="fw-bold display-6 text-center mt-5">My Projects</h2>
-      <p class="sec-about-intro text-center mx-auto mt-4">
-        I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
-        how technology can be used with data, especially in system development,
-        automation, and gaining insights.
-      </p>
-      <p class="sec-about-intro text-center mx-auto mt-3">
-        Two things that I will share here are my random thoughts and the
-        projects that have shaped how I work today.
-      </p>
-
-      <div class="container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Card 1 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <!-- <img src="https://picsum.photos/500/300?1"> -->
-                <img src="assets/images/meme1.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Project One</h5>
-                  <p>Description of your project goes here.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <!-- <img src="https://picsum.photos/500/300?2"> -->
-                <img src="assets/images/meme1.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Project Two</h5>
-                  <p>Description of your project goes here.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <!-- <img src="https://picsum.photos/500/300?3"> -->
-                <img src="assets/images/meme1.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Project Three</h5>
-                  <p>Description of your project goes here.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <!-- <img src="https://picsum.photos/500/300?4"> -->
-                <img src="assets/images/meme1.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Project Four</h5>
-                  <p>Description of your project goes here.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <!-- <img src="https://picsum.photos/500/300?5"> -->
-                <img src="assets/images/meme1.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Project Five</h5>
-                  <p>Description of your project goes here.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-pagination position-relative mt-4"></div>
-        </div>
-      </div>
+      <div id="projects-placeholder"></div>
     </section>
 
     <!-- My Tech Stacks -->
@@ -351,7 +274,7 @@
 
       // Track loaded components to scroll to hash anchor after DOM stabilizes
       let loadedCount = 0;
-      const totalComponents = 5;
+      const totalComponents = 6;
       function checkScrollToHash() {
         loadedCount++;
         if (loadedCount === totalComponents) {
@@ -373,43 +296,10 @@
       loadComponent('pages/components/testimonial.html', 'testimonials-placeholder', checkScrollToHash);
       loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder', checkScrollToHash);
       loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder', checkScrollToHash);
+      loadComponent('pages/components/projectCard.html', 'projects-placeholder', checkScrollToHash);
     </script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      // Initialize Swiper (our sliding cards tool)
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1, // 1 card at a time on mobile
-        spaceBetween: 25, // space between cards in pixels
-        loop: true, // keep repeat cards in a loop forever
-        speed: 2000, // timer
-
-        // Slide automatically
-        autoplay: {
-          delay: 2500, // Slide to the next card every 2.5 seconds (2500ms)
-          disableOnInteraction: false, // Keep sliding even if user clicks a card
-        },
-
-        // Navigation dots at the bottom
-        pagination: {
-          el: "#projects .swiper-pagination", // Connects to the dots element
-          clickable: true, // Lets user click the dots to switch cards
-        },
-
-        // Show more cards on bigger screens
-        breakpoints: {
-          768: {
-            slidesPerView: 2, // Show 2 cards on tablets
-          },
-          992: {
-            slidesPerView: 3, // Show 3 cards on desktop
-          },
-        },
-      });
-
-      // Testimonials Swiper removed because only one testimonial is kept.
-    </script>
   </body>
 </html>
