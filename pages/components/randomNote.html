@@ -162,7 +162,7 @@
     const isSubpage = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
     const jsonUrl = isSubpage ? 'components/title_randomNote.json' : 'pages/components/title_randomNote.json';
 
-    fetch(jsonUrl)
+    fetch(jsonUrl + '?t=' + new Date().getTime())
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch random notes JSON');

@@ -11,7 +11,9 @@
 
 <script>
   (function() {
-    fetch('pages/components/tech.json')
+    const isSubpage = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
+    const jsonUrl = isSubpage ? 'components/tech.json' : 'pages/components/tech.json';
+    fetch(jsonUrl + '?t=' + new Date().getTime())
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch tech JSON');

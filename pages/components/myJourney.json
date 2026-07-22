@@ -15,15 +15,27 @@
       "Analyzed data and generated dashboards for the management team"
     ],
     "badges": [
-      { "text": "UX/UI at Sister of Code (June - August 2026)", "url": "pages/journey/p1_graduate.html#sister-of-code" },
-      { "text": "Python Trainer at Bamnang (July - September 2026)", "url": "pages/journey/p1_graduate.html#training-python" },
-      { "text": "Working at Bamnang (2026 - Present)", "url": "pages/journey/p1_graduate.html#working-place" },
-      { "text": "First Official Work at MEF (2025 - 2026)", "url": "pages/journey/p1_graduate.html#mef" }
+      {
+        "text": "UX/UI at Sister of Code (June - August 2026)",
+        "url": "pages/journey/p1_graduate.html#sister-of-code"
+      },
+      {
+        "text": "Python Trainer at Bamnang (July - September 2026)",
+        "url": "pages/journey/p1_graduate.html#training-python"
+      },
+      {
+        "text": "Working at Bamnang (2026 - Present)",
+        "url": "pages/journey/p1_graduate.html#working-place"
+      },
+      {
+        "text": "First Official Work at MEF (2025 - 2026)",
+        "url": "pages/journey/p1_graduate.html#mef"
+      }
     ]
   },
   {
     "id": 2,
-    "subtitle": "Engineering Studies",
+    "subtitle": "Applied Mathematics and Statistics, Majoring in Data Science",
     "title": "Engineering Student",
     "place": "Institute of Technology of Cambodia (ITC)",
     "duration": "Oct 2020 - July 2025",
@@ -31,24 +43,47 @@
     "achievements": [
       "Successfully defended graduation thesis on AI system development",
       "Selected for Korea Data Camp (AI & Data Science)",
-      "Techpreneur Bootcamp: Worked on Khmer Speech Recognition & Car Posting Data Scraper",
-      "Completed AWS short course"
+      "Completed AWS short course and techpreneur incubation program"
     ],
     "badges": [
-      { "text": "Techpreneur (June 2025 - March 2026)", "url": "pages/journey/p3_techpreneur.html" },
-      { "text": "Life at ITC (2020 - 2025)", "url": "pages/journey/p2_itc.html#each-year" },
-      { "text": "AWS short course (June 2023)", "url": "pages/journey/p2_itc.html#aws-course" },
-      { "text": "Korea Data Camp (July 2024)", "url": "pages/journey/p2_itc.html#korea-data-camp" },
-      { "text": "First Internship, Year3 (Oct - Nov 2023)", "url": "pages/journey/p2_itc.html#internship" },
-      { "text": "Second Internship, Year4 (Aug - Oct 2024)", "url": "pages/journey/p2_itc.html#internship" },
-      { "text": "Third Internship, Year5 (Feb - Apr 2025)", "url": "pages/journey/p2_itc.html#internship" },
-      { "text": "Defense (June 2025)", "url": "pages/journey/p2_itc.html#defense" }
+      {
+        "text": "Techpreneur Boo(June 2025 - March 2026)",
+        "url": "pages/journey/p3_techpreneur.html"
+      },
+      {
+        "text": "Life at ITC (2020 - 2025)",
+        "url": "pages/journey/p2_itc.html#each-year"
+      },
+      {
+        "text": "AWS short course (June 2023)",
+        "url": "pages/journey/p2_itc.html#aws-course"
+      },
+      {
+        "text": "Korea Data Camp (July 2024)",
+        "url": "pages/journey/p2_itc.html#korea-data-camp"
+      },
+      {
+        "text": "First Internship, Year3 (Oct - Nov 2023)",
+        "url": "pages/journey/p2_itc.html#internship"
+      },
+      {
+        "text": "Second Internship, Year4 (Aug - Oct 2024)",
+        "url": "pages/journey/p2_itc.html#internship"
+      },
+      {
+        "text": "Third Internship, Year5 (Feb - Apr 2025)",
+        "url": "pages/journey/p2_itc.html#internship"
+      },
+      {
+        "text": "Defense (June 2025)",
+        "url": "pages/journey/p2_itc.html#defense"
+      }
     ]
   },
   {
     "id": 3,
     "subtitle": "Language Education",
-    "title": "Language Student",
+    "title": "Professional Communication",
     "place": "Institute of Foreign Languages (IFL)",
     "duration": "Oct 2021 - July 2025",
     "description": "Studied English at the Institute of Foreign Languages, refining my professional communication, academic writing, and public presentation skills.",
@@ -58,8 +93,14 @@
       "Participated in student presentations and language workshops"
     ],
     "badges": [
-      { "text": "Project Coordinator: Kid & Future Career in Year4 (2024 - 2025)", "url": "pages/journey/p3_ifl.html#year4-project" },
-      { "text": "Life at IFL (2021 - 2025)", "url": "pages/journey/p3_ifl.html#life-at-ifl" }
+      {
+        "text": "Project Coordinator: Kid & Future Career in Year4 (2024 - 2025)",
+        "url": "pages/journey/p3_ifl.html#year4-project"
+      },
+      {
+        "text": "Life at IFL (2021 - 2025)",
+        "url": "pages/journey/p3_ifl.html#life-at-ifl"
+      }
     ]
   },
   {
@@ -75,8 +116,14 @@
       "Educated over 100 high school students in Scratch programming"
     ],
     "badges": [
-      { "text": "Short Journey at Erobot (2022 - 2023)", "url": "pages/journey/p4_volunteer.html#erobot" },
-      { "text": "Team Lead at YES (2023 - 2024)", "url": "pages/journey/p4_volunteer.html#yes" }
+      {
+        "text": "Short Journey at Erobot (2022 - 2023)",
+        "url": "pages/journey/p4_volunteer.html#erobot"
+      },
+      {
+        "text": "Team Lead at YES (2023 - 2024)",
+        "url": "pages/journey/p4_volunteer.html#yes"
+      }
     ]
   }
 ]

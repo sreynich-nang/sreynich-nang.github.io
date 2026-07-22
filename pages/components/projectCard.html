@@ -23,7 +23,7 @@
     const isSubpage = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
     const jsonUrl = isSubpage ? 'components/titleProject.json' : 'pages/components/titleProject.json';
 
-    fetch(jsonUrl)
+    fetch(jsonUrl + '?t=' + new Date().getTime())
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch projects JSON');

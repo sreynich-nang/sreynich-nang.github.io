@@ -8,7 +8,7 @@
     const isSubpage = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
     const jsonUrl = isSubpage ? 'components/myJourney.json' : 'pages/components/myJourney.json';
 
-    fetch(jsonUrl)
+    fetch(jsonUrl + '?t=' + new Date().getTime())
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch journey JSON');
@@ -44,7 +44,7 @@
             rowHtml = `
               <div class="row align-items-center mb-5 sec-journey-timeline-row">
                 <!-- Place / Subtitle -->
-                <div class="col-lg-5 text-lg-end order-2 order-lg-1 sec-journey-timeline-date">
+                <div class="col-lg-5 text-lg-end order-2 order-lg-1 sec-journey-timeline-date mb-4 mb-lg-0">
                   <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
                   <p class="text-muted mb-0">${item.subtitle}</p>
                 </div>
@@ -121,7 +121,7 @@
                 </div>
 
                 <!-- Place / Subtitle -->
-                <div class="col-lg-5 order-2 order-lg-3 sec-journey-timeline-date">
+                <div class="col-lg-5 order-2 order-lg-3 sec-journey-timeline-date mb-4 mb-lg-0">
                   <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
                   <p class="text-muted mb-0">${item.subtitle}</p>
                 </div>

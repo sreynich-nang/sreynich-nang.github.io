@@ -16,7 +16,9 @@
 
 <script>
   (function() {
-    fetch('pages/components/testimnials.json')
+    const isSubpage = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
+    const jsonUrl = isSubpage ? 'components/testimnials.json' : 'pages/components/testimnials.json';
+    fetch(jsonUrl + '?t=' + new Date().getTime())
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch testimonials JSON');
