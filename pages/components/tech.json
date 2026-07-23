@@ -1,31 +1,33 @@
 {
   "categories": [
     { "key": "all", "label": "All" },
-    { "key": "current-stack", "label": "Current Stack" },
-    { "key": "frontend", "label": "Frontend" },
-    { "key": "data-analyse", "label": "Data Analyse" },
+    { "key": "fundamental", "label": "Fundamental Level" },
     { "key": "data-scientist", "label": "Data Scientist" },
-    { "key": "nlp", "label": "NLP in Text" }
+    { "key": "data-analyse", "label": "Data Analyse" },
+    { "key": "nlp", "label": "NLP in Text" },
+    { "key": "frontend", "label": "Frontend" },
+    { "key": "backend", "label": "Backend" },
+    { "key": "tools", "label": "Tools & Others" }
   ],
   "technologies": [
     {
       "id": 1,
       "name": "Python",
-      "categories": ["current-stack", "data-scientist", "data-analyse", "nlp"],
+      "categories": ["data-scientist", "data-analyse", "nlp", "backend"],
       "iconType": "devicon",
       "iconClass": "devicon-python-plain colored"
     },
     {
       "id": 2,
       "name": "SQL",
-      "categories": ["current-stack", "data-analyse"],
+      "categories": ["data-analyse", "backend"],
       "iconType": "devicon",
       "iconClass": "devicon-mysql-plain colored"
     },
     {
       "id": 3,
       "name": "Pandas",
-      "categories": ["current-stack", "data-analyse", "data-scientist"],
+      "categories": ["data-analyse", "data-scientist"],
       "iconType": "devicon",
       "iconClass": "devicon-pandas-plain colored"
     },
@@ -60,14 +62,14 @@
     {
       "id": 8,
       "name": "Jupyter",
-      "categories": ["current-stack", "data-scientist", "data-analyse"],
+      "categories": ["data-scientist", "data-analyse"],
       "iconType": "devicon",
       "iconClass": "devicon-jupyter-plain colored"
     },
     {
       "id": 9,
       "name": "NLTK",
-      "categories": ["nlp"],
+      "categories": ["nlp", "data-scientist"],
       "iconType": "bootstrap",
       "iconClass": "bi bi-chat-text-fill",
       "iconStyle": "color: #65a6f0;"
@@ -75,7 +77,7 @@
     {
       "id": 10,
       "name": "spaCy",
-      "categories": ["nlp"],
+      "categories": ["nlp", "data-scientist"],
       "iconType": "bootstrap",
       "iconClass": "bi bi-cpu-fill",
       "iconStyle": "color: #65a6f0;"
@@ -98,7 +100,7 @@
     {
       "id": 13,
       "name": "React.js",
-      "categories": ["current-stack", "frontend"],
+      "categories": ["frontend", "fundamental"],
       "iconType": "devicon",
       "iconClass": "devicon-react-original colored"
     },
@@ -118,11 +120,164 @@
     },
     {
       "id": 16,
-      "name": "PowerBI / Tableau",
+      "name": "Power BI",
       "categories": ["data-analyse"],
       "iconType": "bootstrap",
       "iconClass": "bi bi-bar-chart-line-fill",
+      "iconStyle": "color: #f2c811;"
+    },
+    {
+      "id": 17,
+      "name": "Machine Learning & Deep Learning",
+      "categories": ["data-scientist"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-brain",
+      "iconStyle": "color: #8b5cf6;"
+    },
+    {
+      "id": 18,
+      "name": "EDA (Structured & Unstructured Data)",
+      "categories": ["data-scientist", "data-analyse"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-table",
+      "iconStyle": "color: #10b981;"
+    },
+    {
+      "id": 19,
+      "name": "Statistical Analysis with Time Series",
+      "categories": ["data-scientist", "data-analyse"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-graph-up-arrow",
+      "iconStyle": "color: #f59e0b;"
+    },
+    {
+      "id": 20,
+      "name": "R",
+      "categories": ["data-scientist", "data-analyse"],
+      "iconType": "devicon",
+      "iconClass": "devicon-r-original colored"
+    },
+    {
+      "id": 21,
+      "name": "Seaborn",
+      "categories": ["data-scientist", "data-analyse"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-palette-fill",
+      "iconStyle": "color: #4c72b0;"
+    },
+    {
+      "id": 22,
+      "name": "Flask",
+      "categories": ["backend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-flask-original",
+      "iconStyle": "color: #000000;"
+    },
+    {
+      "id": 24,
+      "name": "Streamlit",
+      "categories": ["data-scientist", "frontend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-streamlit-plain colored"
+    },
+    {
+      "id": 25,
+      "name": "FastAPI",
+      "categories": ["backend"],
+      "iconType": "devicon",
+      "iconClass": "devicon-fastapi-plain colored"
+    },
+    {
+      "id": 26,
+      "name": "Full-Stack Development",
+      "categories": ["backend", "frontend"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-layers-half",
       "iconStyle": "color: #3b82f6;"
+    },
+    {
+      "id": 27,
+      "name": "UX/UI Design (Figma)",
+      "categories": ["frontend", "fundamental"],
+      "iconType": "devicon",
+      "iconClass": "devicon-figma-plain colored"
+    },
+    {
+      "id": 28,
+      "name": "Next.js",
+      "categories": ["frontend", "fundamental"],
+      "iconType": "devicon",
+      "iconClass": "devicon-nextjs-plain"
+    },
+    {
+      "id": 29,
+      "name": "Database Design",
+      "categories": ["backend"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-database-fill-check",
+      "iconStyle": "color: #06b6d4;"
+    },
+    {
+      "id": 30,
+      "name": "Vector Database",
+      "categories": ["backend", "data-scientist"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-database-fill-gear",
+      "iconStyle": "color: #6366f1;"
+    },
+    {
+      "id": 31,
+      "name": "Git & GitHub Control",
+      "categories": ["tools"],
+      "iconType": "devicon",
+      "iconClass": "devicon-git-plain colored"
+    },
+    {
+      "id": 32,
+      "name": "Docker",
+      "categories": ["tools", "fundamental"],
+      "iconType": "devicon",
+      "iconClass": "devicon-docker-plain colored"
+    },
+    {
+      "id": 33,
+      "name": "Metabase",
+      "categories": ["data-analyse"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-pie-chart-fill",
+      "iconStyle": "color: #509ee3;"
+    },
+    {
+      "id": 34,
+      "name": "Microsoft Office",
+      "categories": ["tools", "fundamental"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-file-earmark-word-fill",
+      "iconStyle": "color: #2b579a;"
+    },
+    {
+      "id": 35,
+      "name": "Proposal Writing",
+      "categories": ["tools", "fundamental"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-pencil-square",
+      "iconStyle": "color: #ec4899;"
+    },
+    {
+      "id": 36,
+      "name": "Data Ethics & Privacy",
+      "categories": ["data-scientist", "data-analyse", "fundamental"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-shield-lock-fill",
+      "iconStyle": "color: #ef4444;"
+    },
+    {
+      "id": 37,
+      "name": "Research Methodology",
+      "categories": ["fundamental"],
+      "iconType": "bootstrap",
+      "iconClass": "bi bi-journal-bookmark-fill",
+      "iconStyle": "color: #6366f1;"
     }
   ]
 }

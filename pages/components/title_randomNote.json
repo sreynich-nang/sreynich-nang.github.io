@@ -1,65 +1,147 @@
 [
   {
     "id": 1,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
-    "category": "Technology",
-    "tag": "learn-tech",
-    "title": "How to learn coding in 2026",
-    "excerpt": "Now you can use natural language like English sentences to generate code. Generative AI can write code, explain code, debug code, and document code. It can build both the frontend and backend. So, if generative AI can do so many of those tasks that traditionally software developers do then what’s left for software developers to do? And is it worth learning how to code now? My answer is still 100%, YES.",
+    "imageUrl": "../../assets/images/whylovedata_blog.png",
+    "category": "AI & Data",
+    "tag": "learn-data",
+    "title": "Why I Love Data",
+    "excerpt": "Perhaps having no logical explanation is the truest form of love. For me, data isn't just numbers—it is a quiet language of patterns, mysteries, and stories waiting to be discovered. Sometimes, you don't need a complex reason to love what you do; the curiosity itself is enough.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 2,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
-    "category": "AI & Data",
-    "tag": "learn-data",
-    "title": "The Future of Data Analytics",
-    "excerpt": "Data analytics is evolving rapidly with AI integrations. Automated insights and real-time visualization tools are changing how data is analyzed. Understanding standard analytics models remains a key advantage for developers looking to specialize.",
+    "imageUrl": "../../assets/images/me_ifl.jpg",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "Just Me Trying to Be Me",
+    "excerpt": "In a world that constantly tells us who we should be, the hardest yet most rewarding journey is learning to be ourselves. This note is a reflection on authenticity, embracing personal quirks, and navigating life at my own pace.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 3,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
-    "category": "Education",
-    "tag": "learn-tech",
-    "title": "Digital Literacy in Schools",
-    "excerpt": "Teaching Scratch programming and basic web layouts helps students construct logical frameworks early. Emphasizing digital literacy and critical thinking empowers the next generation to be creators, not just consumers.",
+    "imageUrl": "../../assets/images/commitment_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "The Weight of Commitment",
+    "excerpt": "Commitment is demanding—it asks for your focus, your energy, and impacts you both mentally and physically. But staying committed doesn't mean burning out; it is about finding a delicate balance with the random, joyful things that keep us grounded.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 4,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
-    "category": "Self Growth",
-    "tag": "learn-life",
-    "title": "Gaining Clarity in Messy Times",
-    "excerpt": "Sometimes the data of our own lives feels chaotic. Approaching problems with curiosity rather than fear can turn complex situations into structural growth. Limits are essential indicators, not roadblocks.",
+    "imageUrl": "../../assets/images/findbalancelife_blog.png",
+    "category": "Mindfulness",
+    "tag": "random-thought",
+    "title": "Finding Balance in Life",
+    "excerpt": "How do we balance the endless demands of life? Where do we find the line that marks 'enough'? This post explores the search for personal equilibrium and learning to define success and satisfaction on our own terms.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 5,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
-    "category": "Coding Tips",
-    "tag": "learn-data",
-    "title": "Why I Love Text-Based Datasets",
-    "excerpt": "The messier the data, the more interesting it is. Working on Natural Language Processing (NLP) or cleaning dirty textual records forces creativity and precise algorithm building that structured tables don't require.",
+    "imageUrl": "../../assets/images/opportunity_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "ឱកាសមិនងាយនឹងមានឡើយ — Seizing Opportunities",
+    "excerpt": "ឱកាសមាសមិនងាយនឹងកើតឡើងនោះទេ ប៉ុន្តែនៅពេលដែលវាបានមកដល់ហើយ ចូរចាប់យកវាឱ្យជាប់ ហើយកុំបណ្តោយឱ្យវាហោះហើរទៅបាត់ដោយគ្មានន័យ។ Opportunities don't present themselves every day. When a door finally opens, have the courage to step through and make the most of it.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 6,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "imageUrl": "../../assets/images/smallmatter_blog.png",
     "category": "Nature & Patterns",
     "tag": "learn-nature",
-    "title": "Finding Patterns in Nature",
-    "excerpt": "Nature is the ultimate data generator. From the Fibonacci sequence in sunflower seeds to the neural-like paths of river networks, observing ecological patterns teaches us structural balance and optimal routing in code.",
-    "readMoreUrl": "pages/randomNote/p1.html"
+    "title": "The Power of the Smallest Details",
+    "excerpt": "Whether in data, system design, or daily life, the smallest parts often carry the most weight. Paying attention to minute details isn't just about precision; it is about recognizing that small adjustments can make the biggest difference.",
+    "readMoreUrl": "pages/randomNote/p1.html",
+    "imageStyle": "background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #ffffff;"
   },
   {
     "id": 7,
-    "imageUrl": "https://i.pinimg.com/736x/d1/28/07/d128075c58738f2ade425a5a8edbed1d.jpg",
+    "imageUrl": "../../assets/images/corebelief_blog.png",
     "category": "Mindfulness",
     "tag": "random-thought",
-    "title": "The Art of Slowing Down",
-    "excerpt": "In a world optimized for speed, intentional delay is a superpower. Refactoring code or pausing decisions often saves more time than writing hasty logic. Sometimes doing nothing is progress.",
+    "title": "Questioning Our Core Beliefs",
+    "excerpt": "Who taught you the rules you live by, and why do you believe things must remain exactly as they are? A reflective inquiry into challenging assumptions, questioning the status quo, and thinking independently.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 8,
+    "imageUrl": "../../assets/images/boundaryenough_blog.png",
+    "category": "Mindfulness",
+    "tag": "random-thought",
+    "title": "Defining the Boundaries of Enough",
+    "excerpt": "How do we measure satisfaction? What indicators tell us we have reached our goal? This post discusses setting realistic metrics for personal progress and knowing when to feel fulfilled instead of constantly chasing more.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 9,
+    "imageUrl": "../../assets/images/change_blog.png",
+    "category": "Nature & Patterns",
+    "tag": "learn-nature",
+    "title": "Only Change is Unchanging",
+    "excerpt": "In nature, technology, and life, the only thing that never changes is change itself. Embracing this truth helps us build resilient systems and develop the adaptability required to navigate an evolving world.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 10,
+    "imageUrl": "../../assets/images/smallstep_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "បោះជំហានដំបូង — Taking the First Step",
+    "excerpt": "បើគ្មានជំហានដំបូង យើងមិនអាចឡើងដល់កំពូលភ្នំដើម្បីទស្សនាទេសភាពដ៏ស្រស់ស្អាតបានឡើយ។ តែបើមានវិធីផ្សេងក្រៅពីការដើរធម្មតា ហើយវាធ្វើឱ្យយើងសប្បាយចិត្ត ចូរកុំរារែកនឹងសាកល្បងវា។ Every journey requires a beginning. Find your own path to the top, and enjoy the unique way you get there.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+    "category": "Coding Tips",
+    "tag": "learn-tech",
+    "title": "Python Venv: The Office Room Analogy",
+    "excerpt": "Understanding virtual environments through a simple analogy: think of a venv as an office room, packages as workers with specialized skills, and activation as turning on the lights and air conditioner. A clean, visual breakdown of why we use isolated environments in python.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 12,
+    "imageUrl": "../../assets/images/findlight_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "Finding Light in the Darkest Times",
+    "excerpt": "In moments of complete darkness, you cannot even see your own shadow. You don't have to force yourself to be strong. Stay calm, give yourself time, and use your voice to ask for help from those who are in a position to guide you. True strength lies in seeking connection when you need it most.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 13,
+    "imageUrl": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=800&q=80",
+    "category": "Education",
+    "tag": "learn-tech",
+    "title": "When There is a Wheel, There is a Way",
+    "excerpt": "A twist on a classic saying: when there is a wheel, there is a way. In learning, wheels represent tools of progress—from books in the past to search engines and documentation today. With the right tools and focused time, you can master anything.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 14,
+    "imageUrl": "../../assets/images/makestrong_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "What Broke You Once, Makes You Strong",
+    "excerpt": "A reflection on resilience and healing. The painful experiences that crack our foundation are often the very events that build our long-term strength, giving us the capacity to face future challenges with confidence.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "At Least the Start is Started",
+    "excerpt": "Don't let the fear of an imperfect journey stop you from beginning. The hardest part of any endeavor is simply crossing the starting line. Once you take that initial step, momentum takes over.",
+    "readMoreUrl": "pages/randomNote/p1.html"
+  },
+  {
+    "id": 16,
+    "imageUrl": "../../assets/images/networking_blog.png",
+    "category": "Technology",
+    "tag": "learn-tech",
+    "title": "The Art of Maintaining Networks",
+    "excerpt": "Building a network is relatively easy—whether it's connecting with professionals or configuring systems. The real challenge is maintenance: ensuring stability, communication, and resilience over time. This note bridges human connections and system design.",
     "readMoreUrl": "pages/randomNote/p1.html"
   }
 ]
