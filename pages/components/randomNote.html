@@ -192,15 +192,17 @@
           const isEven = index % 2 === 0;
           const imgOrder = isEven ? 'order-md-1' : 'order-md-2';
           const textOrder = isEven ? 'order-md-2' : 'order-md-1';
+          const imgCol = note.imageCol || 'col-md-4';
+          const textCol = note.textCol || 'col-md-8';
 
           return `
             <div class="col-12 note-card-item mb-3" data-tag="${note.tag}">
               <div class="card card-blog border-0 shadow-sm rounded-4 overflow-hidden">
                 <div class="row g-0 align-items-stretch">
-                  <div class="col-md-4 ${imgOrder}">
+                  <div class="${imgCol} ${imgOrder}">
                     <div class="card-img-horizontal" style="background-image: url('${note.imageUrl}'); ${note.imageStyle || ''}"></div>
                   </div>
-                  <div class="col-md-8 ${textOrder} d-flex align-items-center">
+                  <div class="${textCol} ${textOrder} d-flex align-items-center">
                     <div class="card-body p-4">
                       <div class="ube-post-content p-0">
                         <ul class="ube-entry-meta list-inline mb-2">

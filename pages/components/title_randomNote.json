@@ -46,13 +46,12 @@
   },
   {
     "id": 6,
-    "imageUrl": "../../assets/images/smallmatter_blog.png",
+    "imageUrl": "https://i.pinimg.com/736x/5e/19/12/5e1912e1306d0dc1662adc584364ac71.jpg",
     "category": "Nature & Patterns",
     "tag": "learn-nature",
     "title": "The Power of the Smallest Details",
     "excerpt": "Whether in data, system design, or daily life, the smallest parts often carry the most weight. Paying attention to minute details isn't just about precision; it is about recognizing that small adjustments can make the biggest difference.",
-    "readMoreUrl": "pages/randomNote/p1.html",
-    "imageStyle": "background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #ffffff;"
+    "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
     "id": 7,
@@ -88,7 +87,9 @@
     "tag": "learn-life",
     "title": "បោះជំហានដំបូង — Taking the First Step",
     "excerpt": "បើគ្មានជំហានដំបូង យើងមិនអាចឡើងដល់កំពូលភ្នំដើម្បីទស្សនាទេសភាពដ៏ស្រស់ស្អាតបានឡើយ។ តែបើមានវិធីផ្សេងក្រៅពីការដើរធម្មតា ហើយវាធ្វើឱ្យយើងសប្បាយចិត្ត ចូរកុំរារែកនឹងសាកល្បងវា។ Every journey requires a beginning. Find your own path to the top, and enjoy the unique way you get there.",
-    "readMoreUrl": "pages/randomNote/p1.html"
+    "readMoreUrl": "pages/randomNote/p1.html",
+    "imageCol": "col-md-5",
+    "textCol": "col-md-7"
   },
   {
     "id": 11,
@@ -128,7 +129,7 @@
   },
   {
     "id": 15,
-    "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80",
+    "imageUrl": "../../assets/images/step_blog.png",
     "category": "Self Growth",
     "tag": "learn-life",
     "title": "At Least the Start is Started",
