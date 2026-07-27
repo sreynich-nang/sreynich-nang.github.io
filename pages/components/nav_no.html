@@ -1,0 +1,38 @@
+<!-- NAVBAR (MINIMAL - NO MENU LINKS) -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand fw-bold" style="color: #65a6f0" href="index.html">
+      Nang Sreynich
+    </a>
+
+    <a href="pages/contact.html" class="btn btn-contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Script to automatically adjust navbar links if loaded on a subpage -->
+<script>
+  (function () {
+    const path = window.location.pathname;
+    const isSubpage = path.includes("/pages/");
+
+    if (isSubpage) {
+      const isTwoLevelsDeep = (path.match(/\/pages\/.+\//) !== null);
+      const prefix = isTwoLevelsDeep ? "../../" : "../";
+
+      document
+        .querySelectorAll("#navbar-placeholder .navbar-brand, #navbar-placeholder .btn-contact")
+        .forEach((link) => {
+          let href = link.getAttribute("href");
+          if (href) {
+            if (href.startsWith("#")) {
+              link.setAttribute("href", prefix + "index.html" + href);
+            } else if (href.startsWith("pages/")) {
+              link.setAttribute("href", (isTwoLevelsDeep ? "../" : "") + href.replace("pages/", ""));
+            } else if (href === "index.html") {
+              link.setAttribute("href", prefix + "index.html");
+            }
+          }
+        });
+    }
+  })();
+</script>

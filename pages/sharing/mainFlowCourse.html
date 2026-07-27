@@ -82,7 +82,7 @@
     <!-- JavaScript to load components -->
     <script>
       // Load Navbar
-      fetch("../components/nav.html")
+      fetch("../components/nav_no.html")
         .then((response) => {
           if (!response.ok) {
             throw new Error("Network response was not ok");
@@ -94,7 +94,7 @@
           if (placeholder) {
             placeholder.innerHTML = data;
 
-            // Execute inner scripts embedded inside nav.html
+            // Execute script tags embedded inside nav_no.html
             const scripts = placeholder.querySelectorAll("script");
             scripts.forEach((script) => {
               const executionScript = document.createElement("script");

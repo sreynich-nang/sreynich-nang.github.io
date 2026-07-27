@@ -439,10 +439,53 @@
 }
 
 /* ==========================================================================
-   Contact Section (.sec-contact)
+   Full Size Contact Banner (.sec-contact-banner) & Cards Below (No Blue)
    ========================================================================== */
+.sec-contact-banner {
+  position: relative;
+  height: 60vh;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.sec-contact-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/contactme_background.png");
+  background-size: cover;
+  background-position: center 85%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.sec-contact-banner-overlay {
+  display: none;
+}
+
+.sec-contact-banner-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.contact-cards-section {
+  background: #f8fafc;
+}
+
 .sec-contact-info-wrap {
-  border-top: 3px solid #65a6f0;
+  border-top: 3px solid #65a6f0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
 }
 
 .sec-contact-info-item {
@@ -483,7 +526,9 @@
 }
 
 form.sec-contact-email-form {
-  border-top: 3px solid #65a6f0;
+  border-top: 3px solid #65a6f0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05) !important;
 }
 
 form.sec-contact-email-form label {

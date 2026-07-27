@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "imageUrl": "../../assets/images/whylovedata_blog.png",
-    "category": "AI & Data",
-    "tag": "learn-data",
-    "title": "Why I Love Data",
-    "excerpt": "Perhaps having no logical explanation is the truest form of love. For me, data isn't just numbers—it is a quiet language of patterns, mysteries, and stories waiting to be discovered. Sometimes, you don't need a complex reason to love what you do; the curiosity itself is enough.",
+    "imageUrl": "../../assets/images/commitment_blog.png",
+    "category": "Self Growth",
+    "tag": "learn-life",
+    "title": "The Weight of Commitment",
+    "excerpt": "Commitment is demanding—it asks for your focus, your energy, and impacts you both mentally and physically. But staying committed doesn't mean burning out; it is about finding a delicate balance with the random, joyful things that keep us grounded.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {
@@ -19,11 +19,11 @@
   },
   {
     "id": 3,
-    "imageUrl": "../../assets/images/commitment_blog.png",
-    "category": "Self Growth",
-    "tag": "learn-life",
-    "title": "The Weight of Commitment",
-    "excerpt": "Commitment is demanding—it asks for your focus, your energy, and impacts you both mentally and physically. But staying committed doesn't mean burning out; it is about finding a delicate balance with the random, joyful things that keep us grounded.",
+    "imageUrl": "../../assets/images/whylovedata_blog.png",
+    "category": "AI & Data",
+    "tag": "learn-data",
+    "title": "Why I Love Data",
+    "excerpt": "Perhaps having no logical explanation is the truest form of love. For me, data isn't just numbers—it is a quiet language of patterns, mysteries, and stories waiting to be discovered. Sometimes, you don't need a complex reason to love what you do; the curiosity itself is enough.",
     "readMoreUrl": "pages/randomNote/p1.html"
   },
   {

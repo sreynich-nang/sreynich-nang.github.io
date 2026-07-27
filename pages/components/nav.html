@@ -1,5 +1,3 @@
-
-
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
@@ -39,28 +37,100 @@
   </div>
 </nav>
 
-<!-- Script to automatically adjust navbar links if loaded on a subpage -->
+<!-- Script for dynamic active link highlighting on click, subpage landing & scroll -->
 <script>
   (function () {
-    const isSubpage = window.location.pathname.includes("/pages/");
+    const path = window.location.pathname;
+    const isSubpage = path.includes("/pages/");
+
+    // Adjust link paths for subpages
     if (isSubpage) {
+      const isTwoLevelsDeep = (path.match(/\/pages\/.+\//) !== null);
+      const prefix = isTwoLevelsDeep ? "../../" : "../";
+
       document
-        .querySelectorAll(".navbar-brand, .nav-link, .btn-contact")
+        .querySelectorAll("#navbar-placeholder .navbar-brand, #navbar-placeholder .nav-link, #navbar-placeholder .btn-contact")
         .forEach((link) => {
           let href = link.getAttribute("href");
           if (href) {
             if (href.startsWith("#")) {
-              // Convert hash anchors to point to index.html sections
-              link.setAttribute("href", "../index.html" + href);
+              link.setAttribute("href", prefix + "index.html" + href);
             } else if (href.startsWith("pages/")) {
-              // Remove 'pages/' prefix since we are already inside the pages/ directory
-              link.setAttribute("href", href.replace("pages/", ""));
+              link.setAttribute("href", (isTwoLevelsDeep ? "../" : "") + href.replace("pages/", ""));
             } else if (href === "index.html") {
-              // Point brand logo to the root index.html
-              link.setAttribute("href", "../index.html");
+              link.setAttribute("href", prefix + "index.html");
             }
           }
         });
+    }
+
+    const navLinks = document.querySelectorAll("#navbar-placeholder .nav-link");
+
+    // Click handler for instant active highlight
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navLinks.forEach((l) => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+
+    // Determine and set active link on page load
+    navLinks.forEach((l) => l.classList.remove("active"));
+
+    if (isSubpage) {
+      const currentPath = path.toLowerCase();
+      let matched = false;
+
+      navLinks.forEach((link) => {
+        const href = (link.getAttribute("href") || "").toLowerCase();
+        if ((currentPath.includes("random") || currentPath.includes("note")) && (href.includes("random") || href.includes("note"))) {
+          link.classList.add("active");
+          matched = true;
+        } else if (currentPath.includes("about") && href.includes("about")) {
+          link.classList.add("active");
+          matched = true;
+        } else if ((currentPath.includes("project") || currentPath.includes("sharing")) && href.includes("project")) {
+          link.classList.add("active");
+          matched = true;
+        }
+      });
+    } else {
+      // Home page default
+      const homeLink = document.querySelector('#navbar-placeholder .nav-link[href="#home"]');
+      if (homeLink) homeLink.classList.add("active");
+    }
+
+    // Scroll spy for home page sections
+    function updateActiveOnScroll() {
+      if (isSubpage) return;
+      const sections = document.querySelectorAll("section[id]");
+      if (!sections.length) return;
+
+      let currentId = "";
+      const scrollPos = window.scrollY + 200;
+
+      sections.forEach((sec) => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        if (scrollPos >= top && scrollPos < top + height) {
+          currentId = sec.getAttribute("id");
+        }
+      });
+
+      if (currentId) {
+        navLinks.forEach((link) => {
+          const href = link.getAttribute("href");
+          if (href && (href === "#" + currentId || href.endsWith("#" + currentId))) {
+            navLinks.forEach((l) => l.classList.remove("active"));
+            link.classList.add("active");
+          }
+        });
+      }
+    }
+
+    if (!isSubpage) {
+      window.addEventListener("scroll", updateActiveOnScroll);
+      updateActiveOnScroll();
     }
   })();
 </script>
