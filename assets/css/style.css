@@ -566,3 +566,103 @@ form.sec-contact-email-form .error-message,
 form.sec-contact-email-form .sent-message {
   display: none;
 }
+
+/* ==========================================================================
+   About Me Component (.aboutme-component-wrap)
+   ========================================================================== */
+.aboutme-component-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../images/scratchme_banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  overflow: visible;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.sec-about .aboutme-component-wrap {
+  background-image: url("assets/images/scratchme_banner.png");
+}
+
+.aboutme-badge {
+  display: inline-block;
+  background: rgba(101, 166, 240, 0.15);
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* Pinned Card with Rotation Transform */
+.aboutme-pin-card {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  transform: rotate(3deg);
+  transition: all 0.35s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+.aboutme-pin-card:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+.pin-icon-wrap {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.aboutme-bullet-list {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
+.aboutme-bullet-list li::marker {
+  color: #65a6f0;
+  font-size: 1.15rem;
+}
+
+.btn-aboutme-primary {
+  background: #65a6f0;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 10px 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-aboutme-primary:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-aboutme-outline {
+  background: transparent;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  border-radius: 25px;
+  padding: 10px 22px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-aboutme-outline:hover {
+  background: #f8fafc;
+  color: #2563eb;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+}

@@ -134,83 +134,8 @@
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="sec-about min-vh-100 p-3 mb-5">
-      <h2 class="fw-bold display-6 text-center mt-5">About Me</h2>
-
-      <p class="sec-about-intro text-center mx-auto mt-4">
-        I’m Nic, a Data Enthusiast. I’m interested not only in data, but also in
-        how technology can be used with data, especially in system development,
-        automation, and gaining insights.
-      </p>
-      <p class="sec-about-intro text-center mx-auto mt-3">
-        Two things that I will share here are my random thoughts and the
-        projects that have shaped how I work today.
-      </p>
-
-      <div class="container mb-5 mb-lg-0">
-        <div class="row g-0 sec-about-card align-items-stretch">
-          <div
-            class="col-md-12 col-lg-6 border-end border-dark border-opacity-25"
-          >
-            <img
-              src="assets/images/flowdata.jpg"
-              alt="Sample Image"
-              class="sec-about-card-img object-fit-fill"
-            />
-          </div>
-
-          <div
-            class="col-md-12 col-lg-6 sec-about-card-content d-flex flex-column justify-content-center"
-          >
-            <h3>Me in Data Development</h3>
-
-            <ul>
-              <li>How I approach problems in data</li>
-              <li>Why I love working with data</li>
-              <li>How data shapes my thinking</li>
-            </ul>
-
-            <div>
-              <a href="pages/about/aboutme_indata.html" class="btn btn-primary-soft">
-                Explore Data Projects
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-1">
-        <div class="row g-0 sec-about-card align-items-stretch">
-          <div
-            class="col-md-12 col-lg-6 border-end border-dark order-2 order-lg-1 border-opacity-25"
-          >
-            <div
-              class="sec-about-card-content d-flex flex-column justify-content-center h-100"
-            >
-              <h3>Me in System Development</h3>
-              <ul>
-                <li>How I start my communication to PC</li>
-                <li>How I approach problems in system development</li>
-                <li>Why I enjoy building practical systems</li>
-                <li>How systems shape my thinking in real projects</li>
-              </ul>
-              <div>
-                <a href="pages/about/aboutme_insystem.html" class="btn btn-outline-soft">
-                  Learn More
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img
-              src="assets/images/whysystem.jpg"
-              alt="Sample Image"
-              class="sec-about-card-img object-fit-fill"
-            />
-          </div>
-        </div>
-      </div>
+    <section id="about" class="sec-about min-vh-100 p-3 mb-5 d-flex align-items-center">
+      <div id="aboutme-placeholder" class="w-100"></div>
     </section>
 
     <!-- JOURNEY -->
@@ -284,7 +209,7 @@
 
       // Track loaded components to scroll to hash anchor after DOM stabilizes
       let loadedCount = 0;
-      const totalComponents = 6;
+      const totalComponents = 7;
       function checkScrollToHash() {
         loadedCount++;
         if (loadedCount === totalComponents) {
@@ -303,6 +228,7 @@
       // Load all dynamic layout components
       loadComponent('pages/components/nav.html', 'navbar-placeholder', checkScrollToHash);
       loadComponent('pages/components/footer.html', 'footer-placeholder', checkScrollToHash);
+      loadComponent('pages/about/aboutme.html', 'aboutme-placeholder', checkScrollToHash);
       loadComponent('pages/components/testimonial.html', 'testimonials-placeholder', checkScrollToHash);
       loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder', checkScrollToHash);
       loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder', checkScrollToHash);
