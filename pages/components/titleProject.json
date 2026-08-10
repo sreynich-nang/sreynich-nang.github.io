@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "UniSeek (SDG Education MVP)",
+    "category": "system",
     "description": "A 9-month MVP web app connecting Cambodian high school students with university mentors for scheduled one-on-one sessions. Handled BA, UI/UX, Frontend, Backend, and Database Design roles.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=1",
@@ -10,6 +11,7 @@
   {
     "id": 2,
     "title": "Multi-agent-chatbot at Bamnang",
+    "category": "data",
     "description": "An intelligent multi-agent conversational AI system designed to handle complex queries and tasks.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=2"
@@ -17,6 +19,7 @@
   {
     "id": 3,
     "title": "Major-recommendation at Bamnang",
+    "category": "data",
     "description": "A smart recommendation engine helping students find matching majors based on interests and skills.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=3"
@@ -24,6 +27,7 @@
   {
     "id": 4,
     "title": "OCR + automated cleaning table data",
+    "category": "data",
     "description": "High-accuracy optical character recognition pipeline combined with automated tabular data cleaning.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=4"
@@ -31,6 +35,7 @@
   {
     "id": 5,
     "title": "NextStep",
+    "category": "system",
     "description": "An innovative career path mapping and skill tracking application for professional development.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=5"
@@ -38,6 +43,7 @@
   {
     "id": 6,
     "title": "Chhnang khmer",
+    "category": "system",
     "description": "A cultural database and application focused on traditional Cambodian pottery and crafts.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=6"
@@ -45,6 +51,7 @@
   {
     "id": 7,
     "title": "Voice recognition",
+    "category": "data",
     "description": "Advanced speech-to-text processing system tailored for Khmer language and regional accents.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=7"
@@ -52,6 +59,7 @@
   {
     "id": 8,
     "title": "NLP product review analysis with ML classification",
+    "category": "data",
     "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=8"
@@ -59,6 +67,7 @@
   {
     "id": 9,
     "title": "ML project",
+    "category": "data",
     "description": "Predictive analytics and modeling for real-world decision making using supervised learning.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=9"
@@ -66,6 +75,7 @@
   {
     "id": 10,
     "title": "RAG chatbot",
+    "category": "data",
     "description": "Retrieval-Augmented Generation system enabling context-aware semantic searches over custom knowledge bases.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=10"
@@ -73,6 +83,7 @@
   {
     "id": 11,
     "title": "MCP with SDK-gemini",
+    "category": "system",
     "description": "Model Context Protocol integration leveraging Gemini SDK for extended tool usage and data fetching.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=11"
@@ -80,6 +91,7 @@
   {
     "id": 12,
     "title": "Soil analysis",
+    "category": "data",
     "description": "Data-driven agricultural analysis tool identifying soil nutrients, properties, and crop suitability.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=12"
@@ -87,6 +99,7 @@
   {
     "id": 13,
     "title": "Branding awareness analysis",
+    "category": "data",
     "description": "Social media listening and brand sentiment tracking dashboard using natural language processing.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=13"

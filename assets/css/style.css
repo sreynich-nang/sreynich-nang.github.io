@@ -598,20 +598,68 @@ form.sec-contact-email-form .sent-message {
   margin-bottom: 12px;
 }
 
+/* Image Card Wrap with Dark Blurred Backdrop */
+.aboutme-img-card-wrap {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 1.25rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25) !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.aboutme-img-card-wrap:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35) !important;
+}
+
+.aboutme-img-card-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
 /* Pinned Card with Rotation Transform */
 .aboutme-pin-card {
   width: 100%;
   max-width: 380px;
   background: #ffffff;
   border: 1px solid #e2e8f0;
+  color: #1e293b;
   transform: rotate(3deg);
   transition: all 0.35s ease;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
 }
 
+.aboutme-pin-card .text-muted {
+  color: #475569 !important;
+}
+
 .aboutme-pin-card:hover {
   transform: rotate(0deg) scale(1.02);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16) !important;
+}
+
+/* Dark Grey Theme Variant for Pinned Card */
+.aboutme-pin-card.dark-card {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  color: #f8fafc;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.aboutme-pin-card.dark-card h4 {
+  color: #ffffff !important;
+  border-bottom-color: #334155 !important;
+}
+
+.aboutme-pin-card.dark-card .text-muted {
+  color: #94a3b8 !important;
 }
 
 .pin-icon-wrap {

@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects - Sreynich Nang</title>
+    <meta name="description"
+        content="Explore all projects, data science tools, machine learning pipelines, and system automation projects built by Sreynich Nang." />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        body {
+            padding-top: 75px;
+            background-color: #f8fafc;
+        }
+
+        /* Fixed/Sticky Top Half Banner Styling */
+        /* Top Banner Section */
+        .sticky-hero-banner {
+            position: relative;
+            width: 100%;
+            height: 360px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+        }
+
+        .sticky-hero-banner img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .sticky-hero-banner {
+                height: 220px;
+            }
+
+            .sticky-hero-banner img {
+                height: 220px;
+            }
+        }
+
+        .p2-filter-sidebar {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+            position: sticky;
+            top: 90px;
+            z-index: 50;
+        }
+
+        .p2-filter-label {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+
+        .p2-form-select,
+        .p2-form-input {
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        .p2-form-select:focus,
+        .p2-form-input:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+        .badge-category {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .badge-data {
+            background-color: #eff6ff;
+            color: #2563eb;
+            border: 1px solid #bfdbfe;
+        }
+
+        .badge-system {
+            background-color: #f0fdf4;
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Component -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Sticky Banner Section (Always Top Half, Fixed on Scroll) -->
+    <div class="sticky-hero-banner">
+        <img src="../../assets/images/myProject.webp" alt="My Projects Banner" />
+    </div>
+
+    <!-- Main Content Section: Sidebar & Grid Layout -->
+    <div class="container pb-5">
+        <div class="row g-4">
+            <!-- 1/3 Row: Filter Sidebar -->
+            <aside class="col-lg-4">
+                <div class="p2-filter-sidebar">
+                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                        <h5 class="fw-bold mb-0 text-dark">Filter Projects</h5>
+                        <button type="button" id="btn-reset" class="btn btn-sm text-muted p-0 text-decoration-underline"
+                            onclick="resetFilters()">
+                            Reset All
+                        </button>
+                    </div>
+
+                    <form id="filter-form" onsubmit="event.preventDefault();">
+                        <!-- Filter: Search Keyword -->
+                        <div class="mb-4">
+                            <label for="p2-search-input" class="p2-filter-label d-block">Search</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light border-end-0"><i
+                                        class="bi bi-search text-muted"></i></span>
+                                <input type="text" id="p2-search-input"
+                                    class="form-control p2-form-input border-start-0"
+                                    placeholder="Search by title or topic..." oninput="applyAllFilters()" />
+                            </div>
+                        </div>
+
+                        <!-- Filter: Category Dropdown -->
+                        <div class="mb-4">
+                            <label for="p2-filter-category" class="p2-filter-label d-block">Category</label>
+                            <select id="p2-filter-category" class="form-select p2-form-select"
+                                onchange="applyAllFilters()">
+                                <option value="all" selected>All Projects</option>
+                                <option value="data">Data &amp; AI</option>
+                                <option value="system">System Development</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="btn btn-primary w-100 fw-bold rounded-pill py-2 mt-2"
+                            onclick="applyAllFilters()">
+                            Apply Filters
+                        </button>
+                    </form>
+                </div>
+            </aside>
+
+            <!-- 2/3 Row: Projects Cards Grid -->
+            <main class="col-lg-8">
+                <!-- Top bar with count & sorting -->
+                <div
+                    class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded-4 shadow-sm border">
+                    <span id="p2-result-count" class="fw-semibold text-secondary">Showing Projects</span>
+                    <div class="d-flex align-items-center gap-2">
+                        <label for="p2-sort-by" class="small text-muted mb-0">Sort By:</label>
+                        <select id="p2-sort-by" class="form-select form-select-sm border-0 bg-light rounded-pill"
+                            style="width: auto;" onchange="applyAllFilters()">
+                            <option value="default">Default</option>
+                            <option value="title-asc">Title: A to Z</option>
+                            <option value="title-desc">Title: Z to A</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Project Cards Container -->
+                <div id="p2-cards-container" class="row row-cols-1 row-cols-md-2 g-4"></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Component Loader & Dataset Integration -->
+    <script>
+        let projectsData = [];
+
+        // Load Navbar Component
+        fetch("../components/nav.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+                document.querySelectorAll("#navbar-placeholder .navbar-brand, #navbar-placeholder .nav-link, #navbar-placeholder .btn-contact").forEach((link) => {
+                    let href = link.getAttribute("href");
+                    if (href) {
+                        if (href.startsWith("#")) link.setAttribute("href", "../../index.html" + href);
+                        else if (href.startsWith("pages/")) link.setAttribute("href", "../" + href.replace("pages/", ""));
+                        else if (href === "index.html") link.setAttribute("href", "../../index.html");
+                    }
+                });
+            });
+
+        // Load Footer Component
+        fetch("../components/footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+
+        // Fetch titleProject.json and initialize cards
+        function loadAllProjects() {
+            fetch("../components/titleProject.json?t=" + new Date().getTime())
+                .then((res) => res.json())
+                .then((data) => {
+                    projectsData = data;
+                    applyAllFilters();
+                })
+                .catch((err) => console.error("Error fetching projects dataset:", err));
+        }
+
+        function setCategoryFilter(cat) {
+            document.getElementById("p2-filter-category").value = cat;
+            applyAllFilters();
+        }
+
+        function applyAllFilters() {
+            if (!projectsData.length) return;
+
+            const searchVal = document.getElementById("p2-search-input").value.toLowerCase().trim();
+            const catVal = document.getElementById("p2-filter-category").value;
+            const sortVal = document.getElementById("p2-sort-by").value;
+
+            let filtered = projectsData.filter((p) => {
+                // Category filter
+                if (catVal !== "all") {
+                    if (p.category && p.category !== catVal) return false;
+                }
+
+                // Search keyword filter
+                if (searchVal) {
+                    const combinedText = (p.title + " " + p.description).toLowerCase();
+                    if (!combinedText.includes(searchVal)) return false;
+                }
+
+                return true;
+            });
+
+            // Sorting
+            if (sortVal === "title-asc") {
+                filtered.sort((a, b) => a.title.localeCompare(b.title));
+            } else if (sortVal === "title-desc") {
+                filtered.sort((a, b) => b.title.localeCompare(a.title));
+            }
+
+            // Render Count
+            document.getElementById("p2-result-count").innerText = `Showing ${filtered.length} Projects`;
+
+            // Render Cards
+            const container = document.getElementById("p2-cards-container");
+            if (!filtered.length) {
+                container.innerHTML = `
+            <div class="col-12 text-center py-5">
+              <i class="bi bi-folder-x display-3 text-muted"></i>
+              <p class="mt-3 text-secondary">No matching projects found.</p>
+            </div>
+          `;
+                return;
+            }
+
+            container.innerHTML = filtered
+                .map((project) => {
+                    let imageUrl = project.imageUrl;
+                    if (imageUrl.startsWith("assets/")) {
+                        imageUrl = "../../" + imageUrl;
+                    }
+                    let exploreUrl = project.exploreUrl;
+                    if (exploreUrl.startsWith("pages/projects/")) {
+                        exploreUrl = exploreUrl.replace("pages/projects/", "");
+                    }
+
+                    const isData = project.category === "data";
+                    const badgeClass = isData ? "badge-data" : "badge-system";
+                    const badgeLabel = isData ? "Data & AI" : "System Development";
+
+                    return `
+              <div class="col">
+                <div class="card h-100 border rounded-3 overflow-hidden shadow-sm d-flex flex-column">
+                  <div class="position-relative">
+                    <img src="${imageUrl}" class="card-img-top object-fit-cover" style="height: 200px;" alt="${project.title}">
+                    <span class="badge ${badgeClass} badge-category position-absolute top-0 end-0 m-3">${badgeLabel}</span>
+                  </div>
+                  <div class="card-body p-4 d-flex flex-column justify-content-between">
+                    <div>
+                      <h5 class="card-title fw-semibold text-dark mb-2">${project.title}</h5>
+                      <p class="card-text text-secondary small mb-3">${project.description}</p>
+                    </div>
+                    <div class="pt-2">
+                      <a href="${exploreUrl}" class="btn btn-outline-secondary btn-sm rounded-pill px-4 w-100">Explore More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+                })
+                .join("");
+        }
+
+        function resetFilters() {
+            document.getElementById("p2-search-input").value = "";
+            document.getElementById("p2-filter-category").value = "all";
+            document.getElementById("p2-sort-by").value = "default";
+            setCategoryFilter("all");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadAllProjects();
+        });
+    </script>
+</body>
+
+</html>
