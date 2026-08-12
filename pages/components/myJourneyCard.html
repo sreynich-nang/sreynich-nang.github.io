@@ -21,10 +21,35 @@
 
         let htmlContent = `<h2 class="fw-bold display-6 text-center mt-5 mb-5">My Journey</h2>`;
 
-        data.forEach((item, index) => {
-          const isEven = index % 2 === 0; // Even indices are Item 1, 3 (Date Left, Card Right)
+        // Helper to render card content cleanly
+        function renderCardBody(item) {
+          const initialLimit = 3;
+          let achievementsHtml = '';
+          const hasExtra = item.achievements && item.achievements.length > initialLimit;
+          
+          if (item.achievements && item.achievements.length > 0) {
+            const visibleAch = item.achievements.slice(0, initialLimit);
+            achievementsHtml += visibleAch.map(ach => `<li class="mb-1">${ach}</li>`).join('');
 
-          // Adjust badge URLs for subpages
+            if (hasExtra) {
+              const hiddenAch = item.achievements.slice(initialLimit);
+              achievementsHtml += `
+                <div id="extra-ach-${item.id}" class="d-none extra-achievements-wrapper">
+                  ${hiddenAch.map(ach => `<li class="mb-1">${ach}</li>`).join('')}
+                </div>
+              `;
+            }
+          }
+
+          const extraCount = hasExtra ? item.achievements.length - initialLimit : 0;
+          const toggleBtnHtml = hasExtra ? `
+            <div class="mb-3">
+              <button type="button" class="btn btn-link btn-sm p-0 text-decoration-none fw-semibold sec-journey-card-toggle" data-target="extra-ach-${item.id}" data-count="${extraCount}">
+                Show More (+${extraCount} more) <i class="bi bi-chevron-down ms-1"></i>
+              </button>
+            </div>
+          ` : '';
+
           const badgesHtml = item.badges.map(badge => {
             let badgeUrl = badge.url || '';
             if (isSubpage && badgeUrl.startsWith('pages/')) {
@@ -33,108 +58,132 @@
             return `<a href="${badgeUrl}" class="sec-journey-badge">${badge.text}</a>`;
           }).join('');
 
-          // Create achievements list
-          const achievementsHtml = item.achievements.map(ach => {
-            return `<li class="mb-1">${ach}</li>`;
-          }).join('');
-
-          let rowHtml = '';
-          if (isEven) {
-            // Place Left, Card Right on desktop
-            rowHtml = `
-              <div class="row align-items-center mb-5 sec-journey-timeline-row">
-                <!-- Place / Subtitle -->
-                <div class="col-lg-5 text-lg-end order-2 order-lg-1 sec-journey-timeline-date mb-4 mb-lg-0">
-                  <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
-                  <p class="text-muted mb-0">${item.subtitle}</p>
-                </div>
-
-                <!-- Timeline -->
-                <div class="col-lg-2 order-1 order-lg-2 sec-journey-timeline-col">
-                  <div class="sec-journey-timeline-center text-center">
-                    <div class="sec-journey-timeline-dot mx-auto"></div>
-                    <div class="sec-journey-timeline-line mx-auto"></div>
+          return `
+            <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+                  <div>
+                    <h4 class="fw-bold mb-1" style="color: #0f172a;">${item.title}</h4>
                   </div>
+                  <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
                 </div>
+                
+                <p class="card-text text-secondary mb-4">${item.description}</p>
+                
+                <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
+                <ul class="text-secondary ps-3 mb-2">
+                  ${achievementsHtml}
+                </ul>
+                ${toggleBtnHtml}
 
-                <!-- Card -->
-                <div class="col-lg-5 order-3 sec-journey-timeline-card">
-                  <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
-                    <div class="card-body p-4">
-                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
-                        <div>
-                          <h4 class="fw-bold mb-1" style="color: #0f172a;">${item.title}</h4>
-                        </div>
-                        <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
-                      </div>
-                      
-                      <p class="card-text text-secondary mb-4">${item.description}</p>
-                      
-                      <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
-                      <ul class="text-secondary ps-3 mb-4">
-                        ${achievementsHtml}
-                      </ul>
-
-                      <div class="pt-3 border-top d-flex flex-wrap gap-2">
-                        ${badgesHtml}
-                      </div>
-                    </div>
-                  </div>
+                <div class="pt-3 border-top d-flex flex-wrap gap-2">
+                  ${badgesHtml}
                 </div>
               </div>
-            `;
-          } else {
-            // Card Left, Place Right on desktop
-            rowHtml = `
-              <div class="row align-items-center mb-5 sec-journey-timeline-row">
-                <!-- Card -->
-                <div class="col-lg-5 order-3 order-lg-1 sec-journey-timeline-card">
-                  <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
-                    <div class="card-body p-4">
-                      <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
-                        <div>
-                          <h4 class="fw-bold mb-1" style="color: #0f172a;">${item.title}</h4>
-                        </div>
-                        <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
-                      </div>
-                      
-                      <p class="card-text text-secondary mb-4">${item.description}</p>
-                      
-                      <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
-                      <ul class="text-secondary ps-3 mb-4">
-                        ${achievementsHtml}
-                      </ul>
+            </div>
+          `;
+        }
 
-                      <div class="pt-3 border-top d-flex flex-wrap gap-2">
-                        ${badgesHtml}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        const initialRowLimit = 2;
 
-                <!-- Timeline -->
-                <div class="col-lg-2 order-1 order-lg-2 sec-journey-timeline-col">
-                  <div class="sec-journey-timeline-center text-center">
-                    <div class="sec-journey-timeline-dot mx-auto"></div>
-                    <div class="sec-journey-timeline-line mx-auto"></div>
-                  </div>
-                </div>
+        data.forEach((item, index) => {
+          const isEven = index % 2 === 0; // Even indices: Date Left, Card Right
+          const isHiddenRow = index >= initialRowLimit;
+          const rowClasses = `row align-items-center mb-5 sec-journey-timeline-row ${isHiddenRow ? 'sec-journey-extra-row d-none' : ''}`;
 
-                <!-- Place / Subtitle -->
-                <div class="col-lg-5 order-2 order-lg-3 sec-journey-timeline-date mb-4 mb-lg-0">
-                  <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
-                  <p class="text-muted mb-0">${item.subtitle}</p>
-                </div>
+          const cardHtml = renderCardBody(item);
+          const placeSubtitleHtml = `
+            <div class="col-lg-5 ${isEven ? 'text-lg-end order-2 order-lg-1' : 'order-2 order-lg-3'} sec-journey-timeline-date mb-4 mb-lg-0">
+              <h5 class="fw-bold mb-1" style="color: #0f172a;">${item.place}</h5>
+              <p class="text-muted mb-0">${item.subtitle}</p>
+            </div>
+          `;
+          const timelineLineHtml = `
+            <div class="col-lg-2 order-1 order-lg-2 sec-journey-timeline-col">
+              <div class="sec-journey-timeline-center text-center">
+                <div class="sec-journey-timeline-dot mx-auto"></div>
+                <div class="sec-journey-timeline-line mx-auto"></div>
               </div>
-            `;
-          }
+            </div>
+          `;
+          const cardColHtml = `
+            <div class="col-lg-5 ${isEven ? 'order-3' : 'order-3 order-lg-1'} sec-journey-timeline-card">
+              ${cardHtml}
+            </div>
+          `;
+
+          let rowHtml = `
+            <div class="${rowClasses}">
+              ${isEven ? placeSubtitleHtml + timelineLineHtml + cardColHtml : cardColHtml + timelineLineHtml + placeSubtitleHtml}
+            </div>
+          `;
           htmlContent += rowHtml;
         });
 
+        if (data.length > initialRowLimit) {
+          const hiddenCount = data.length - initialRowLimit;
+          htmlContent += `
+            <div class="text-center mt-5 pt-3 mb-5" id="journey-timeline-toggle-wrapper">
+              <button type="button" class="btn btn-outline-primary rounded-pill px-4 py-2 fw-semibold shadow-sm" id="journey-timeline-toggle-btn" data-count="${hiddenCount}" data-expanded="false">
+                Show More Journeys (${hiddenCount} more) <i class="bi bi-chevron-down ms-2"></i>
+              </button>
+            </div>
+          `;
+        }
+
         container.innerHTML = htmlContent;
+
+        // 1. Card level achievement toggles
+        const cardToggles = container.querySelectorAll('.sec-journey-card-toggle');
+        cardToggles.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const count = this.getAttribute('data-count');
+            const targetEl = document.getElementById(targetId);
+            if (!targetEl) return;
+
+            const isHidden = targetEl.classList.contains('d-none');
+            if (isHidden) {
+              targetEl.classList.remove('d-none');
+              this.innerHTML = `Show Less <i class="bi bi-chevron-up ms-1"></i>`;
+            } else {
+              targetEl.classList.add('d-none');
+              this.innerHTML = `Show More (+${count} more) <i class="bi bi-chevron-down ms-1"></i>`;
+            }
+          });
+        });
+
+        // 2. Timeline level row toggle
+        const timelineToggleBtn = document.getElementById('journey-timeline-toggle-btn');
+        if (timelineToggleBtn) {
+          timelineToggleBtn.addEventListener('click', function() {
+            const extraRows = container.querySelectorAll('.sec-journey-extra-row');
+            const hiddenCount = this.getAttribute('data-count');
+            const isExpanded = this.getAttribute('data-expanded') === 'true';
+
+            if (!isExpanded) {
+              extraRows.forEach(row => {
+                row.classList.remove('d-none');
+                row.classList.add('animate-fade-in');
+              });
+              this.setAttribute('data-expanded', 'true');
+              this.innerHTML = `Show Less Journeys <i class="bi bi-chevron-up ms-2"></i>`;
+            } else {
+              extraRows.forEach(row => {
+                row.classList.add('d-none');
+                row.classList.remove('animate-fade-in');
+              });
+              this.setAttribute('data-expanded', 'false');
+              this.innerHTML = `Show More Journeys (${hiddenCount} more) <i class="bi bi-chevron-down ms-2"></i>`;
+
+              container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+        }
       })
       .catch(error => {
         console.error('Error loading journey timeline:', error);
       });
   })();
 </script>
+

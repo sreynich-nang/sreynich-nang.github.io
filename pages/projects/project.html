@@ -93,6 +93,11 @@
                 titleFsClass = 'fs-5';
               }
 
+              // Apply d-none for screen sizes under 992px (869px downward) for the last 3 cards (idx 2, 3, 4)
+              if (idx >= 2) {
+                colClass += ' d-none d-lg-block';
+              }
+
               return `
                 <div class="${colClass}">
                   <div class="card h-100 border rounded-3 overflow-hidden text-center shadow-sm">

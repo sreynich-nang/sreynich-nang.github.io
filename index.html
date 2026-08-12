@@ -47,43 +47,65 @@
     <section id="home" class="sec-home">
       <div class="container py-5 sec-home-container">
         <div class="row flex-column flex-lg-row align-items-center">
-          <!-- LEFT SIDE -->
-          <div class="col-lg-5 d-flex justify-content-center pt-5 d-none d-lg-flex mb-5">
-            <div class="aboutme-pin-card position-relative p-4 rounded-4 bg-white text-start">
-              <!-- Light Black Paperclip SVG -->
-              <div class="pin-icon-wrap position-absolute top-0 start-50 translate-middle">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1e293b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                </svg>
+          <!-- LEFT SIDE: Quick Facts Card (Displayed below hero text on mobile) -->
+          <div class="col-lg-5 d-flex justify-content-center pt-4 pt-lg-5 mb-5 order-2 order-lg-1">
+            <div class="aboutme-pin-card-wrapper">
+              <div class="aboutme-pin-card position-relative p-4 rounded-4 text-start">
+                <!-- Top-Right Light Grey Paperclip SVG -->
+                <div class="pin-icon-wrap position-absolute top-0 end-0 me-3" style="z-index: 10; margin-top: -14px;">
+                  <svg width="28" height="36" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                  </svg>
+                </div>
+
+                <h4 class="fw-bold text-dark mt-1 mb-3 text-center border-bottom pb-2">
+                  Quick Facts
+                </h4>
+
+                <ul class="list-unstyled mb-0 ps-1">
+                  <li class="d-flex align-items-start gap-3 mb-3">
+                    <div class="quick-fact-icon flex-shrink-0">
+                      <i class="bi bi-graph-up-arrow fs-5 text-primary"></i>
+                    </div>
+                    <div>
+                      <strong class="text-dark d-block">Data &amp; Tech Explorer</strong>
+                      <div class="text-muted small">Bridging data analysis &amp; system automation</div>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-start gap-3 mb-3">
+                    <div class="quick-fact-icon flex-shrink-0">
+                      <i class="bi bi-file-earmark-text fs-5 text-primary"></i>
+                    </div>
+                    <div>
+                      <strong class="text-dark d-block">Text Data Enthusiast</strong>
+                      <div class="text-muted small">Loves digging into unstructured text data</div>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-start gap-3 mb-3">
+                    <div class="quick-fact-icon flex-shrink-0">
+                      <i class="bi bi-lightbulb fs-5 text-primary"></i>
+                    </div>
+                    <div>
+                      <strong class="text-dark d-block">Continuous Learner</strong>
+                      <div class="text-muted small">Exploring tech tools &amp; project ideas</div>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-start gap-3">
+                    <div class="quick-fact-icon flex-shrink-0">
+                      <i class="bi bi-journal-bookmark fs-5 text-primary"></i>
+                    </div>
+                    <div>
+                      <strong class="text-dark d-block">Thought Collector</strong>
+                      <div class="text-muted small">Documenting lessons in Random Notes</div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-
-              <h4 class="fw-bold text-dark mt-2 mb-3 text-center border-bottom pb-2">
-                Quick Facts
-              </h4>
-
-              <ul class="aboutme-bullet-list ps-3 mb-0">
-                <li class="mb-3">
-                  <strong>Data &amp; Tech Explorer</strong>
-                  <div class="text-muted small">Bridging data analysis &amp; system automation</div>
-                </li>
-                <li class="mb-3">
-                  <strong>Text Data Enthusiast</strong>
-                  <div class="text-muted small">Loves digging into unstructured text data</div>
-                </li>
-                <li class="mb-3">
-                  <strong>Continuous Learner</strong>
-                  <div class="text-muted small">Exploring tech tools &amp; project ideas</div>
-                </li>
-                <li class="mb-0">
-                  <strong>Thought Collector</strong>
-                  <div class="text-muted small">Documenting lessons in Random Notes</div>
-                </li>
-              </ul>
             </div>
           </div>
 
-          <!-- RIGHT SIDE -->
-          <div class="col-lg-7 text-lg-start text-center pt-4 pt-lg-0">
+          <!-- RIGHT SIDE: Hero Text -->
+          <div class="col-lg-7 text-lg-start text-center pt-4 pt-lg-0 order-1 order-lg-2">
             <h1 class="fw-bold">Hi, I'm Sreynich</h1>
 
             <p class="text-muted">
@@ -131,8 +153,8 @@
               </div>
             </div>
 
-            <!-- Inspiration Card -->
-            <div class="sec-home-inspiration mt-4">
+            <!-- Inspiration Card (Hidden on mobile size) -->
+            <div class="sec-home-inspiration mt-4 d-none d-lg-block">
               <div
                 class="sec-home-inspiration-divider"
                 style="background-color: #93c5fd"

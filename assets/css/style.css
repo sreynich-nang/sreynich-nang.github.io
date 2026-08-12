@@ -243,6 +243,53 @@
   }
 }
 
+.sec-journey-extra-row.animate-fade-in {
+  animation: fadeInJourney 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeInJourney {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sec-journey-card-toggle {
+  color: #2563eb;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.sec-journey-card-toggle:hover {
+  color: #1d4ed8;
+  text-decoration: underline !important;
+}
+
+#journey-timeline-toggle-wrapper {
+  position: relative;
+  z-index: 5;
+  margin-top: 3.5rem !important;
+  padding-top: 1rem;
+}
+
+#journey-timeline-toggle-btn {
+  transition: all 0.25s ease-in-out;
+  border-color: #3b82f6;
+  color: #2563eb;
+}
+
+#journey-timeline-toggle-btn:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
 /* ==========================================================================
    Testimonials Section (.sec-testimonials)
    ========================================================================== */
@@ -624,14 +671,35 @@ form.sec-contact-email-form .sent-message {
   border-radius: 16px;
 }
 
-/* Pinned Card with Rotation Transform */
-.aboutme-pin-card {
-  width: 100%;
+/* Pinned Card with Rotation Transform & Stacked Layers */
+.aboutme-pin-card-wrapper {
+  position: relative;
   max-width: 380px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.aboutme-pin-card-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -6px;
+  bottom: -6px;
+  left: 6px;
+  background: #bac3cf;
+  border-radius: 1.25rem;
+  transform: rotate(5deg);
+  z-index: 1;
+  box-shadow: 0 10px 25px rgba(203, 200, 200, 0.15);
+}
+
+.aboutme-pin-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
   color: #1e293b;
-  transform: rotate(3deg);
+  transform: rotate(-1deg);
   transition: all 0.35s ease;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
 }
@@ -663,14 +731,19 @@ form.sec-contact-email-form .sent-message {
 }
 
 .pin-icon-wrap {
-  background: #ffffff;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.quick-fact-icon {
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #2563eb;
 }
 
 .aboutme-bullet-list {
