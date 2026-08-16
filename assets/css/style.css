@@ -291,6 +291,131 @@
 }
 
 /* ==========================================================================
+   Work Section (.sec-work)
+   ========================================================================== */
+.sec-work {
+  position: relative;
+  overflow: visible;
+  padding: 80px 0 0;
+}
+
+.sec-work-band {
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.sec-work-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/image2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(100px);
+  transform: scale(1.1);
+  z-index: -2;
+}
+
+.sec-work-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: -1;
+}
+
+.sec-work-img-col {
+  position: relative;
+  z-index: 2;
+}
+
+.sec-work-photo {
+  position: relative;
+  max-width: 340px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.18));
+  transition: transform 0.4s ease;
+}
+
+.sec-work-photo:hover {
+  transform: scale(1.03) translateY(-4px);
+}
+
+.sec-work-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px 30px;
+}
+
+.sec-work-content h2 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.sec-work-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.sec-work-btn {
+  background: #ffffff;
+  color: #60a5fa;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 28px;
+  transition: all 0.3s ease;
+}
+
+.sec-work-btn:hover {
+  background: #ffffff;
+  color: #60a5fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sec-work-btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 28px;
+  transition: all 0.3s ease;
+}
+
+.sec-work-btn-outline:hover {
+  background: #ffffff;
+  color: #60a5fa;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+  .sec-work {
+    padding-top: 40px;
+  }
+
+  .sec-work-photo {
+    max-width: 280px;
+    margin-top: -80px;
+    margin-bottom: 0;
+  }
+
+  .sec-work-content {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+}
+
+/* ==========================================================================
    Testimonials Section (.sec-testimonials)
    ========================================================================== */
 .sec-testimonials {

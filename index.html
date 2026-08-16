@@ -181,15 +181,50 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="sec-about min-vh-100 p-3 mb-5 d-flex align-items-center">
-      <div id="aboutme-placeholder" class="w-100"></div>
-    </section>
-
     <!-- JOURNEY -->
     <section id="journey" class="sec-about min-vh-100 p-3 mb-5">
       <div id="journey-placeholder"></div>
     </section>
+
+    <!-- WORK / ABOUT -->
+    <section id="about" class="sec-work">
+      <div class="sec-work-band">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- LEFT: Photo -->
+            <div class="col-lg-5 text-center sec-work-img-col">
+              <img
+                src="assets/images/ME.png"
+                alt="Sreynich Nang"
+                class="sec-work-photo"
+              />
+            </div>
+            <!-- RIGHT: About Me content -->
+            <div class="col-lg-7 sec-work-content">
+              <span class="aboutme-badge" style="background: rgba(255,255,255,0.2); color: #ffffff;">Get to Know Me</span>
+              <h2 class="fw-bold display-5 mb-3">About Me</h2>
+              <p>
+                Hi, I'm <strong>Nic (Sreynich Nang)</strong>, a passionate Data & Tech Enthusiast.
+                I love applying technology to solve real-world problems—especially working with <strong>Text Data</strong>, system development, and workflow automation.
+              </p>
+              <p>
+                The messier the data, the more it catches my interest. I enjoy turning complex data into clear insights and building structured tech systems.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-3">
+                <a href="pages/about/aboutme_indata.html" class="btn sec-work-btn">
+                  <i class="bi bi-cpu me-1"></i> Me in Data Development
+                </a>
+                <a href="pages/about/aboutme_insystem.html" class="btn sec-work-btn-outline">
+                  <i class="bi bi-diagram-3 me-1"></i> Me in System Development
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- PROJECTS -->
     <section id="projects" class="sec-about py-5">
@@ -257,7 +292,7 @@
 
       // Track loaded components to scroll to hash anchor after DOM stabilizes
       let loadedCount = 0;
-      const totalComponents = 7;
+      const totalComponents = 6;
       function checkScrollToHash() {
         loadedCount++;
         if (loadedCount === totalComponents) {
@@ -276,7 +311,7 @@
       // Load all dynamic layout components
       loadComponent('pages/components/nav.html', 'navbar-placeholder', checkScrollToHash);
       loadComponent('pages/components/footer.html', 'footer-placeholder', checkScrollToHash);
-      loadComponent('pages/about/aboutme.html', 'aboutme-placeholder', checkScrollToHash);
+
       loadComponent('pages/components/testimonial.html', 'testimonials-placeholder', checkScrollToHash);
       loadComponent('pages/components/tech_badget.html', 'tech-stacks-placeholder', checkScrollToHash);
       loadComponent('pages/components/myJourneyCard.html', 'journey-placeholder', checkScrollToHash);
