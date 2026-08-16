@@ -7,7 +7,7 @@
       <span id="testimonial-text"></span>
     </p>
     <div class="sec-testimonials-img mx-auto d-flex align-items-center justify-content-center bg-light text-secondary">
-      <i class="bi bi-person-fill" style="font-size: 3rem; line-height: 1;"></i>
+      <img id="testimonial-img" src="" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
     </div>
     <h3 id="testimonial-name" class="sec-testimonials-name"></h3>
     <h4 id="testimonial-role" class="sec-testimonials-title"></h4>
@@ -53,6 +53,13 @@
           const roleEl = document.getElementById('testimonial-role');
           if (roleEl) {
             roleEl.textContent = testimonial.role;
+          }
+
+          const imgEl = document.getElementById('testimonial-img');
+          if (imgEl && testimonial.image) {
+            const imgPrefix = isSubpage ? '../../' : '';
+            imgEl.src = imgPrefix + testimonial.image;
+            imgEl.alt = testimonial.name;
           }
         }
       })
