@@ -398,15 +398,16 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 973px) {
   .sec-work {
     padding-top: 40px;
   }
 
   .sec-work-photo {
     max-width: 280px;
-    margin-top: -80px;
+    margin-top: 0;
     margin-bottom: 0;
+    padding-top: 20px;
   }
 
   .sec-work-content {
