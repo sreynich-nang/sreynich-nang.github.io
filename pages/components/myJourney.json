@@ -1,127 +1,146 @@
 [
   {
     "id": 1,
-    "subtitle": "Graduation & Career",
-    "title": "Fresh Graduate",
-    "place": "Bamnang & MEF",
-    "duration": "July 2026 - Present",
-    "description": "Completed my Bachelor of Data Science degree with honors, focusing on Artificial Intelligence, System Development, Automation, and Data Analytics.",
+    "subtitle": "Data & Applied ML",
+    "title": "Data & Applied ML Engineer",
+    "place": "Bamnang Holdings Pte. Ltd.",
+    "duration": "Feb 2026 - Present",
     "achievements": [
-      "Completed honors degree in Data Science and Professional Communication",
-      "Worked at the Ministry of Economy and Finance (MEF)",
-      "Taught Python programming course to kids at Bamnang",
-      "Developed Recommendation Engine (Major Compass Test) at Bamnang",
-      "Built Bilingual Multi-Agent AI Chatbot (Khmer & English)",
-      "Analyzed data and generated dashboards for the management team"
+      "Conduct literature review, Design questionnaires, and develop end-to-end backend for Major Recommendation Engine (Major Compass Test)",
+      "Develop on end-to-end on Bilingual Multi-Agent AI Chatbot (Khmer & English)",
+      "Bamnang User Intelligence (Build dashboard for Management Team)"
     ],
+    "tech": "Python, Google Development Kits, PostgreSQL, PGVector, Metabase",
     "badges": [
       {
-        "text": "UX/UI at Sister of Code (June - August 2026)",
-        "url": "pages/journey/p1_graduate.html#sister-of-code"
-      },
-      {
-        "text": "Python Trainer at Bamnang (July - September 2026)",
-        "url": "pages/journey/p1_graduate.html#training-python"
-      },
-      {
-        "text": "Working at Bamnang (2026 - Present)",
+        "text": "Recommendation Engine Project",
         "url": "pages/journey/p1_graduate.html#working-place"
       },
       {
-        "text": "First Official Work at MEF (2025 - 2026)",
-        "url": "pages/journey/p1_graduate.html#mef"
+        "text": "Python Trainer at Bamnang",
+        "url": "pages/journey/p1_graduate.html#training-python"
+      },
+      {
+        "text": "Chatbot",
+        "url": "pages/journey/p1_graduate.html#working-place"
       }
     ]
   },
   {
     "id": 2,
-    "subtitle": "Applied Mathematics and Statistics, Majoring in Data Science",
-    "title": "Engineering Student",
-    "place": "Institute of Technology of Cambodia (ITC)",
-    "duration": "Oct 2020 - July 2025",
-    "description": "Began my academic studies at the Institute of Technology of Cambodia, building strong foundational skills in logic, programming, and sciences.",
+    "subtitle": "Public Sector Data Science",
+    "title": "Junior Data Scientist",
+    "place": "Ministry of Economy and Finance",
+    "duration": "Aug 2025 - Jan 2026",
     "achievements": [
-      "Successfully defended graduation thesis on AI system development",
-      "Selected for Korea Data Camp (AI & Data Science)",
-      "Completed AWS short course and techpreneur incubation program"
+      "Developed end-to-end both frontend and backend on Document Extraction to extract tables from PDFs/images using Datalab/Marker",
+      "Developed a pipeline to clean, normalize, and structure extracted data using LLMs service, transforming inconsistent document outputs into tidy datasets based on Hadley Wickham’s Tidy Data principles"
     ],
+    "tech": "Python, Datalab/Marker, Google Service",
     "badges": [
       {
-        "text": "Techpreneur Boo(June 2025 - March 2026)",
-        "url": "pages/journey/p3_techpreneur.html"
-      },
-      {
-        "text": "Life at ITC (2020 - 2025)",
-        "url": "pages/journey/p2_itc.html#each-year"
-      },
-      {
-        "text": "AWS short course (June 2023)",
-        "url": "pages/journey/p2_itc.html#aws-course"
-      },
-      {
-        "text": "Korea Data Camp (July 2024)",
-        "url": "pages/journey/p2_itc.html#korea-data-camp"
-      },
-      {
-        "text": "First Internship, Year3 (Oct - Nov 2023)",
-        "url": "pages/journey/p2_itc.html#internship"
-      },
-      {
-        "text": "Second Internship, Year4 (Aug - Oct 2024)",
-        "url": "pages/journey/p2_itc.html#internship"
-      },
-      {
-        "text": "Third Internship, Year5 (Feb - Apr 2025)",
-        "url": "pages/journey/p2_itc.html#internship"
-      },
-      {
-        "text": "Defense (June 2025)",
-        "url": "pages/journey/p2_itc.html#defense"
+        "text": "Document Extraction (modern OCR)",
+        "url": "pages/journey/p1_graduate.html#mef"
       }
     ]
   },
   {
     "id": 3,
-    "subtitle": "Language Education",
-    "title": "Professional Communication",
-    "place": "Institute of Foreign Languages (IFL)",
-    "duration": "Oct 2021 - July 2025",
-    "description": "Studied English at the Institute of Foreign Languages, refining my professional communication, academic writing, and public presentation skills.",
+    "subtitle": "Bachelor of Applied Mathematics and Statistics, majoring in Data Science",
+    "title": "Journey as an Engineering Student",
+    "place": "Institute of Technology of Cambodia (ITC)",
+    "duration": "2020 - 2025",
     "achievements": [
-      "Completed Year 3 & Year 4 academic research projects",
-      "Developed professional English communication and translation skills",
-      "Participated in student presentations and language workshops"
+      "Analytical Knowledge",
+      "System Design in Practical",
+      "Hand on Machine Learning, Deep Learning Project"
     ],
     "badges": [
       {
-        "text": "Project Coordinator: Kid & Future Career in Year4 (2024 - 2025)",
-        "url": "pages/journey/p3_ifl.html#year4-project"
+        "text": "Soil Analysis",
+        "url": "pages/journey/p2_itc.html#each-year"
       },
       {
-        "text": "Life at IFL (2021 - 2025)",
-        "url": "pages/journey/p3_ifl.html#life-at-ifl"
+        "text": "EDA on Student Performance",
+        "url": "pages/journey/p2_itc.html#each-year"
+      },
+      {
+        "text": "Customer Feedback Analysis (NLP, EDA, ML)",
+        "url": "pages/journey/p2_itc.html#each-year"
+      },
+      {
+        "text": "Time Series Analysis",
+        "url": "pages/journey/p2_itc.html#each-year"
+      },
+      {
+        "text": "House Pricing Prediction",
+        "url": "pages/journey/p2_itc.html#each-year"
+      },
+      {
+        "text": "Dry Beans Classification Using Deep Learning (Customed Layer)",
+        "url": "pages/journey/p2_itc.html#each-year"
       }
     ]
   },
   {
     "id": 4,
-    "subtitle": "Volunteer Work",
-    "title": "Volunteer Instructor",
-    "place": "ERobot & Youth Empowering Society (YES)",
-    "duration": "Sep 2022 - Oct 2024",
-    "description": "Conducted digital literacy, Scratch programming, and leadership workshops for high school students, fostering education and community growth.",
+    "subtitle": "Techpreneur Bootcamp by Dichi Academy and USAID Fully Funded",
+    "title": "Journey as a Full-Stack-Development Student",
+    "place": "Techpreneur Bootcamp",
+    "duration": "Jun 2024 - Mar 2025",
     "achievements": [
-      "Volunteered as logic & programming instructor at ERobot",
-      "Coordinated youth leadership workshops at YES",
-      "Educated over 100 high school students in Scratch programming"
+      "Beyond the technical knowledge, with the intensive bootcamp, unlock the opportunities to collapse with various people from different background to work on idea challenges that given from various company partners",
+      "Conducted user research, defined problems, and translated needs into solutions",
+      "Mapped user journeys and designed intuitive interfaces with Figma.",
+      "Handed on development frontend, backend, and database systems",
+      "Coordinated tasks and worked across business, design, and engineering teams to deliver the MVP"
     ],
     "badges": [
       {
-        "text": "Short Journey at Erobot (2022 - 2023)",
-        "url": "pages/journey/p4_volunteer.html#erobot"
+        "text": "UX/UI Project",
+        "url": "pages/journey/p3_techpreneur.html"
       },
       {
-        "text": "Team Lead at YES (2023 - 2024)",
+        "text": "Full-Stack Development in Education",
+        "url": "pages/journey/p3_techpreneur.html"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "subtitle": "Bachelor of Professional Communication",
+    "title": "Life at Institute of Foreign Language (IFL)",
+    "place": "Institute of Foreign Languages (IFL)",
+    "duration": "2021 - 2025",
+    "achievements": [
+      "Professional Communication in practical settings",
+      "Applied Research Methodology across various projects",
+      "Global Exposure: Explored different cultures, perspectives, and learning experiences alongside students from diverse academic backgrounds as a Data Science student"
+    ],
+    "badges": [
+      {
+        "text": "Coordinate on Final Project",
+        "url": "pages/journey/p3_ifl.html#year4-project"
+      },
+      {
+        "text": "Research Development Methodology",
+        "url": "pages/journey/p3_ifl.html#life-at-ifl"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "subtitle": "Volunteer & Community Service",
+    "title": "Volunteer Coordinator",
+    "place": "Youth Empowering Society (YES)",
+    "duration": "Oct 2024 - May 2025",
+    "achievements": [
+      "Coordinated a volunteer team to train students at PTEC in Scratch programming and development",
+      "Successfully received a Certificate of Honor from the PTEC Director in recognition of our trainers’ contributions"
+    ],
+    "badges": [
+      {
+        "text": "Momentum together",
         "url": "pages/journey/p4_volunteer.html#yes"
       }
     ]

@@ -50,13 +50,28 @@
             </div>
           ` : '';
 
-          const badgesHtml = item.badges.map(badge => {
-            let badgeUrl = badge.url || '';
+          const badgesHtml = item.badges ? item.badges.map(badge => {
+            let badgeText = typeof badge === 'string' ? badge : badge.text;
+            let badgeUrl = typeof badge === 'object' && badge.url ? badge.url : '#';
             if (isSubpage && badgeUrl.startsWith('pages/')) {
               badgeUrl = badgeUrl.replace('pages/', '');
             }
-            return `<a href="${badgeUrl}" class="sec-journey-badge">${badge.text}</a>`;
-          }).join('');
+            return `<a href="${badgeUrl}" class="sec-journey-badge">${badgeText}</a>`;
+          }).join('') : '';
+
+          const badgesSectionHtml = badgesHtml ? `
+            <div class="pt-3 border-top d-flex flex-wrap gap-2">
+              ${badgesHtml}
+            </div>
+          ` : '';
+
+          const techHtml = item.tech ? `
+            <div class="mt-2 mb-3 text-secondary" style="font-size: 0.9rem;">
+              <strong class="text-dark">Tech:</strong> ${Array.isArray(item.tech) ? item.tech.join(', ') : item.tech}
+            </div>
+          ` : '';
+
+          const descHtml = item.description ? `<p class="card-text text-secondary mb-3">${item.description}</p>` : '';
 
           return `
             <div class="card shadow-sm border border-light-subtle rounded-4 overflow-hidden">
@@ -68,17 +83,19 @@
                   <span class="badge rounded-pill bg-light text-primary border border-primary-subtle px-3 py-2 fw-semibold">${item.duration}</span>
                 </div>
                 
-                <p class="card-text text-secondary mb-4">${item.description}</p>
+                ${descHtml}
                 
+                ${achievementsHtml ? `
                 <h6 class="fw-bold text-dark mb-2">Key Achievements:</h6>
                 <ul class="text-secondary ps-3 mb-2">
                   ${achievementsHtml}
                 </ul>
                 ${toggleBtnHtml}
+                ` : ''}
 
-                <div class="pt-3 border-top d-flex flex-wrap gap-2">
-                  ${badgesHtml}
-                </div>
+                ${techHtml}
+
+                ${badgesSectionHtml}
               </div>
             </div>
           `;
