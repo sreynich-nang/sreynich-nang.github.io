@@ -1,0 +1,186 @@
+/* ==========================================================================
+   STAR Blog / Case Study Template Styles (pages/projects/style.css)
+   Color family aligned with assets/css/global.css & assets/css/style.css
+   ========================================================================== */
+
+:root {
+  --primary-color: #65a6f0;
+  --primary-soft-color: #93c5fd;
+  --primary-hover-color: #60a5fa;
+  --primary-active-color: #2563eb;
+  --dark-color: #0f172a;
+  --dark-hover-color: #1f2937;
+  --light-color: #f8fafc;
+  --surface-color: #ffffff;
+  --text-muted-color: #64748b;
+  --body-text-color: #475569;
+  --border-color: #e2e8f0;
+  --border-dark-color: #cbd5e1;
+  --font-family: 'Inter', sans-serif;
+  --font-heading: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+  padding-top: 75px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: var(--font-family);
+}
+
+/* Scroll Reading Progress Bar */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--border-color);
+  z-index: 1060;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-soft-color), var(--primary-color));
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* Header & Titles */
+.blog-header {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 3rem 0 2.5rem;
+}
+
+.blog-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.blog-sub-title-wrapper {
+  padding-left: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.blog-sub-title {
+  font-size: 1.15rem;
+  color: var(--body-text-color);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* Sticky STAR Sidebar Navigation */
+.star-nav-sidebar {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.star-nav-track-line {
+  position: absolute;
+  width: 2px;
+  background-color: var(--border-color);
+  top: 24px;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.star-nav-marker {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: transparent;
+}
+
+.star-nav-marker .marker-circle,
+.star-nav-marker .marker-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 2px solid var(--border-dark-color);
+  background-color: var(--surface-color);
+  color: var(--text-muted-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+.star-nav-marker .marker-label {
+  margin-top: 0.45rem;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted-color);
+  transition: color 0.25s ease;
+}
+
+/* Hover & Active Marker States */
+.star-nav-marker:hover .marker-circle,
+.star-nav-marker:hover .marker-box {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: scale(1.06);
+}
+
+.star-nav-marker:hover .marker-label {
+  color: var(--primary-color);
+}
+
+.star-nav-marker.active .marker-circle,
+.star-nav-marker.active .marker-box {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(101, 166, 240, 0.35);
+}
+
+.star-nav-marker.active .marker-label {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* STAR Section Content */
+.star-section {
+  scroll-margin-top: 110px;
+  padding-bottom: 2.5rem;
+}
+
+.star-section-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.star-section-content {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--body-text-color);
+}
+
+@media (max-width: 991.98px) {
+  .star-nav-sidebar {
+    display: none;
+  }
+}
