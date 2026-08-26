@@ -2,9 +2,9 @@
   {
     "id": 2,
     "slug": "pipi-chatbot",
-    "title": "PiPi — Multi-Agent Chatbot at Bamnang",
-    "subtitle": "A multilingual conversational AI bringing universities, scholarships, majors, and mentor information into one unified student experience.",
-    "description": "PiPi bridges diverse education knowledge bases across Bamnang, allowing Cambodian students to discover opportunities naturally through conversation in English, Khmer, and Khmer Latin.",
+    "title": "PiPi — Chatbot at Bamnang",
+    "subtitle": "A multilingual chatbot helping students discover universities, scholarships, and mentors in one conversation.",
+    "description": "Bringing Bamnang's educational resources together so students can ask questions naturally in English, Khmer, or Khmer Latin.",
     "appUrl": "https://app.bamnang.com/",
     "appCta": "Test PiPi on Bamnang App",
     "appPrompt": "Experience PiPi firsthand by downloading and testing the Bamnang App.",
@@ -27,51 +27,39 @@
     ],
     "situation": {
       "title": "The Situation",
-      "subtitle": "Scattered information and multilingual communication barriers",
-      "description": "Bamnang users need information about universities, majors, scholarships, campuses, events, and mentors. Information was spread across different areas, making it harder for users to get a clear answer through one conversation.",
-      "points": [
-        "Bamnang users need information about universities, majors, scholarships, campuses, events, and mentors.",
-        "Users communicate in different ways: English, Khmer, and Khmer written in Latin letters.",
-        "Information was spread across different areas, making it harder for users to get a clear answer through one conversation."
-      ]
+      "paragraph": "Bamnang offers helpful information about universities, majors, scholarships, events, and mentors, but this knowledge was scattered across different places. At the same time, students communicate in different ways—some type in English, some in Khmer script, and many in Khmer Latin. This made it difficult for students to find clear answers quickly through a single conversation."
     },
     "task": {
       "title": "The Task",
-      "subtitle": "Unifying educational knowledge into an intuitive, multilingual conversational agent",
-      "description": "Make PiPi capable of understanding and responding to users across English, Khmer, and Khmer Latin, while unifying knowledge from various areas into one conversational flow.",
-      "points": [
-        "Make PiPi able to understand and respond to users across English, Khmer, and Khmer Latin.",
-        "Bring different types of Bamnang knowledge into one conversational experience.",
-        "Make the experience simple, natural, and useful for students, regardless of how they communicate."
-      ]
+      "paragraph": "The goal was to make PiPi understand and respond accurately across English, Khmer, and Khmer Latin, while uniting all Bamnang knowledge into one seamless chat experience that feels simple, natural, and helpful for any student."
     },
     "action": {
       "title": "The Action",
-      "subtitle": "Knowledge integration, multilingual NLP handling, and user-centric testing",
-      "description": "Engineered a structured knowledge workflow and conversational pipeline tailored to student user personas.",
+      "paragraph": "I organized knowledge from multiple Bamnang sources and designed the conversation flow to handle mixed-language inputs smoothly. By testing real student queries and everyday phrasing, I refined the responses to ensure answers were direct, easy to understand, and focused on what students actually need.",
       "points": [
-        "Organized and connected knowledge from various sources.",
-        "Designed the chatbot experience to handle English, Khmer, and Khmer Latin conversations.",
-        "Focused on making answers clear, relevant, and easy for students to understand.",
-        "Tested different user questions and conversation patterns to improve the quality and consistency of responses.",
-        "Considered the chatbot from the user's perspective, not only from the information it contains."
+        "Conducted technical research to evaluate LLM frameworks, agent architectures, and tools suitable for Bamnang’s chatbot.",
+        "Designed the multi-agent chatbot architecture and defined how different agents should handle different student needs.",
+        "Organized and structured knowledge from multiple Bamnang sources for chatbot use.",
+        "Designed the conversation flow to support different types of student questions and interactions.",
+        "Worked on multi-language support for Khmer, English, and mixed Khmer-English inputs.",
+        "Designed the database structure to support chatbot knowledge, conversations, sessions, and related data.",
+        "Tested the chatbot with real student questions and everyday phrasing to identify gaps and improve responses.",
+        "Refined prompts and chatbot logic to make answers direct, simple, and relevant.",
+        "Worked on the backend implementation end-to-end, connecting chatbot logic, knowledge sources, database, and APIs.",
+        "Iteratively improved the system based on real usage, testing, and student needs."
       ]
     },
     "result": {
       "title": "The Result",
-      "subtitle": "Multilingual, accessible education discovery for students",
-      "description": "PiPi now provides a multilingual, student-friendly way to discover Bamnang's education information through conversation, making the information easier to access and explore.",
-      "points": [
-        "PiPi now provides a multilingual, student-friendly way to discover Bamnang's education information through conversation, making the information easier to access and explore."
-      ]
+      "paragraph": "PiPi now offers a friendly, multilingual way for students to explore educational opportunities in one place, making school and scholarship guidance accessible no matter how they choose to communicate."
     }
   },
   {
     "id": 3,
     "slug": "mct",
     "title": "Major-Recommendation at Bamnang (MCT)",
-    "subtitle": "A guided assessment system connecting students' personal strengths, interests, and career preferences with matching university majors and job fields.",
-    "description": "MCT bridges student self-discovery and higher education choices by converting user responses into actionable career clusters and major recommendations.",
+    "subtitle": "A guided test helping students connect their interests and strengths with suitable university majors and careers.",
+    "description": "Guiding high school graduates from self-understanding to matching job clusters and university majors.",
     "appUrl": "https://app.bamnang.com/",
     "appCta": "Test MCT on Bamnang App",
     "appPrompt": "Experience the Major Career Test (MCT) firsthand by downloading and testing the Bamnang App.",
@@ -94,44 +82,27 @@
     ],
     "situation": {
       "title": "The Situation",
-      "subtitle": "Unclear career pathways and limited self-awareness among students",
-      "description": "Students often know they want a future career, but may not know which major or career direction fits them. Choosing a major can be difficult when students have limited understanding of their interests, strengths, and possible career paths. Bamnang needed a way to help students explore suitable directions through a simple and guided experience.",
-      "points": [
-        "Students often know they want a future career, but may not know which major or career direction fits them.",
-        "Choosing a major can be difficult when students have limited understanding of their interests, strengths, and possible career paths.",
-        "Bamnang needed a way to help students explore suitable directions through a simple and guided experience."
-      ]
+      "paragraph": "Many students want a good career after graduation but struggle to pick the right university major because they are unsure of their strengths, interests, and potential job paths. Bamnang needed a simple, guided tool to help students explore their options without feeling overwhelmed."
     },
     "task": {
       "title": "The Task",
-      "subtitle": "Building an insightful, actionable recommendation system for career self-discovery",
-      "description": "Build a user experience that helps students discover potential study and career directions, turning answers into meaningful recommendations rather than plain test scores.",
-      "points": [
-        "Build a user experience that helps students discover potential study and career directions.",
-        "Turn students' answers into meaningful recommendations, rather than simply showing test scores.",
-        "Make the result understandable and useful for students when considering their next step."
-      ]
+      "paragraph": "The goal was to build a student-friendly assessment that turns questionnaire answers into meaningful recommendations with clear explanations, rather than just displaying raw numbers or arbitrary test scores."
     },
     "action": {
       "title": "The Action",
-      "subtitle": "User-centric assessment design, job cluster mapping, and structured pathway insights",
-      "description": "Designed the MCT experience around students' interests, characteristics, and career preferences, structuring the journey from self-discovery to university majors.",
+      "paragraph": "I designed the Major Career Test around students' real interests and traits, mapping their answers directly to relevant job clusters. I structured the results so students can step-by-step connect who they are to possible career paths and matching majors.",
       "points": [
-        "Designed the MCT experience around students' interests, characteristics, and career preferences.",
-        "Connected students' responses with relevant job clusters and career directions.",
-        "Developed a result experience that shows students their potential matches and why they may fit those directions.",
-        "Structured the results so students can move from self-understanding → career direction → possible majors."
+        "Conducted a literature review with the college to research global career clusters, workforce trends, and relevant career/education data.",
+        "Translated the research into a career-cluster framework that connects students’ interests and traits with potential career directions.",
+        "Designed the Major Career Test logic and scoring flow, including how student responses determine relevant job clusters and career paths.",
+        "Designed and developed the backend architecture end-to-end, from database structure and APIs to scoring, mapping, and result generation.",
+        "Structured the result experience so students can move step-by-step from self-understanding → job clusters → career paths → relevant university majors.",
+        "Integrated the test with the broader platform so the results can support personalized recommendations and future student guidance."
       ]
     },
     "result": {
       "title": "The Result",
-      "subtitle": "Actionable self-discovery bridging students to confident education decisions",
-      "description": "Students receive a personalized view of career and study directions, creating a clear bridge between student self-discovery and education decisions.",
-      "points": [
-        "Students receive a more personalized view of possible career and study directions.",
-        "Instead of only getting a score, students can understand what their result means and why certain directions may fit them.",
-        "MCT creates a bridge between student self-discovery and education decisions."
-      ]
+      "paragraph": "Students now receive clear, personalized recommendations that explain why certain majors fit them, helping them make confident, informed decisions about their university education."
     }
   }
 ]

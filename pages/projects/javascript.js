@@ -205,25 +205,29 @@ function populateSectionContent(sectionKey, data) {
   if (bodyEl) {
     let bodyHtml = '';
 
-    if (Array.isArray(data.points) && data.points.length > 0) {
+    const textContent = data.paragraph || data.description;
+    const hasPoints = Array.isArray(data.points) && data.points.length > 0;
+
+    if (textContent) {
+      bodyHtml += `<p class="star-section-text ${hasPoints ? 'mb-3' : 'mb-0'}">${textContent}</p>`;
+    } else if (Array.isArray(data.paragraphs) && data.paragraphs.length > 0) {
+      bodyHtml += data.paragraphs
+        .map((p, idx) => `<p class="star-section-text ${idx < data.paragraphs.length - 1 ? 'mb-3' : (hasPoints ? 'mb-3' : 'mb-0')}">${p}</p>`)
+        .join('');
+    }
+
+    if (hasPoints) {
       bodyHtml += `
-        <ul class="star-point-list list-unstyled mb-0">
+        <ul class="star-bullet-list mb-0 ps-3">
           ${data.points
             .map(
               (point) => `
-            <li class="star-point-item d-flex align-items-start gap-3">
-              <span class="star-point-icon flex-shrink-0">
-                <i class="bi bi-check2-circle"></i>
-              </span>
-              <span class="star-point-text">${point}</span>
-            </li>
+            <li class="star-bullet-item mb-2">${point}</li>
           `
             )
             .join('')}
         </ul>
       `;
-    } else if (data.description) {
-      bodyHtml += `<p class="star-section-text mb-0">${data.description}</p>`;
     }
 
     bodyEl.innerHTML = bodyHtml;
