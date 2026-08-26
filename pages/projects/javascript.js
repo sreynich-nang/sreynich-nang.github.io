@@ -71,9 +71,18 @@ async function loadStarProjectData() {
       return;
     }
 
-    // Determine target project from URL query parameter (e.g. ?id=2 or ?id=pipi-chatbot)
+    // Determine target project from URL query parameter (e.g. ?id=3 or ?id=mct) or filename
     const urlParams = new URLSearchParams(window.location.search);
-    const targetId = urlParams.get('id');
+    let targetId = urlParams.get('id');
+
+    if (!targetId) {
+      const currentPath = window.location.pathname.toLowerCase();
+      if (currentPath.includes('mct')) {
+        targetId = '3';
+      } else if (currentPath.includes('chatbot')) {
+        targetId = '2';
+      }
+    }
 
     let project = projects[0];
     if (targetId) {

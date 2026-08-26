@@ -65,5 +65,73 @@
         "PiPi now provides a multilingual, student-friendly way to discover Bamnang's education information through conversation, making the information easier to access and explore."
       ]
     }
+  },
+  {
+    "id": 3,
+    "slug": "mct",
+    "title": "Major-Recommendation at Bamnang (MCT)",
+    "subtitle": "A guided assessment system connecting students' personal strengths, interests, and career preferences with matching university majors and job fields.",
+    "description": "MCT bridges student self-discovery and higher education choices by converting user responses into actionable career clusters and major recommendations.",
+    "appUrl": "https://app.bamnang.com/",
+    "appCta": "Test MCT on Bamnang App",
+    "appPrompt": "Experience the Major Career Test (MCT) firsthand by downloading and testing the Bamnang App.",
+    "images": [
+      {
+        "url": "images/MCT1.webp",
+        "title": "Interactive Self-Discovery",
+        "caption": "Guided questionnaire assessing student interests, skills, and personal strengths"
+      },
+      {
+        "url": "images/MCT2.webp",
+        "title": "Career Cluster Matching",
+        "caption": "Connecting student characteristics with relevant professional fields and job pathways"
+      },
+      {
+        "url": "images/MCT3.webp",
+        "title": "Actionable Major Suggestions",
+        "caption": "Clear breakdown of recommended university majors and curriculum directions"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "subtitle": "Unclear career pathways and limited self-awareness among students",
+      "description": "Students often know they want a future career, but may not know which major or career direction fits them. Choosing a major can be difficult when students have limited understanding of their interests, strengths, and possible career paths. Bamnang needed a way to help students explore suitable directions through a simple and guided experience.",
+      "points": [
+        "Students often know they want a future career, but may not know which major or career direction fits them.",
+        "Choosing a major can be difficult when students have limited understanding of their interests, strengths, and possible career paths.",
+        "Bamnang needed a way to help students explore suitable directions through a simple and guided experience."
+      ]
+    },
+    "task": {
+      "title": "The Task",
+      "subtitle": "Building an insightful, actionable recommendation system for career self-discovery",
+      "description": "Build a user experience that helps students discover potential study and career directions, turning answers into meaningful recommendations rather than plain test scores.",
+      "points": [
+        "Build a user experience that helps students discover potential study and career directions.",
+        "Turn students' answers into meaningful recommendations, rather than simply showing test scores.",
+        "Make the result understandable and useful for students when considering their next step."
+      ]
+    },
+    "action": {
+      "title": "The Action",
+      "subtitle": "User-centric assessment design, job cluster mapping, and structured pathway insights",
+      "description": "Designed the MCT experience around students' interests, characteristics, and career preferences, structuring the journey from self-discovery to university majors.",
+      "points": [
+        "Designed the MCT experience around students' interests, characteristics, and career preferences.",
+        "Connected students' responses with relevant job clusters and career directions.",
+        "Developed a result experience that shows students their potential matches and why they may fit those directions.",
+        "Structured the results so students can move from self-understanding → career direction → possible majors."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "subtitle": "Actionable self-discovery bridging students to confident education decisions",
+      "description": "Students receive a personalized view of career and study directions, creating a clear bridge between student self-discovery and education decisions.",
+      "points": [
+        "Students receive a more personalized view of possible career and study directions.",
+        "Instead of only getting a score, students can understand what their result means and why certain directions may fit them.",
+        "MCT creates a bridge between student self-discovery and education decisions."
+      ]
+    }
   }
 ]
