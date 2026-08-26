@@ -208,6 +208,17 @@
                         else if (href === "index.html") link.setAttribute("href", "../../index.html");
                     }
                 });
+
+                // Highlight "Projects" in navbar
+                document.querySelectorAll("#navbar-placeholder .nav-link").forEach((link) => {
+                    const text = link.textContent.trim().toLowerCase();
+                    const href = (link.getAttribute("href") || "").toLowerCase();
+                    if (text === "projects" || href.includes("project")) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
             });
 
         // Load Footer Component
@@ -282,10 +293,16 @@
                     let imageUrl = project.imageUrl;
                     if (imageUrl.startsWith("assets/")) {
                         imageUrl = "../../" + imageUrl;
+                    } else if (imageUrl.startsWith("pages/projects/")) {
+                        imageUrl = imageUrl.replace("pages/projects/", "");
+                    } else if (imageUrl.startsWith("pages/")) {
+                        imageUrl = "../" + imageUrl.replace("pages/", "");
                     }
                     let exploreUrl = project.exploreUrl;
                     if (exploreUrl.startsWith("pages/projects/")) {
                         exploreUrl = exploreUrl.replace("pages/projects/", "");
+                    } else if (exploreUrl.startsWith("pages/")) {
+                        exploreUrl = exploreUrl.replace("pages/", "");
                     }
 
                     const isData = project.category === "data";

@@ -1,0 +1,69 @@
+[
+  {
+    "id": 2,
+    "slug": "pipi-chatbot",
+    "title": "PiPi — Multi-Agent Chatbot at Bamnang",
+    "subtitle": "A multilingual conversational AI bringing universities, scholarships, majors, and mentor information into one unified student experience.",
+    "description": "PiPi bridges diverse education knowledge bases across Bamnang, allowing Cambodian students to discover opportunities naturally through conversation in English, Khmer, and Khmer Latin.",
+    "appUrl": "https://app.bamnang.com/",
+    "appCta": "Test PiPi on Bamnang App",
+    "appPrompt": "Experience PiPi firsthand by downloading and testing the Bamnang App.",
+    "images": [
+      {
+        "url": "images/campus_chatbot.webp",
+        "title": "Campus & Major Discovery",
+        "caption": "Exploring universities, faculties, and admission details via conversation"
+      },
+      {
+        "url": "images/mentor_chatbot.webp",
+        "title": "Mentor Consultation",
+        "caption": "Inquiring about mentors, guidance, and scheduled study sessions"
+      },
+      {
+        "url": "images/scholar_chatbot.webp",
+        "title": "Scholarship Search",
+        "caption": "Discovering active scholarships, eligibility, and application deadlines"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "subtitle": "Scattered information and multilingual communication barriers",
+      "description": "Bamnang users need information about universities, majors, scholarships, campuses, events, and mentors. Information was spread across different areas, making it harder for users to get a clear answer through one conversation.",
+      "points": [
+        "Bamnang users need information about universities, majors, scholarships, campuses, events, and mentors.",
+        "Users communicate in different ways: English, Khmer, and Khmer written in Latin letters.",
+        "Information was spread across different areas, making it harder for users to get a clear answer through one conversation."
+      ]
+    },
+    "task": {
+      "title": "The Task",
+      "subtitle": "Unifying educational knowledge into an intuitive, multilingual conversational agent",
+      "description": "Make PiPi capable of understanding and responding to users across English, Khmer, and Khmer Latin, while unifying knowledge from various areas into one conversational flow.",
+      "points": [
+        "Make PiPi able to understand and respond to users across English, Khmer, and Khmer Latin.",
+        "Bring different types of Bamnang knowledge into one conversational experience.",
+        "Make the experience simple, natural, and useful for students, regardless of how they communicate."
+      ]
+    },
+    "action": {
+      "title": "The Action",
+      "subtitle": "Knowledge integration, multilingual NLP handling, and user-centric testing",
+      "description": "Engineered a structured knowledge workflow and conversational pipeline tailored to student user personas.",
+      "points": [
+        "Organized and connected knowledge from various sources.",
+        "Designed the chatbot experience to handle English, Khmer, and Khmer Latin conversations.",
+        "Focused on making answers clear, relevant, and easy for students to understand.",
+        "Tested different user questions and conversation patterns to improve the quality and consistency of responses.",
+        "Considered the chatbot from the user's perspective, not only from the information it contains."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "subtitle": "Multilingual, accessible education discovery for students",
+      "description": "PiPi now provides a multilingual, student-friendly way to discover Bamnang's education information through conversation, making the information easier to access and explore.",
+      "points": [
+        "PiPi now provides a multilingual, student-friendly way to discover Bamnang's education information through conversation, making the information easier to access and explore."
+      ]
+    }
+  }
+]

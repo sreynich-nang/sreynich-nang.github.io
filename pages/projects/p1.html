@@ -102,6 +102,17 @@
               }
             }
           });
+
+        // Highlight "Projects" in navbar
+        document.querySelectorAll("#navbar-placeholder .nav-link").forEach((link) => {
+          const text = link.textContent.trim().toLowerCase();
+          const href = (link.getAttribute("href") || "").toLowerCase();
+          if (text === "projects" || href.includes("project")) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
       });
 
     // Load Footer
@@ -137,6 +148,10 @@
               let imgUrl = project.imageUrl;
               if (imgUrl.startsWith("assets/")) {
                 imgUrl = "../../" + imgUrl;
+              } else if (imgUrl.startsWith("pages/projects/")) {
+                imgUrl = imgUrl.replace("pages/projects/", "");
+              } else if (imgUrl.startsWith("pages/")) {
+                imgUrl = "../" + imgUrl.replace("pages/", "");
               }
               document.getElementById("project-img").src = imgUrl;
               document.getElementById("project-img").alt = project.title;

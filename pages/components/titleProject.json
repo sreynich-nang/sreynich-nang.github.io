@@ -10,15 +10,15 @@
   },
   {
     "id": 2,
-    "title": "Multi-agent-chatbot at Bamnang",
+    "title": "Chatbot at Bamnang",
     "category": "data",
     "description": "An intelligent multi-agent conversational AI system designed to handle complex queries and tasks.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=2"
+    "imageUrl": "pages/projects/images/scholar_chatbot.webp",
+    "exploreUrl": "pages/projects/chatbot.html?id=2"
   },
   {
     "id": 3,
-    "title": "Major-recommendation at Bamnang",
+    "title": "Major-Recommendation at Bamnang",
     "category": "data",
     "description": "A smart recommendation engine helping students find matching majors based on interests and skills.",
     "imageUrl": "assets/images/meme1.jpg",

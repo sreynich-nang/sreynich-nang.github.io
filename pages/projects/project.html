@@ -75,9 +75,15 @@
               if (isSubpage) {
                 if (imageUrl.startsWith('assets/')) {
                   imageUrl = '../../' + imageUrl;
+                } else if (imageUrl.startsWith('pages/projects/')) {
+                  imageUrl = imageUrl.replace('pages/projects/', '');
+                } else if (imageUrl.startsWith('pages/')) {
+                  imageUrl = '../' + imageUrl.replace('pages/', '');
                 }
-                if (exploreUrl.startsWith('pages/')) {
+                if (exploreUrl.startsWith('pages/projects/')) {
                   exploreUrl = exploreUrl.replace('pages/projects/', '');
+                } else if (exploreUrl.startsWith('pages/')) {
+                  exploreUrl = exploreUrl.replace('pages/', '');
                 }
               }
 

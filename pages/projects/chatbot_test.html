@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Template</title>
+  <title>PiPi Chatbot - STAR Case Study</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,14 +36,37 @@
     <header class="blog-header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-lg-10">
             <h1 id="blog-title" class="blog-title">
-              Blog Title
+              Loading Project...
             </h1>
-            <div class="blog-sub-title-wrapper">
+            <div class="blog-sub-title-wrapper mb-4">
               <p id="blog-sub-title" class="blog-sub-title">
-                Blog Subtitle goes here.
+                Please wait while project details are being loaded.
               </p>
+            </div>
+
+            <!-- CTA Download / Test Banner -->
+            <div id="blog-cta-wrapper" class="blog-cta-box d-none d-flex flex-column flex-md-row align-items-md-center justify-content-between p-3 p-md-4 rounded-4 mb-4 gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="cta-app-icon">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div>
+                  <h6 id="cta-title" class="fw-bold mb-1 text-dark">Try it yourself</h6>
+                  <p id="cta-prompt" class="small text-secondary mb-0">Experience PiPi firsthand by downloading the Bamnang App.</p>
+                </div>
+              </div>
+              <a id="cta-link" href="https://app.bamnang.com/" target="_blank" class="btn btn-primary-soft btn-sm text-nowrap fw-bold px-4 py-2">
+                <i class="bi bi-box-arrow-up-right me-1"></i> <span id="cta-btn-text">Test on Bamnang App</span>
+              </a>
+            </div>
+
+            <!-- Project Image Gallery Showcase -->
+            <div id="blog-gallery-wrapper" class="blog-gallery-wrapper d-none">
+              <div class="row g-3 justify-content-center" id="blog-gallery-grid">
+                <!-- Dynamically loaded preview images -->
+              </div>
             </div>
           </div>
         </div>
@@ -80,39 +103,19 @@
           </nav>
         </aside>
 
-        <!-- STAR Sections -->
+        <!-- STAR Sections (Dynamically populated from components) -->
         <div class="col-12 col-lg-10">
           <!-- 01 The Situation -->
-          <section id="situation" class="star-section mb-5">
-            <h2 class="star-section-title">The Situation</h2> <!-- to load from the component -->
-            <div class="star-section-content">
-              <!-- Content for The Situation -->
-            </div>
-          </section>
+          <section id="situation" class="star-section mb-5"></section>
 
           <!-- 02 The Task -->
-          <section id="task" class="star-section mb-5">
-            <h2 class="star-section-title">The Task</h2>
-            <div class="star-section-content">
-              <!-- Content for The Task -->
-            </div>
-          </section>
+          <section id="task" class="star-section mb-5"></section>
 
           <!-- 03 The Action -->
-          <section id="action" class="star-section mb-5">
-            <h2 class="star-section-title">The Action</h2>
-            <div class="star-section-content">
-              <!-- Content for The Action -->
-            </div>
-          </section>
+          <section id="action" class="star-section mb-5"></section>
 
           <!-- 04 The Result -->
-          <section id="result" class="star-section mb-5">
-            <h2 class="star-section-title">The Result</h2>
-            <div class="star-section-content">
-              <!-- Content for The Result -->
-            </div>
-          </section>
+          <section id="result" class="star-section mb-5"></section>
         </div>
       </div>
     </div>

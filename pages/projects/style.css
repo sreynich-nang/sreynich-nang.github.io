@@ -162,25 +162,226 @@ body {
 /* STAR Section Content */
 .star-section {
   scroll-margin-top: 110px;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
 }
 
-.star-section-title {
+.star-section:last-of-type {
+  padding-bottom: 8rem;
+}
+
+.star-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.star-card:hover {
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06) !important;
+}
+
+.star-badge-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.badge-situation {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.badge-task {
+  background-color: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fde68a;
+}
+
+.badge-action {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-result {
+  background-color: #f5f3ff;
+  color: #7c3aed;
+  border: 1px solid #ddd6fe;
+}
+
+.star-step-tag {
+  display: block;
+  font-size: 0.72rem;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 1.75rem;
-  color: var(--dark-color);
-  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted-color);
+  margin-bottom: 2px;
 }
 
-.star-section-content {
-  font-size: 1rem;
-  line-height: 1.75;
+.star-section-heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--dark-color);
+}
+
+.star-section-lead {
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--body-text-color);
+  font-weight: 500;
+}
+
+.star-point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.star-point-item {
+  background: var(--light-color);
+  border: 1px solid var(--border-color);
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.star-point-item:hover {
+  background: #ffffff;
+  border-color: var(--primary-soft-color);
+  transform: translateX(4px);
+}
+
+.star-point-icon {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-top: 1px;
+}
+
+.star-point-text {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--dark-color);
 }
 
 @media (max-width: 991.98px) {
   .star-nav-sidebar {
     display: none;
   }
+  
+  .star-card {
+    padding: 1.5rem !important;
+  }
 }
+
+/* CTA Download / Test Box */
+.blog-cta-box {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.06);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.cta-app-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Project Image Gallery */
+.blog-gallery-wrapper {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.gallery-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  height: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-soft-color);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.gallery-img-wrapper {
+  background: #f1f5f9;
+  overflow: hidden;
+  position: relative;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .gallery-img-wrapper {
+    height: 360px;
+  }
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-caption-wrapper {
+  padding: 1rem 1.15rem;
+  background: var(--surface-color);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.gallery-item-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--dark-color);
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.gallery-item-caption {
+  font-size: 0.82rem;
+  color: var(--body-text-color);
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: center;
+}
+
