@@ -21,36 +21,41 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <style>
         body {
-            padding-top: 75px;
             background-color: #f8fafc;
         }
 
-        /* Fixed/Sticky Top Half Banner Styling */
-        /* Top Banner Section */
-        .sticky-hero-banner {
+        /* Top Hero Banner Section (Matches contact.html background size) */
+        .sec-projects-banner {
             position: relative;
-            width: 100%;
-            height: 360px;
+            height: 60vh;
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             overflow: hidden;
+            padding-top: 0;
+            padding-bottom: 30px;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
         }
 
-        .sticky-hero-banner img {
+        .sec-projects-banner-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 360px;
-            object-fit: cover;
-            object-position: top center;
-            display: block;
+            height: 100%;
+            background-image: url("../../assets/images/myProject.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
         }
 
         @media (max-width: 768px) {
-            .sticky-hero-banner {
-                height: 220px;
-            }
-
-            .sticky-hero-banner img {
-                height: 220px;
+            .sec-projects-banner {
+                height: 45vh;
+                min-height: 260px;
             }
         }
 
@@ -111,10 +116,10 @@
     <!-- Navbar Component -->
     <div id="navbar-placeholder"></div>
 
-    <!-- Sticky Banner Section (Always Top Half, Fixed on Scroll) -->
-    <div class="sticky-hero-banner">
-        <img src="../../assets/images/myProject.webp" alt="My Projects Banner" />
-    </div>
+    <!-- Hero Banner Section (Matches contact.html background size) -->
+    <header class="sec-projects-banner">
+        <div class="sec-projects-banner-bg"></div>
+    </header>
 
     <!-- Main Content Section: Sidebar & Grid Layout -->
     <div class="container pb-5">

@@ -1,0 +1,368 @@
+body {
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Top Hero Banner Section (Matches contact.html background size) */
+.sec-sharing-banner {
+  position: relative;
+  height: 60vh;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-bottom: 2rem;
+}
+
+.sec-sharing-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/whatShared_background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .sec-sharing-banner {
+    height: 45vh;
+    min-height: 260px;
+  }
+}
+
+/* Custom Tab Switcher Styling (matching Panda CSS / Base UI classes) */
+.tab-switcher-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tablist-pill {
+  background-color: #f1f5f9;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  height: 56px;
+  padding: 5px;
+  width: auto;
+  white-space: nowrap;
+  border: 1px solid #e2e8f0;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 12px;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 24px;
+  min-width: 110px;
+  transition: all 0.22s ease-in-out;
+  user-select: none;
+}
+
+.tab-button:hover {
+  color: #0f172a;
+  background-color: #e2e8f0;
+}
+
+.tab-button.active,
+.tab-button[aria-selected="true"] {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tab-button i {
+  font-size: 1.05rem;
+}
+
+/* Card Grid & Items */
+.sharing-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sharing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.sharing-card-img-wrap {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.sharing-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.sharing-card:hover .sharing-card-img-wrap img {
+  transform: scale(1.04);
+}
+
+.card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.badge-coding {
+  background: rgba(37, 99, 235, 0.9);
+  color: #ffffff;
+}
+
+.badge-math {
+  background: rgba(234, 88, 12, 0.9);
+  color: #ffffff;
+}
+
+.badge-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.tab-pane-content {
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   Presentation Slide Deck Player (Unified Section Card)
+   ========================================================================== */
+.presentation-section-wrapper {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+  padding: 2rem;
+}
+
+.presentation-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.presentation-viewer-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+.presentation-canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Clickable Navigation Zones */
+.presentation-click-zone {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  width: 50%;
+  z-index: 5;
+  cursor: pointer;
+}
+.presentation-click-zone.left {
+  left: 0;
+}
+.presentation-click-zone.right {
+  right: 0;
+}
+
+/* Bottom Controls Overlay Bar */
+.presentation-overlay-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 20px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.35) 60%, transparent 100%);
+  z-index: 10;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+/* Segmented Slide Progress Ticks */
+.presentation-progress-track {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.presentation-tick {
+  flex: 1;
+  height: 3.5px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.presentation-tick:hover {
+  transform: scaleY(1.8);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.presentation-tick.active,
+.presentation-tick.completed {
+  background: #ffffff;
+}
+
+/* Controls Row */
+.presentation-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.presentation-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}
+
+.presentation-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.presentation-counter {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 10px;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+}
+
+/* Loading & Error States */
+.presentation-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  z-index: 20;
+}
+
+/* Fullscreen Behavior */
+.presentation-viewer-container:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: unset;
+  background: #000000;
+}
+
+.presentation-viewer-container:fullscreen .presentation-canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .presentation-section-wrapper {
+    padding: 1.25rem !important;
+  }
+  .presentation-viewer-container {
+    aspect-ratio: 16 / 10;
+  }
+  .presentation-overlay-bar {
+    padding: 16px 12px 10px;
+  }
+  .presentation-progress-track {
+    gap: 2px;
+    margin-bottom: 8px;
+  }
+  .presentation-btn {
+    font-size: 1rem;
+    padding: 3px 6px;
+  }
+  .presentation-counter {
+    font-size: 0.85rem;
+    margin: 0 6px;
+  }
+}
+
+/* Inner Details Card */
+.presentation-inner-details {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+}

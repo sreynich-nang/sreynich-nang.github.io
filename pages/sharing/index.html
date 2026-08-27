@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What I've Shared - Sreynich Nang</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Global CSS -->
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- PDF.js CDN for Slide Presentation Rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- Placeholder for navbar component -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Banner Section (Matches contact.html background size) -->
+    <header class="sec-sharing-banner">
+      <div class="sec-sharing-banner-bg"></div>
+    </header>
+
+    <!-- MAIN SHARING CONTAINER -->
+    <main class="container pb-5">
+
+        <!-- Controls Toolbar: Tabs Switcher (Math / Coding) on Left -->
+        <div class="row align-items-center justify-content-between g-3 mb-4">
+          <div class="col-12 col-md-auto">
+            <div class="tab-switcher-container">
+              <!-- Provided Tabs Element with Panda/Base-UI classes -->
+              <div
+                data-orientation="horizontal"
+                data-activation-direction="right"
+                role="tablist"
+                class="tablist-pill panda-bg_gray.100 panda-bdr_xl panda-d_flex panda-flex-wrap_nowrap panda-gap_0 md:panda-gap_2 panda-h_58px panda-jc_space-between panda-ov-x_auto panda-px_1.5 panda-py_1.5 panda-scr-bar-w_none panda-w_auto panda-white-space_nowrap panda-z_relativeFront2 [&::-webkit-scrollbar]:panda-w_0"
+              >
+                <!-- Math Tab -->
+                <button
+                  type="button"
+                  data-orientation="horizontal"
+                  aria-disabled="false"
+                  tabindex="-1"
+                  role="tab"
+                  aria-selected="false"
+                  id="tab-math"
+                  class="tab-button panda-ai_center panda-bg_none panda-bd_none panda-bdr_lg panda-c_blackAlpha.600 panda-cursor_pointer panda-d_flex md:panda-fs_[16px] md:hover:panda-bg-c_gray.200 panda-fs_[14px] panda-fw_bold panda-h_auto panda-jc_center panda-px_3 md:panda-px_5 panda-py_3 md:panda-py_4 panda-w_50% lg:panda-w_auto hover:panda-c_black selected:panda-bg_white selected:panda-bx-sh_[0px_1px_8px_0px_#0000000D] selected:panda-c_black selected:hover:panda-bg_white"
+                  onclick="switchTab('math')"
+                >
+                  <i class="bi bi-calculator me-2"></i> Math
+                </button>
+
+                <!-- Coding Tab (Selected by default) -->
+                <button
+                  type="button"
+                  data-orientation="horizontal"
+                  aria-disabled="false"
+                  tabindex="0"
+                  role="tab"
+                  aria-selected="true"
+                  id="tab-coding"
+                  class="tab-button active panda-ai_center panda-bg_none panda-bd_none panda-bdr_lg panda-c_blackAlpha.600 panda-cursor_pointer panda-d_flex md:panda-fs_[16px] md:hover:panda-bg-c_gray.200 panda-fs_[14px] panda-fw_bold panda-h_auto panda-jc_center panda-px_3 md:panda-px_5 panda-py_3 md:panda-py_4 panda-w_50% lg:panda-w_auto hover:panda-c_black selected:panda-bg_white selected:panda-bx-sh_[0px_1px_8px_0px_#0000000D] selected:panda-c_black selected:hover:panda-bg_white"
+                  data-active=""
+                  data-composite-item-active=""
+                  aria-controls="panel-coding"
+                  onclick="switchTab('coding')"
+                >
+                  <i class="bi bi-code-slash me-2"></i> Coding
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section Summary / Subtitle on Right -->
+          <div class="col-12 col-md-auto text-md-end">
+            <span class="text-secondary small fw-medium">
+              <i class="bi bi-collection me-1 text-primary"></i> Tutorials, Notes &amp; Learning Resources
+            </span>
+          </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- TAB PANEL: CODING -->
+        <!-- =================================================================== -->
+        <section id="panel-coding" class="tab-pane-content">
+          <div class="row g-4">
+            <!-- Dynamic cards will be loaded here -->
+          </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- TAB PANEL: MATH -->
+        <!-- =================================================================== -->
+        <section id="panel-math" class="tab-pane-content d-none">
+          <div class="row g-4">
+            <!-- Dynamic cards will be loaded here -->
+          </div>
+        </section>
+    </main>
+
+    <!-- Placeholder for footer component -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Page Specific Script -->
+    <script src="assets/javascript.js"></script>
+  </body>
+</html>
