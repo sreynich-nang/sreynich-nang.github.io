@@ -314,15 +314,20 @@
                     const badgeClass = isData ? "badge-data" : "badge-system";
                     const badgeLabel = isData ? "Data & AI" : "System Development";
 
+                    const isSlide = imageUrl.includes('neroDrive') || imageUrl.includes('uniseek');
+                    const imgFitClass = isSlide ? 'object-fit-contain p-2' : 'object-fit-cover';
+
                     return `
               <div class="col">
                 <div class="card h-100 border rounded-3 overflow-hidden shadow-sm d-flex flex-column">
-                  <div class="position-relative">
-                    <img src="${imageUrl}" class="card-img-top object-fit-cover" style="height: 200px;" alt="${project.title}">
-                    <span class="badge ${badgeClass} badge-category position-absolute top-0 end-0 m-3">${badgeLabel}</span>
+                  <div class="card-img-container" style="background-color: #f8fafc; height: 210px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    <img src="${imageUrl}" class="card-img-top ${imgFitClass} w-100 h-100" alt="${project.title}">
                   </div>
                   <div class="card-body p-4 d-flex flex-column justify-content-between">
                     <div>
+                      <div class="mb-2">
+                        <span class="badge ${badgeClass} badge-category">${badgeLabel}</span>
+                      </div>
                       <h5 class="card-title fw-semibold text-dark mb-2">${project.title}</h5>
                       <p class="card-text text-secondary small mb-3">${project.description}</p>
                     </div>

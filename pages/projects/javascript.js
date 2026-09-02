@@ -87,6 +87,12 @@ async function loadStarProjectData() {
         targetId = '8';
       } else if (currentPath.includes('ocr')) {
         targetId = '4';
+      } else if (currentPath.includes('brandingawareness') || currentPath.includes('branding') || currentPath.includes('onion')) {
+        targetId = '13';
+      } else if (currentPath.includes('uniseek')) {
+        targetId = '1';
+      } else if (currentPath.includes('neurodrive') || currentPath.includes('nerodrive')) {
+        targetId = '9';
       }
     }
 

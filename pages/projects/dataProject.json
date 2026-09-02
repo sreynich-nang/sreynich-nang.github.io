@@ -239,5 +239,147 @@
       "title": "The Result",
       "paragraph": "Delivered a working first-draft prototype for testing, successfully validating that local OCR models combined with LLM restructuring can eliminate recurring API costs and streamline messy document table transformation."
     }
+  },
+  {
+    "id": 13,
+    "slug": "onion-branding-awareness",
+    "title": "ONiON Mobility — EV Brand Awareness & Market Analysis",
+    "subtitle": "Quantitative Market Research, Customer Segmentation for X-Series & Power BI Demographic Dashboards",
+    "description": "A comprehensive market analysis for ONiON Mobility identifying EV customer preferences, competitor positioning, and platform usage to drive X-Series sales.",
+    "appUrl": "../../assets/pdf/Slide_MarketingAnalysisforEVBrandingAwareness_compressed.pdf",
+    "appCta": "View Presentation Deck (PDF)",
+    "appPrompt": "Explore the full marketing internship defense presentation deck and demographic data findings.",
+    "appTitle": "Internship Defense Deck",
+    "appIcon": "bi bi-file-earmark-pdf text-danger",
+    "pdfUrl": "../../assets/pdf/Slide_MarketingAnalysisforEVBrandingAwareness_compressed.pdf",
+    "pdfTitle": "Marketing Internship Defense Presentation",
+    "pdfSubtitle": "Comprehensive EV Market Research, Competitor Analysis & Power BI Dashboards",
+    "images": [
+      {
+        "url": "images/branding_awareness_onion.webp",
+        "title": "Power BI Demographic & Social Platform Usage Dashboard",
+        "caption": "Quantitative survey analysis of target customer demographics, active hours, and preferred digital channels in Cambodia"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "ONiON Mobility launched its X-Series electric two-wheelers in Cambodia, aiming to grow market share amidst emerging EV competitors. However, the marketing team faced challenges in low brand recognition, undefined target customer segments, and understanding the distinct preferences between traditional petroleum riders and EV adopters."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "During my marketing data internship, my goal was to conduct comprehensive quantitative market research to identify key trends, competitor strategies, and customer behaviors to shape effective marketing campaigns for the X-Series."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "I executed an end-to-end data collection, preprocessing, and visual analytics workflow:",
+      "points": [
+        "Designed structured quantitative surveys covering demographic, geographic, psychographic, and brand awareness factors with strict data ethics.",
+        "Cleaned and normalized raw survey response data using Python and Pandas for analytical processing.",
+        "Built interactive Power BI dashboards to deliver key data-driven insights to the project manager, helping improve product satisfaction and achieve brand awareness KPIs.",
+        "Analyzed peak active platform hours (Facebook, Telegram, TikTok) and benchmarked brand perception across 5 major EV competitors against ONiON Mobility."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Delivered actionable market insights and targeted demographic profiles that guided ONiON's digital and offline marketing strategies, pinpointing high-converting digital channels and referral-driven adoption patterns."
+    }
+  },
+  {
+    "id": 1,
+    "slug": "uniseek-education-mvp",
+    "title": "UniSeek — University Mentorship Platform",
+    "subtitle": "Connecting High School Students with University Mentors for 1-on-1 Discovery Sessions",
+    "description": "Techpreneur final project helping Cambodian students explore universities, receive guidance from verified mentors, and make confident higher education decisions.",
+    "appUrl": "../../assets/pdf/uniSeek.pdf",
+    "appCta": "View Presentation Deck (PDF)",
+    "appPrompt": "Explore the full Techpreneur capstone presentation deck, UI design flows, and database architecture.",
+    "appTitle": "Techpreneur Capstone Deck",
+    "appIcon": "bi bi-file-earmark-pdf text-danger",
+    "pdfUrl": "../../assets/pdf/uniSeek.pdf",
+    "pdfTitle": "Techpreneur Final Presentation Deck",
+    "pdfSubtitle": "UniSeek Education Sector Project — Architecture, UI Flows & Mentorship Platform",
+    "images": [
+      {
+        "url": "images/uniseek1.webp",
+        "title": "University & Subject Rankings",
+        "caption": "Exploring top Cambodian institutions, faculties, and performance rankings"
+      },
+      {
+        "url": "images/uniseek2.webp",
+        "title": "Major & Career Assessment Survey",
+        "caption": "Interactive assessment guiding high schoolers toward matching academic fields"
+      },
+      {
+        "url": "images/uniseek3.webp",
+        "title": "1-on-1 Mentor Appointment Booking",
+        "caption": "Scheduling live video guidance sessions with verified university seniors"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Over 54% of Cambodian students struggle with higher education choices and switch majors after university entry due to limited guidance. High schoolers needed a direct channel to connect with university seniors to understand real campus life, curriculum demands, and career trajectories."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "As our final capstone project at Techpreneur, our team set out to build UniSeek—a scalable web platform enabling high school students to explore universities, complete major assessment surveys, and book 1-on-1 mentorship sessions."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "I coordinated the cross-functional project workflow across business analysis, user experience, database architecture, and frontend implementation:",
+      "points": [
+        "Coordinated the business analysis flow, defining user personas, survey questions, and core problem-solution frameworks.",
+        "Designed UI/UX wireframes and user journeys for mentor discovery, scheduling calendar, and survey recommendation flows.",
+        "Architected relational database schemas in PostgreSQL to manage user authentication, mentor availability, and appointment sessions.",
+        "Developed interactive frontend components using React and Next.js for mentor dashboards and student booking views."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Successfully delivered and defended the final capstone at Techpreneur, producing a high-fidelity mentorship prototype that demonstrates how interactive digital sharing can bridge the gap between high school students and university life."
+    }
+  },
+  {
+    "id": 9,
+    "slug": "neurodrive-automotive-intelligence",
+    "title": "NeuroDrive — Automotive Consumer Market Intelligence",
+    "subtitle": "1st Place Winner — Techpreneur Bootcamp & RMA Cambodia Ideation Challenge",
+    "description": "An AI-powered market intelligence proof-of-concept replacing costly surveys with public web scraping and proxy variable modeling to predict automotive consumer behavior.",
+    "appUrl": "../../assets/pdf/neuroDrive_ideationChallenge.pdf",
+    "appCta": "View Presentation Deck (PDF)",
+    "appPrompt": "Explore the full award-winning Techpreneur Bootcamp & RMA Cambodia ideation presentation deck.",
+    "appTitle": "Ideation Challenge Deck (1st Place)",
+    "appIcon": "bi bi-file-earmark-pdf text-danger",
+    "pdfUrl": "../../assets/pdf/neuroDrive_ideationChallenge.pdf",
+    "pdfTitle": "Automobile Ideation Challenge Presentation",
+    "pdfSubtitle": "Gather & Gain Insights of Data Effectively and Automatedly using Data Scraping & AI",
+    "images": [
+      {
+        "url": "images/neroDrive.webp",
+        "title": "Automobile Ideation Challenge — Techpreneur & RMA Cambodia",
+        "caption": "Using automated multi-source data scraping and AI for automotive consumer demand prediction"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Traditional automotive market research relies heavily on slow, expensive manual surveys or hard-to-obtain dealership cooperation. Distributors and dealerships lack real-time, scalable visibility into consumer car preferences and regional market demand."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "During the Techpreneur Bootcamp & RMA Cambodia Ideation Challenge, our team set out to design NeuroDrive—an automated AI market intelligence proof-of-concept to collect and correlate automotive demand data without relying on direct dealership data or manual surveys."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "We architected an innovative data collection and machine learning framework:",
+      "points": [
+        "Replaced manual surveys with automated data scraping from public marketplace listings (Khmer24) and professional social signals (Facebook).",
+        "Modeled proxy variables (listing turnaround time, regional price distributions, demographic interests) to correlate car supply with buyer demand.",
+        "Designed clustering and text analysis models to segment target personas (luxury buyers, young enthusiasts, budget professionals).",
+        "Structured a sustainable and scalable business value proposition delivering continuous, cost-effective consumer insights."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Awarded 1st Place at the Techpreneur Bootcamp Ideation Challenge, successfully demonstrating how public data aggregation and AI predictive modeling can revolutionize automotive market research."
+    }
   }
 ]
