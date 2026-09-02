@@ -83,6 +83,10 @@ async function loadStarProjectData() {
         targetId = '2';
       } else if (currentPath.includes('chhnangkhmer')) {
         targetId = '6';
+      } else if (currentPath.includes('sementicanalysis') || currentPath.includes('sentimentanalysis') || currentPath.includes('sentiment')) {
+        targetId = '8';
+      } else if (currentPath.includes('ocr')) {
+        targetId = '4';
       }
     }
 
@@ -130,11 +134,15 @@ async function loadStarProjectData() {
 
     if (galleryWrapper && galleryGrid && Array.isArray(project.images) && project.images.length > 0) {
       galleryWrapper.classList.remove('d-none');
+      const isSingle = project.images.length === 1;
+      const colClass = isSingle ? 'col-12 col-lg-10' : (project.images.length === 2 ? 'col-md-6 col-12' : 'col-md-4 col-sm-6 col-12');
+      const cardClass = isSingle ? 'gallery-card single-feature' : 'gallery-card';
+
       galleryGrid.innerHTML = project.images
         .map(
           (img) => `
-          <div class="col-md-4 col-sm-6 col-12">
-            <div class="gallery-card">
+          <div class="${colClass}">
+            <div class="${cardClass}">
               <div class="gallery-img-wrapper">
                 <img src="${img.url}" alt="${img.title || project.title}" loading="lazy" />
               </div>

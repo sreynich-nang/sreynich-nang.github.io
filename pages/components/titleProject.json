@@ -25,19 +25,19 @@
   },
   {
     "id": 8,
-    "title": "NLP - Amazon Product Review Analysis with ML Classification",
+    "title": "NLP — Sentiment Analysis on Product Reviews",
     "category": "data",
-    "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=8"
+    "description": "Investigating the impact of text preprocessing (BoW, N-grams) across Logistic Regression, Naive Bayes, and KNN models for product review sentiment classification.",
+    "imageUrl": "pages/projects/images/sementicAnalysis.webp",
+    "exploreUrl": "pages/projects/sementicAnalysisNLP.html?id=8"
   },
   {
     "id": 4,
-    "title": "OCR + automated cleaning table data",
+    "title": "OCR & Automated Cleaning Table Data",
     "category": "data",
-    "description": "High-accuracy optical character recognition pipeline combined with automated tabular data cleaning.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=4"
+    "description": "A full-stack FastAPI tool with local OCR (Marker) extracting tabular PDF data and converting messy tables into structured tidy datasets.",
+    "imageUrl": "pages/projects/images/ocr.webp",
+    "exploreUrl": "pages/projects/OCR.html?id=4"
   },
   {
     "id": 1,

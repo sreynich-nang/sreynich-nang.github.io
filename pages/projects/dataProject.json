@@ -163,5 +163,81 @@
       "title": "The Result",
       "paragraph": "Successfully delivered and presented a high-fidelity, interactive prototype at Sisters of Code, providing a seamless browsing and ordering experience with pure client-side technologies."
     }
+  },
+  {
+    "id": 8,
+    "slug": "sentiment-analysis-nlp",
+    "title": "Sentiment Analysis on Product Reviews",
+    "subtitle": "Impact of Preprocessing Techniques on Machine Learning Models (Logistic Regression, Naive Bayes, KNN)",
+    "description": "A Year 4 NLP project investigating how text preprocessing techniques, BoW, and N-grams affect sentiment classification performance across multiple ML models.",
+    "appUrl": "https://github.com/sreynich-nang/Sentiment-Analysis-on-Product-Reviews/tree/master",
+    "appCta": "View on GitHub",
+    "appPrompt": "Explore the complete Jupyter notebooks, preprocessing pipelines, model training code, and evaluation metrics on GitHub.",
+    "appTitle": "Project Repository & Code",
+    "appIcon": "bi bi-github text-dark",
+    "images": [
+      {
+        "url": "images/sementicAnalysis.webp",
+        "title": "NLP Pipeline & Machine Learning Architecture",
+        "caption": "Text cleaning, tokenization, BoW & N-grams representation, multi-model training (Logistic Regression, Naive Bayes, KNN), and evaluation metrics"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Product reviews contain valuable customer opinions, but analyzing a large number of reviews manually is time-consuming. Our Year 4 NLP project focused on using machine learning to automatically classify product reviews into positive, negative, or neutral sentiments."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "Our task was to investigate whether text preprocessing techniques affect sentiment classification performance and to compare three machine learning models: Logistic Regression, Naive Bayes, and KNN."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "We collected product review data and performed basic text preprocessing, including tokenization and stopword removal. We then represented the text using Bag-of-Words (BoW) and N-grams, trained the three models, and evaluated them using Accuracy, Precision, Recall, and F1 Score."
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "We compared the performance of the models across the different preprocessing techniques and identified which combination produced better sentiment classification results. The project helped us understand how NLP preprocessing and machine learning models influence text classification performance."
+    }
+  },
+  {
+    "id": 4,
+    "slug": "ocr-transform2tidy",
+    "title": "OCR & Automated Tabular Data Cleaning",
+    "subtitle": "Full-Stack PDF Extraction and Transform2Tidy Engine with FastAPI & Local OCR",
+    "description": "A full-stack web application extracting tabular data from PDF/image documents with locally hosted OCR (Marker) and transforming wide messy tables into structured tidy datasets.",
+    "appUrl": "https://github.com/sreynich-nang/fullstack_pdf2md_transform2tidy",
+    "appCta": "View on GitHub",
+    "appPrompt": "Explore the complete full-stack codebase, FastAPI backend, local Marker OCR setup, and Transform2Tidy pipelines on GitHub.",
+    "appTitle": "Project Repository & Code",
+    "appIcon": "bi bi-github text-dark",
+    "images": [
+      {
+        "url": "images/ocr_backend_logical_flow.webp",
+        "title": "Full-Stack System Architecture & Logic Flow",
+        "caption": "React client layer, FastAPI gateway, local GPU Marker OCR extraction, and LLM-assisted Transform2Tidy processing pipeline"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Organizations frequently have valuable data trapped inside complex PDF documents and scanned images. Manually copying, cleaning, and reshaping messy tables into structured, analysis-ready formats is tedious and time-consuming."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "My goal was to build a full-stack application to automatically extract tabular data from PDFs and images using local open-source OCR models without paid external APIs, and transform them into clean datasets following Hadley Wickham’s Tidy Data principles."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "I conducted technical research and developed the pipeline from model evaluation to full-stack integration:",
+      "points": [
+        "Conducted a literature review and benchmarked open-source OCR engines (Marker vs. MinerU) on a local GPU server with zero external API dependencies.",
+        "Built a FastAPI backend pipeline to handle document uploads, parse PDF/images into Markdown, and extract raw CSV tables.",
+        "Engineered the Transform2Tidy automated workflow to convert multi-header and wide tables into standardized tidy data formats.",
+        "Developed an interactive Web UI for document uploads, live table previews, in-place edits, and one-click tidy CSV exports."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Delivered a working first-draft prototype for testing, successfully validating that local OCR models combined with LLM restructuring can eliminate recurring API costs and streamline messy document table transformation."
+    }
   }
 ]

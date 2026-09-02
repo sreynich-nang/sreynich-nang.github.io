@@ -281,9 +281,22 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.gallery-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+.gallery-card.single-feature {
+  max-width: 100%;
+}
+
+.gallery-card.single-feature .gallery-img-wrapper {
+  height: auto;
+  min-height: 280px;
+  max-height: 560px;
+  background-color: #ffffff;
+  padding: 0.75rem;
+}
+
+.gallery-card.single-feature img {
+  object-fit: contain;
+  height: auto;
+  max-height: 540px;
 }
 
 .gallery-img-wrapper {
