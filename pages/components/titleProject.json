@@ -1,12 +1,11 @@
 [
   {
-    "id": 1,
-    "title": "UniSeek (SDG Education MVP)",
+    "id": 6,
+    "title": "Chhnang Khmer at Sister of Code",
     "category": "system",
-    "description": "A 9-month MVP web app connecting Cambodian high school students with university mentors for scheduled one-on-one sessions. Handled BA, UI/UX, Frontend, Backend, and Database Design roles.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=1",
-    "details": "<h3>Project Overview</h3><p>UniSeek is a 9-month MVP initiative supporting the SDG goal in education. It is a web app that helps Cambodian high school students connect with university mentors through scheduled one-on-one sessions.</p><h3 class='mt-4 mb-3'>My Roles & Accomplishments:</h3><ul class='text-secondary'><li class='mb-2'><strong>Business Analyst:</strong> Using Trello, assisted in assigning tasks to teammates, helped define core problems and solutions, conducted user research, and designed surveys.</li><li class='mb-2'><strong>UX/UI Designer:</strong> Using Figma, mapped user journeys, designed wireframes, and designed the visual experience for the survey and booking schedules.</li><li class='mb-2'><strong>Frontend Developer:</strong> Using Next.js, built the mentor dashboard and survey page, defined the file structure, and managed state payloads.</li><li class='mb-2'><strong>Backend Developer:</strong> Using NestJS, developed logic to analyze survey results and generate a ranked recommendation list of top Cambodian universities.</li><li><strong>Database Designer:</strong> Using PostgreSQL, designed relational database schemas for the entire application.</li></ul>"
+    "description": "A responsive e-commerce web platform for authentic Khmer recipe kit delivery, featuring custom UI/UX design, dynamic JSON catalog, and client-side cart management.",
+    "imageUrl": "pages/projects/images/chhnangKhmer.webp",
+    "exploreUrl": "pages/projects/chhnangKhmer.html?id=6"
   },
   {
     "id": 2,
@@ -18,11 +17,19 @@
   },
   {
     "id": 3,
-    "title": "Major-Recommendation at Bamnang",
+    "title": "Major Recommendation at Bamnang",
     "category": "data",
     "description": "A smart recommendation engine helping students find matching majors based on interests and skills.",
     "imageUrl": "pages/projects/images/MCT1.webp",
     "exploreUrl": "pages/projects/MCT.html?id=3"
+  },
+  {
+    "id": 8,
+    "title": "NLP - Amazon Product Review Analysis with ML Classification",
+    "category": "data",
+    "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
+    "imageUrl": "assets/images/meme1.jpg",
+    "exploreUrl": "pages/projects/p1.html?id=8"
   },
   {
     "id": 4,
@@ -33,6 +40,15 @@
     "exploreUrl": "pages/projects/p1.html?id=4"
   },
   {
+    "id": 1,
+    "title": "UniSeek (SDG Education MVP)",
+    "category": "system",
+    "description": "A 9-month MVP web app connecting Cambodian high school students with university mentors for scheduled one-on-one sessions. Handled BA, UI/UX, Frontend, Backend, and Database Design roles.",
+    "imageUrl": "assets/images/meme1.jpg",
+    "exploreUrl": "pages/projects/p1.html?id=1",
+    "details": "<h3>Project Overview</h3><p>UniSeek is a 9-month MVP initiative supporting the SDG goal in education. It is a web app that helps Cambodian high school students connect with university mentors through scheduled one-on-one sessions.</p><h3 class='mt-4 mb-3'>My Roles & Accomplishments:</h3><ul class='text-secondary'><li class='mb-2'><strong>Business Analyst:</strong> Using Trello, assisted in assigning tasks to teammates, helped define core problems and solutions, conducted user research, and designed surveys.</li><li class='mb-2'><strong>UX/UI Designer:</strong> Using Figma, mapped user journeys, designed wireframes, and designed the visual experience for the survey and booking schedules.</li><li class='mb-2'><strong>Frontend Developer:</strong> Using Next.js, built the mentor dashboard and survey page, defined the file structure, and managed state payloads.</li><li class='mb-2'><strong>Backend Developer:</strong> Using NestJS, developed logic to analyze survey results and generate a ranked recommendation list of top Cambodian universities.</li><li><strong>Database Designer:</strong> Using PostgreSQL, designed relational database schemas for the entire application.</li></ul>"
+  },
+  {
     "id": 5,
     "title": "NextStep",
     "category": "system",
@@ -41,28 +57,12 @@
     "exploreUrl": "pages/projects/p1.html?id=5"
   },
   {
-    "id": 6,
-    "title": "Chhnang khmer",
-    "category": "system",
-    "description": "A cultural database and application focused on traditional Cambodian pottery and crafts.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=6"
-  },
-  {
     "id": 7,
     "title": "Voice recognition",
     "category": "data",
     "description": "Advanced speech-to-text processing system tailored for Khmer language and regional accents.",
     "imageUrl": "assets/images/meme1.jpg",
     "exploreUrl": "pages/projects/p1.html?id=7"
-  },
-  {
-    "id": 8,
-    "title": "NLP product review analysis with ML classification",
-    "category": "data",
-    "description": "Machine learning sentiment classification and topic modeling pipeline for product reviews.",
-    "imageUrl": "assets/images/meme1.jpg",
-    "exploreUrl": "pages/projects/p1.html?id=8"
   },
   {
     "id": 9,

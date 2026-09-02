@@ -81,6 +81,8 @@ async function loadStarProjectData() {
         targetId = '3';
       } else if (currentPath.includes('chatbot')) {
         targetId = '2';
+      } else if (currentPath.includes('chhnangkhmer')) {
+        targetId = '6';
       }
     }
 
@@ -103,17 +105,21 @@ async function loadStarProjectData() {
       subtitleEl.textContent = project.subtitle || project.description || '';
     }
 
-    // Populate CTA Download Banner
+    // Populate CTA Download / Action Banner
     const ctaWrapper = document.getElementById('blog-cta-wrapper');
     const ctaLink = document.getElementById('cta-link');
     const ctaPrompt = document.getElementById('cta-prompt');
     const ctaBtnText = document.getElementById('cta-btn-text');
+    const ctaTitle = document.getElementById('cta-title');
+    const ctaIcon = document.querySelector('#blog-cta-wrapper .cta-app-icon i');
 
     if (ctaWrapper && project.appUrl) {
       ctaWrapper.classList.remove('d-none');
       if (ctaLink) ctaLink.href = project.appUrl;
+      if (ctaTitle && project.appTitle) ctaTitle.textContent = project.appTitle;
       if (ctaPrompt && project.appPrompt) ctaPrompt.textContent = project.appPrompt;
       if (ctaBtnText && project.appCta) ctaBtnText.textContent = project.appCta;
+      if (ctaIcon && project.appIcon) ctaIcon.className = project.appIcon;
     } else if (ctaWrapper) {
       ctaWrapper.classList.add('d-none');
     }
@@ -143,6 +149,27 @@ async function loadStarProjectData() {
         .join('');
     } else if (galleryWrapper) {
       galleryWrapper.classList.add('d-none');
+    }
+
+    // Populate PDF Presentation Slide Deck (if present in project data & DOM)
+    const deckSection = document.getElementById('presentation-deck-section');
+    const deckContainer = document.getElementById('presentation-deck');
+    const pdfDownloadLink = document.getElementById('pdf-download-link');
+    const pdfSectionTitle = document.getElementById('pdf-section-title');
+    const pdfSectionSubtitle = document.getElementById('pdf-section-subtitle');
+
+    if (deckSection && deckContainer && project.pdfUrl) {
+      deckSection.classList.remove('d-none');
+      if (pdfDownloadLink) pdfDownloadLink.href = project.pdfUrl;
+      if (pdfSectionTitle && project.pdfTitle) pdfSectionTitle.textContent = project.pdfTitle;
+      if (pdfSectionSubtitle && project.pdfSubtitle) {
+        pdfSectionSubtitle.innerHTML = `<i class="bi bi-info-circle me-1 text-primary"></i> ${project.pdfSubtitle}`;
+      }
+      if (typeof slidePlayer !== 'undefined') {
+        slidePlayer.init(project.pdfUrl, 'presentation-deck');
+      }
+    } else if (deckSection) {
+      deckSection.classList.add('d-none');
     }
 
     // STAR Section definitions & their component file paths
@@ -305,3 +332,172 @@ function initStarScrollSpy() {
   window.addEventListener('scroll', updateActiveMarker, { passive: true });
   updateActiveMarker();
 }
+
+// ==========================================================================
+// Slide Deck Presentation Engine (PDF.js Canvas & Interactive Controls)
+// ==========================================================================
+const slidePlayer = {
+  pdfDoc: null,
+  pageNum: 1,
+  pageRendering: false,
+  pageNumPending: null,
+  zoomScale: 2.0, // High DPI rendering for crisp typography
+  canvas: null,
+  ctx: null,
+  container: null,
+
+  init(pdfUrl, containerId) {
+    if (typeof pdfjsLib === 'undefined') {
+      console.warn('PDF.js library is not loaded. Skipping slide player initialization.');
+      return;
+    }
+
+    // Configure PDF.js worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    this.container = document.getElementById(containerId);
+    if (!this.container) return;
+
+    this.canvas = this.container.querySelector('.presentation-canvas');
+    if (!this.canvas) return;
+    this.ctx = this.canvas.getContext('2d');
+
+    const loader = this.container.querySelector('.presentation-loader');
+    if (loader) loader.style.display = 'block';
+
+    pdfjsLib
+      .getDocument(pdfUrl)
+      .promise.then((pdf) => {
+        this.pdfDoc = pdf;
+        if (loader) loader.style.display = 'none';
+        this.buildProgressTicks(pdf.numPages);
+        this.renderPage(this.pageNum);
+      })
+      .catch((err) => {
+        console.error('Error loading presentation PDF:', err);
+        if (loader) {
+          loader.innerHTML = `
+            <div class="text-danger small p-3 bg-dark rounded">
+              <i class="bi bi-exclamation-triangle-fill me-1"></i> Failed to render PDF presentation.
+              <div class="mt-2"><a href="${pdfUrl}" target="_blank" class="btn btn-outline-light btn-sm">Open File Directly</a></div>
+            </div>
+          `;
+        }
+      });
+
+    // Keyboard listener for Left / Right arrow navigation
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') this.prevPage();
+      else if (e.key === 'ArrowRight') this.nextPage();
+    });
+  },
+
+  buildProgressTicks(total) {
+    const track = this.container.querySelector('.presentation-progress-track');
+    if (!track) return;
+    track.innerHTML = '';
+    for (let i = 1; i <= total; i++) {
+      const tick = document.createElement('div');
+      tick.className = 'presentation-tick' + (i === 1 ? ' active' : '');
+      tick.title = `Slide ${i}`;
+      tick.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.goToPage(i);
+      });
+      track.appendChild(tick);
+    }
+  },
+
+  renderPage(num) {
+    this.pageRendering = true;
+    this.pdfDoc.getPage(num).then((page) => {
+      const viewport = page.getViewport({ scale: this.zoomScale });
+      this.canvas.height = viewport.height;
+      this.canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: this.ctx,
+        viewport: viewport,
+      };
+
+      const renderTask = page.render(renderContext);
+      renderTask.promise.then(() => {
+        this.pageRendering = false;
+        if (this.pageNumPending !== null) {
+          this.renderPage(this.pageNumPending);
+          this.pageNumPending = null;
+        }
+      });
+    });
+
+    this.updateControlsUI(num);
+  },
+
+  queueRenderPage(num) {
+    if (this.pageRendering) {
+      this.pageNumPending = num;
+    } else {
+      this.renderPage(num);
+    }
+  },
+
+  prevPage() {
+    if (!this.pdfDoc || this.pageNum <= 1) return;
+    this.pageNum--;
+    this.queueRenderPage(this.pageNum);
+  },
+
+  nextPage() {
+    if (!this.pdfDoc || this.pageNum >= this.pdfDoc.numPages) return;
+    this.pageNum++;
+    this.queueRenderPage(this.pageNum);
+  },
+
+  goToPage(num) {
+    if (!this.pdfDoc || num < 1 || num > this.pdfDoc.numPages) return;
+    this.pageNum = num;
+    this.queueRenderPage(this.pageNum);
+  },
+
+  updateControlsUI(num) {
+    if (!this.container || !this.pdfDoc) return;
+    const total = this.pdfDoc.numPages;
+
+    const counter = this.container.querySelector('.presentation-counter');
+    if (counter) counter.innerText = `${num} / ${total}`;
+
+    const prevBtn = this.container.querySelector('.btn-prev-slide');
+    if (prevBtn) prevBtn.disabled = num <= 1;
+
+    const nextBtn = this.container.querySelector('.btn-next-slide');
+    if (nextBtn) nextBtn.disabled = num >= total;
+
+    // Highlight active and past progress ticks
+    const ticks = this.container.querySelectorAll('.presentation-tick');
+    ticks.forEach((tick, idx) => {
+      const slideIndex = idx + 1;
+      tick.classList.remove('active', 'completed');
+      if (slideIndex === num) {
+        tick.classList.add('active');
+      } else if (slideIndex < num) {
+        tick.classList.add('completed');
+      }
+    });
+  },
+
+  toggleFullscreen() {
+    const viewer = this.container.querySelector('.presentation-viewer-container');
+    if (!viewer) return;
+
+    if (!document.fullscreenElement) {
+      if (viewer.requestFullscreen) viewer.requestFullscreen();
+      else if (viewer.webkitRequestFullscreen) viewer.webkitRequestFullscreen();
+      else if (viewer.msRequestFullscreen) viewer.msRequestFullscreen();
+    } else {
+      if (document.exitFullscreen) document.exitFullscreen();
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+  },
+};
+

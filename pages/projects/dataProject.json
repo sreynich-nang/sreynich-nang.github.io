@@ -104,5 +104,64 @@
       "title": "The Result",
       "paragraph": "Students now receive clear, personalized recommendations that explain why certain majors fit them, helping them make confident, informed decisions about their university education."
     }
+  },
+  {
+    "id": 6,
+    "slug": "chhnangkhmer",
+    "title": "Chhnang Khmer — Recipe Kit Delivery Web App",
+    "subtitle": "An authentic, culturally inspired e-commerce platform allowing customers to order pre-portioned Khmer recipe kits with step-by-step guides.",
+    "description": "An individual capstone project at Sisters of Code promoting Cambodian culinary heritage with client-side JSON data handling, interactive cart, and responsive UX/UI.",
+    "appUrl": "https://sreynich-nang.github.io/chhnang-khmer/",
+    "appCta": "Explore Live Web Demo",
+    "appPrompt": "Experience the live, interactive recipe kit platform hosted on GitHub Pages.",
+    "appTitle": "Live Prototype Demo",
+    "appIcon": "bi bi-globe-americas text-primary",
+    "pdfUrl": "../../assets/pdf/chhnangKhmer.pdf",
+    "pdfTitle": "UX/UI Strategy & Frontend Architecture",
+    "pdfSubtitle": "Official Presentation Deck for Sisters of Code Capstone",
+    "images": [
+      {
+        "url": "images/chhnangkhmer1.webp",
+        "title": "Culinary Hero & Brand Identity",
+        "caption": "Immersive landing page celebrating authentic Khmer recipes with prominent call-to-actions"
+      },
+      {
+        "url": "images/chhnangkhmer2.webp",
+        "title": "Storytelling & Brand Mission",
+        "caption": "Highlighting the mission to make cooking traditional Khmer dishes accessible with less prep time and zero food waste"
+      },
+      {
+        "url": "images/chhnangkhmer3.webp",
+        "title": "Recipe Catalog & Dynamic Filtering",
+        "caption": "Interactive multi-criteria filtering by category, cuisine, diet set, and price range"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Many people love authentic Khmer dishes but find traditional cooking time-consuming due to sourcing and prepping ingredients. Chhnang Khmer was envisioned as a recipe kit delivery platform to make cooking heritage food at home convenient and accessible."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "As an individual capstone at Sisters of Code, my goal was to design and build a multi-page responsive web app using HTML5, CSS3, Bootstrap 5, and pure JavaScript with zero backend dependencies.",
+      "points": [
+        "Craft a culturally inspired UI/UX design with custom typography and color tokens.",
+        "Implement dynamic client-side filtering, recipe details, cart handling, and order tracking.",
+        "Manage application state and mock catalog data using JSON and localStorage."
+      ]
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "I developed the frontend architecture end-to-end, combining reusable layout components with dynamic client-side JavaScript logic.",
+      "points": [
+        "Designed responsive UI layouts across 8+ pages using Bootstrap 5 and an 8px spatial grid.",
+        "Built dynamic DOM rendering for recipe kits, dietary filters, and nutrition details from JSON data.",
+        "Implemented interactive shopping cart state and checkout validations with localStorage persistence.",
+        "Created an interactive order tracking timeline to simulate a complete customer journey."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Successfully delivered and presented a high-fidelity, interactive prototype at Sisters of Code, providing a seamless browsing and ordering experience with pure client-side technologies."
+    }
   }
 ]
