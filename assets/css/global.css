@@ -66,6 +66,21 @@ body {
   color: #ffffff;
 }
 
+.btn-outline-secondary {
+  color: #475569;
+  border-color: #cbd5e1;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(101, 166, 240, 0.25);
+}
+
 .social-icon {
   color: #e2e8f0;
   font-size: 1.8rem;
