@@ -381,5 +381,69 @@
       "title": "The Result",
       "paragraph": "Awarded 1st Place at the Techpreneur Bootcamp Ideation Challenge, successfully demonstrating how public data aggregation and AI predictive modeling can revolutionize automotive market research."
     }
+  },
+  {
+    "id": 10,
+    "slug": "nextstep",
+    "title": "NextStep — Student Journeys, University Life & Career Guidance",
+    "subtitle": "A collaborative student storytelling and mentorship platform built as a team capstone project at Sister of Code.",
+    "description": "Designed and developed with responsive HTML5, CSS3, and Bootstrap, NextStep empowers Cambodian students to share real-life academic journeys, explore scholarship guides, and structure personal experiences using interactive story workbenches.",
+    "appUrl": "https://sreynich-nang.github.io/frontend-team1-NEXTSTEP/",
+    "appCta": "Explore Live Web Demo",
+    "appPrompt": "Experience the live, interactive NextStep student journey platform hosted on GitHub Pages.",
+    "appTitle": "Live Web Platform",
+    "appIcon": "bi bi-globe-americas text-primary",
+    "images": [
+      {
+        "url": "images/nextstep1.webp",
+        "title": "Landing Hero & Platform Mission",
+        "caption": "Immersive welcome banner with clear CTAs and introduction to NextStep's mission in connecting student journeys"
+      },
+      {
+        "url": "images/nextstep2.webp",
+        "title": "Story Reading Experience",
+        "caption": "In-depth article view featuring author profile, interactive applause/save metrics, structured tabs, and rich multimedia content"
+      },
+      {
+        "url": "images/nextstep3.webp",
+        "title": "Guided Storytelling Format Selector",
+        "caption": "Structured templates guiding students to share journeys in university life or scholarship applications"
+      },
+      {
+        "url": "images/nextstep4.webp",
+        "title": "Phase 1: Story Inventory Workbench",
+        "caption": "Interactive reflection workspace for capturing starting points, decision-making moments, expectations, and media attachments"
+      },
+      {
+        "url": "images/nextstep5.webp",
+        "title": "Phase 2: Narrative Timeline Configuration",
+        "caption": "Year-by-year milestone organizer with date pickers, growth reflections, dynamic additions, and progress saving"
+      }
+    ],
+    "situation": {
+      "title": "The Situation",
+      "paragraph": "Many high school graduates and university students in Cambodia navigate higher education decisions without access to authentic, relatable guidance from seniors who recently faced the same transitions. While casual advice exists on social media, real student stories remain scattered, unverified, and hard to search. Furthermore, students wishing to share their own experiences often struggle without a guided structure to articulate their transformation and lessons learned."
+    },
+    "task": {
+      "title": "The Task",
+      "paragraph": "As a collaborative team capstone project at Sister of Code, our mission was to conceptualize, design, and develop a fully responsive web platform—NextStep—to bridge this mentorship gap. Our objectives included creating a welcoming brand identity in Figma, implementing a clean and accessible UI using modern color theory, and building responsive frontend web pages using HTML5, CSS3, and Bootstrap 5 with an interactive multi-phase story authoring workbench."
+    },
+    "action": {
+      "title": "The Action",
+      "paragraph": "Working as an agile frontend team, we designed and engineered the platform from initial UX wireframing to live deployment:",
+      "points": [
+        "Conducted UX research and wireframed user journeys in Figma, applying modern color palettes, typography hierarchy, and spacing tokens.",
+        "Built responsive frontend layouts using semantic HTML5 and Bootstrap 5, customized with dedicated CSS for cohesive styling across all screen sizes.",
+        "Created an intuitive Story Catalog featuring category-based filtering across university life, scholarship journeys, and academic milestones.",
+        "Developed a rich article reading experience with author profiles, engagement counters (applause, bookmarks), and organized story tabs.",
+        "Engineered Phase 1 of the Story Workbench ('Story Inventory'), enabling contributors to record personal milestones, mindset shifts, and file attachments.",
+        "Implemented Phase 2 ('Narrative Timeline Configuration'), allowing writers to map year-by-year reflections with interactive date pickers and dynamic cards.",
+        "Collaborated using Git and GitHub for version control, conducting peer code reviews and deploying the final platform to GitHub Pages."
+      ]
+    },
+    "result": {
+      "title": "The Result",
+      "paragraph": "Successfully launched the NextStep web platform on GitHub Pages with responsive mobile and desktop support. The project was presented at the Sister of Code showcase, receiving strong praise for its thoughtful UX/UI flow, interactive authoring workbench, and community-first empowerment for Cambodian students."
+    }
   }
 ]

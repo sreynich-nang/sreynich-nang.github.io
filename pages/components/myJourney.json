@@ -28,6 +28,29 @@
   },
   {
     "id": 2,
+    "subtitle": "Website Development, and UX/UI Design",
+    "title": "Website Development & UX/UI Design",
+    "place": "Sister of Code",
+    "duration": "Apr 2026 - Aug 2026",
+    "achievements": [
+      "Learned concept ideas of color theory and practical UI/UX design in Framer and Figma",
+      "Hands-on beyond basics in practical concepts of HTML, CSS, and Bootstrap for responsive design",
+      "Completed responsive static websites for Team Project (NextStep), Individual Project (Chhnang Khmer), and Portfolio"
+    ],
+    "tech": "HTML, CSS, Bootstrap, Figma, Framer",
+    "badges": [
+      {
+        "text": "NextStep (Team Project)",
+        "url": "pages/projects/nextstep.html?id=10"
+      },
+      {
+        "text": "Chhnang Khmer (Individual Project)",
+        "url": "pages/projects/chhnangKhmer.html?id=6"
+      }
+    ]
+  },
+  {
+    "id": 3,
     "subtitle": "Public Sector Data Science",
     "title": "Junior Data Scientist",
     "place": "Ministry of Economy and Finance",
@@ -45,7 +68,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "subtitle": "Bachelor of Applied Mathematics and Statistics, majoring in Data Science",
     "title": "Journey as an Engineering Student",
     "place": "Institute of Technology of Cambodia (ITC)",
@@ -83,7 +106,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "subtitle": "Techpreneur Bootcamp by Dichi Academy and USAID Fully Funded",
     "title": "Journey as a Full-Stack-Development Student",
     "place": "Techpreneur Bootcamp",
@@ -107,7 +130,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "subtitle": "Bachelor of Professional Communication",
     "title": "Life at Institute of Foreign Language (IFL)",
     "place": "Institute of Foreign Languages (IFL)",
@@ -129,7 +152,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "subtitle": "Volunteer & Community Service",
     "title": "Volunteer Coordinator",
     "place": "Youth Empowering Society (YES)",

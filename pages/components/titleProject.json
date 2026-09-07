@@ -8,6 +8,14 @@
     "exploreUrl": "pages/projects/chhnangKhmer.html?id=6"
   },
   {
+    "id": 10,
+    "title": "NextStep at Sister of Code",
+    "category": "system",
+    "description": "A collaborative student storytelling and mentorship platform empowering Cambodian students to share university life stories, scholarship journeys, and career guidance with interactive story workbenches.",
+    "imageUrl": "pages/projects/images/nextstep.webp",
+    "exploreUrl": "pages/projects/nextstep.html?id=10"
+  },
+  {
     "id": 2,
     "title": "Chatbot at Bamnang",
     "category": "data",

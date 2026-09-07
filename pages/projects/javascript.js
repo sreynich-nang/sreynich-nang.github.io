@@ -93,6 +93,8 @@ async function loadStarProjectData() {
         targetId = '1';
       } else if (currentPath.includes('neurodrive') || currentPath.includes('nerodrive')) {
         targetId = '9';
+      } else if (currentPath.includes('nextstep')) {
+        targetId = '10';
       }
     }
 
