@@ -14,15 +14,15 @@
     "badges": [
       {
         "text": "Recommendation Engine Project",
-        "url": "pages/journey/p1_graduate.html#working-place"
+        "url": "pages/projects/MCT.html?id=3"
       },
       {
         "text": "Python Trainer at Bamnang",
-        "url": "pages/journey/p1_graduate.html#training-python"
+        "url": "pages/sharing/index.html"
       },
       {
         "text": "Chatbot",
-        "url": "pages/journey/p1_graduate.html#working-place"
+        "url": "pages/projects/chatbot.html?id=2"
       }
     ]
   },
@@ -63,7 +63,7 @@
     "badges": [
       {
         "text": "Document Extraction (modern OCR)",
-        "url": "pages/journey/p1_graduate.html#mef"
+        "url": "pages/projects/OCR.html?id=4"
       }
     ]
   },

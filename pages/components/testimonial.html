@@ -1,16 +1,103 @@
+<style>
+  .sec-testimonials-relative {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .sec-testimonials-item {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .sec-testimonials-text {
+    font-style: italic;
+    color: #475569;
+    font-size: 1.08rem;
+    line-height: 1.8;
+    text-wrap: balance;
+    margin: 0 auto;
+    max-width: 840px;
+  }
+  .sec-testimonials-nav-btn {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #3b82f6;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+  .sec-testimonials-nav-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+    transform: translateY(-50%) scale(1.08);
+  }
+  .sec-testimonials-prev {
+    left: -22px;
+  }
+  .sec-testimonials-next {
+    right: -22px;
+  }
+  @media (max-width: 992px) {
+    .sec-testimonials-prev {
+      left: 0;
+    }
+    .sec-testimonials-next {
+      right: 0;
+    }
+    .sec-testimonials-nav-btn {
+      width: 38px;
+      height: 38px;
+      font-size: 0.95rem;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(4px);
+    }
+  }
+  @media (max-width: 576px) {
+    .sec-testimonials-text {
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+    .sec-testimonials-prev {
+      left: -6px;
+    }
+    .sec-testimonials-next {
+      right: -6px;
+    }
+  }
+</style>
+
 <div class="container">
-  <h2 class="fw-bold display-6 text-center mb-5">Testimonial</h2>
+  <h2 class="fw-bold display-6 text-center mb-5">Testimonials</h2>
   
-  <div class="sec-testimonials-item">
-    <p class="sec-testimonials-text">
-      <i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-left"></i>
-      <span id="testimonial-text"></span>
-    </p>
-    <div class="sec-testimonials-img mx-auto d-flex align-items-center justify-content-center bg-light text-secondary">
-      <img id="testimonial-img" src="" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+  <div class="sec-testimonials-relative">
+    <!-- Prev / Next Navigation buttons -->
+    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous Testimonial">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next Testimonial">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <div class="swiper testimonialSwiper px-md-4">
+      <div class="swiper-wrapper" id="testimonials-wrapper">
+        <!-- Dynamic slides will load here -->
+      </div>
+      <div class="swiper-pagination position-relative mt-4"></div>
     </div>
-    <h3 id="testimonial-name" class="sec-testimonials-name"></h3>
-    <h4 id="testimonial-role" class="sec-testimonials-title"></h4>
   </div>
 </div>
 
@@ -26,42 +113,79 @@
         return response.json();
       })
       .then(data => {
-        if (data && data.length > 0) {
-          const testimonial = data[0];
-          
-          // Format paragraph breaks
-          const formattedText = testimonial.text.replace(/\n\n/g, '<br><br>');
-          
-          const textEl = document.getElementById('testimonial-text');
-          if (textEl) {
-            // Keep last word and quote icon on same line to prevent lone quote wrapping
-            const words = formattedText.split(' ');
-            if (words.length > 1) {
-              const lastWord = words.pop();
-              const textWithoutLastWord = words.join(' ');
-              textEl.innerHTML = textWithoutLastWord + ` <span class="text-nowrap">${lastWord}<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-right"></i></span>`;
-            } else {
-              textEl.innerHTML = formattedText + `<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-right"></i>`;
-            }
-          }
-          
-          const nameEl = document.getElementById('testimonial-name');
-          if (nameEl) {
-            nameEl.textContent = testimonial.name;
-          }
-          
-          const roleEl = document.getElementById('testimonial-role');
-          if (roleEl) {
-            roleEl.textContent = testimonial.role;
-          }
+        const wrapper = document.getElementById('testimonials-wrapper');
+        if (!wrapper || !data || data.length === 0) return;
 
-          const imgEl = document.getElementById('testimonial-img');
-          if (imgEl && testimonial.image) {
-            const imgPrefix = isSubpage ? '../../' : '';
-            imgEl.src = imgPrefix + testimonial.image;
-            imgEl.alt = testimonial.name;
+        wrapper.innerHTML = data.map(testimonial => {
+          const paragraphs = testimonial.text.split('\n\n').filter(p => p.trim().length > 0);
+
+          const paragraphsHtml = paragraphs.map((para, pIdx) => {
+            // Prevent orphan word on last line by binding the trailing words with &nbsp;
+            const words = para.trim().split(/\s+/);
+            let processedPara = para;
+            if (words.length >= 3) {
+              const lastThree = words.slice(-3).join('&nbsp;');
+              processedPara = words.slice(0, -3).join(' ') + ' ' + lastThree;
+            } else if (words.length === 2) {
+              processedPara = words.join('&nbsp;');
+            }
+
+            const isFirst = pIdx === 0;
+            const isLast = pIdx === paragraphs.length - 1;
+
+            return `
+              <p class="sec-testimonials-text ${isLast ? 'mb-4' : 'mb-3'}">
+                ${isFirst ? '<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-left"></i>' : ''}
+                <span>${processedPara}</span>
+                ${isLast ? '<i class="bi bi-quote sec-testimonials-quote sec-testimonials-quote-right"></i>' : ''}
+              </p>
+            `;
+          }).join('');
+
+          const imgPrefix = isSubpage ? '../../' : '';
+          const imgSrc = testimonial.image ? (imgPrefix + testimonial.image) : '';
+
+          return `
+            <div class="swiper-slide h-auto">
+              <div class="sec-testimonials-item">
+                ${paragraphsHtml}
+                <div class="sec-testimonials-img mx-auto d-flex align-items-center justify-content-center bg-light text-secondary">
+                  <img src="${imgSrc}" alt="${testimonial.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                </div>
+                <h3 class="sec-testimonials-name">${testimonial.name}</h3>
+                <h4 class="sec-testimonials-title">${testimonial.role}</h4>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        function initTestimonialSwiper() {
+          if (typeof Swiper !== 'undefined') {
+            new Swiper(".testimonialSwiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: data.length > 1,
+              grabCursor: true,
+              speed: 800,
+              autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              },
+              navigation: {
+                nextEl: ".sec-testimonials-next",
+                prevEl: ".sec-testimonials-prev",
+              },
+              pagination: {
+                el: ".testimonialSwiper .swiper-pagination",
+                clickable: true,
+              },
+            });
+          } else {
+            setTimeout(initTestimonialSwiper, 100);
           }
         }
+        initTestimonialSwiper();
       })
       .catch(error => {
         console.error('Error loading testimonial content:', error);
