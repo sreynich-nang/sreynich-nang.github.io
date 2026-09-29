@@ -17,15 +17,32 @@
   color: #cbd5e1 !important;
 }
 
+.sec-home .btn-hero-primary {
+  background-color: #93c5fd;
+  color: #0f172a;
+  border: 1px solid #93c5fd;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sec-home .btn-hero-primary:hover {
+  background-color: #93c5fd;
+  border-color: #93c5fd;
+  color: #0f172a;
+  transform: translateY(-3px) scale(1.03);
+}
+
 .sec-home .btn-outline-primary {
   color: #ffffff;
   border-color: #93c5fd;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sec-home .btn-outline-primary:hover {
   background: #93c5fd;
   color: #0f172a;
   border-color: #93c5fd;
+  transform: translateY(-3px) scale(1.03);
 }
 
 .sec-home::before {
