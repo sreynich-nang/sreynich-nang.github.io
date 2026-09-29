@@ -1,11 +1,1202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milestones & Achievements — Nang Sreynich</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <!-- Custom Achievement Scrollytelling CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+
+  <body class="achievement-page-main">
+    <!-- Navbar Component Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Header -->
+    <header class="sec-achievement-hero text-center">
+      <div class="container">
+        <h1 class="mb-3">Story in My Achievements</h1>
+        <p class="lead">
+          Nine pivotal chapters in data engineering, artificial intelligence, youth leadership, frontend craft, and global exchange.
+        </p>
+
+        <!-- Horizontal Quick Jump Navigation Pills -->
+        <nav class="achievement-nav-pills" aria-label="Story navigation">
+          <a href="#bamnang" class="achievement-pill-btn active" data-index="1" data-slug="bamnang">
+            <span class="pill-num">01</span> Bamnang
+          </a>
+          <a href="#mef" class="achievement-pill-btn" data-index="2" data-slug="mef">
+            <span class="pill-num">02</span> MEF
+          </a>
+          <a href="#python-trainer" class="achievement-pill-btn" data-index="3" data-slug="python-trainer">
+            <span class="pill-num">03</span> Python Trainer
+          </a>
+          <a href="#yes-leader" class="achievement-pill-btn" data-index="4" data-slug="yes-leader">
+            <span class="pill-num">04</span> YES Leader
+          </a>
+          <a href="#sister-of-code" class="achievement-pill-btn" data-index="5" data-slug="sister-of-code">
+            <span class="pill-num">05</span> Sister of Code
+          </a>
+          <a href="#techpreneur" class="achievement-pill-btn" data-index="6" data-slug="techpreneur">
+            <span class="pill-num">06</span> Techpreneur
+          </a>
+          <a href="#aws-cloud" class="achievement-pill-btn" data-index="7" data-slug="aws-cloud">
+            <span class="pill-num">07</span> AWS Cloud
+          </a>
+          <a href="#korea-camp" class="achievement-pill-btn" data-index="8" data-slug="korea-camp">
+            <span class="pill-num">08</span> Korea Camp
+          </a>
+          <a href="#career-talk" class="achievement-pill-btn" data-index="9" data-slug="career-talk">
+            <span class="pill-num">09</span> Career Talk
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Scrollytelling Split Container -->
+    <main class="container scrollytelling-container">
+      <div class="row g-4 g-xl-5 position-relative">
+        
+        <!-- LEFT COLUMN: Scrollable Narrative Stories -->
+        <div class="col-lg-6 col-xl-6">
+          <ol class="achievement-story-list list-unstyled" id="achievement-list">
+
+            <!-- STORY 01: Bamnang -->
+            <li class="achievement-story-item is-active" id="story-1" data-index="1" data-slug="bamnang">
+              <span id="bamnang" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">01</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 1: Bamnang Holdings">
+                  <h2 class="story-title">Bamnang Holdings</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="bamnang" title="Copy link to Bamnang Holdings" aria-label="Copy direct link to Bamnang Holdings">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Data &amp; Applied ML Engineer</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">Feb 2026 – Present</span>
+                <span class="story-tag-pill">AI &amp; Recommendation</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Empowering thousands of students through bilingual conversational AI and intelligent career recommendation systems.
+                </p>
+                <p class="story-narrative">
+                  High school and university students often struggle to discover the right academic path because educational resources are fragmented across platforms and languages. At Bamnang, I architected and built the end-to-end backend for the <strong>Major Compass Test (MCT)</strong>—an intelligent recommendation engine that analyzes student aptitudes and interests to match them with university majors. In parallel, I developed <strong>PiPi</strong>, a bilingual multi-agent AI chatbot capable of understanding queries in English, Khmer, and Khmer Latin to provide instant answers on universities and scholarships with 98% accuracy.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Designed and deployed the Major Recommendation Engine (MCT) scoring algorithms and backend APIs.</li>
+                  <li>Engineered a bilingual Multi-Agent RAG system handling Khmer script, Khmer Latin, and English queries.</li>
+                  <li>Built the Bamnang User Intelligence executive dashboard utilizing PostgreSQL, PGVector, and Metabase.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PGVector</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                  <span class="tech-tag">LangChain</span>
+                  <span class="tech-tag">Metabase</span>
+                  <span class="tech-tag">FastAPI</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../projects/chatbot.html?id=2" class="story-btn story-btn-primary">
+                    <i class="bi bi-robot"></i> PiPi Chatbot Case Study
+                  </a>
+                  <a href="../projects/MCT.html?id=3" class="story-btn story-btn-outline">
+                    <i class="bi bi-compass"></i> Major Compass Test
+                  </a>
+                  <a href="https://app.bamnang.com/" target="_blank" rel="noopener noreferrer" class="story-btn story-btn-outline">
+                    <i class="bi bi-box-arrow-up-right"></i> Bamnang App
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase (Visible on < lg screens) -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-1">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/01-bamnang-1.webp" alt="PiPi Chatbot at Bamnang" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/01-bamnang-2.webp" alt="Major Compass Test MCT" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="2">
+                          <img src="assets/images/01-bamnang-3.webp" alt="Bamnang Recommendation Engine" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                        <span class="slider-dot" data-slide-to="2"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 02: MEF -->
+            <li class="achievement-story-item" id="story-2" data-index="2" data-slug="mef">
+              <span id="mef" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">02</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 2: Ministry of Economy and Finance">
+                  <h2 class="story-title">Ministry of Economy &amp; Finance</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="mef" title="Copy link to Ministry of Economy & Finance" aria-label="Copy direct link to Ministry of Economy & Finance">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Junior Data Scientist</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">Aug 2025 – Jan 2026</span>
+                <span class="story-tag-pill">Public Sector &amp; OCR</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Transforming macroeconomic publications and scanned budgets into structured, analytics-ready tidy data.
+                </p>
+                <p class="story-narrative">
+                  Crucial macroeconomic reports and public sector budgets are often published as locked scanned PDFs and complex tables with merged headers. At the Ministry of Economy and Finance (MEF), I engineered an automated, modern Document Extraction system leveraging Datalab/Marker to extract tabular structures and text from scanned PDF reports. To solve structural anomalies, I designed a pipeline powered by LLM services to clean, normalize, and validate messy extracted outputs into structured datasets based on Hadley Wickham’s <strong>Tidy Data</strong> principles.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Engineered automated modern OCR table extraction pipeline converting complex PDF reports to structured data.</li>
+                  <li>Implemented LLM validation pipelines to resolve merged headers, footnotes, and multi-currency formats.</li>
+                  <li>Standardized macroeconomic data workflows according to Tidy Data principles for downstream economic modeling.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Datalab / Marker</span>
+                  <span class="tech-tag">LLM Normalization</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">Tidy Data</span>
+                  <span class="tech-tag">Streamlit</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../projects/OCR.html?id=4" class="story-btn story-btn-primary">
+                    <i class="bi bi-file-earmark-text"></i> Document Extraction Project
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-2">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/02-mef-1.webp" alt="Document Extraction at MEF" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/02-mef-2.webp" alt="Modern OCR Logical Architecture" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 03: Python Trainer -->
+            <li class="achievement-story-item" id="story-3" data-index="3" data-slug="python-trainer">
+              <span id="python-trainer" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">03</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 3: Python Trainer">
+                  <h2 class="story-title">Python Trainer</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="python-trainer" title="Copy link to Python Trainer" aria-label="Copy direct link to Python Trainer">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Lead Python Instructor &amp; Mentor</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">2025 – 2026</span>
+                <span class="story-tag-pill">Tech Education</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Demystifying programming fundamentals and empowering learners to build real tools and automation scripts.
+                </p>
+                <p class="story-narrative">
+                  Believing that programming literacy should be welcoming rather than intimidating, I authored a practical, beginner-friendly Python training program for community members and aspiring developers at Bamnang Housing. I designed structured slide decks and real-world exercises covering syntax, conditional logic, loops, functions, and file handling. During weekly workshops, I guided students through building their own automation scripts, debugging challenges, and discovering the joy of problem-solving with Python.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Authored 10+ comprehensive training slide decks and practical weekend coding exercises.</li>
+                  <li>Trained and mentored 40+ enthusiastic learners with zero prior coding background.</li>
+                  <li>Guided students through writing automation scripts, data parsers, and web scraping prototypes.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Jupyter</span>
+                  <span class="tech-tag">Interactive Slides</span>
+                  <span class="tech-tag">Automation</span>
+                  <span class="tech-tag">VS Code</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../sharing/index.html" class="story-btn story-btn-primary">
+                    <i class="bi bi-file-earmark-slides"></i> Python Slide Decks
+                  </a>
+                  <a href="../sharing/main_youtubeCourse.html" class="story-btn story-btn-outline">
+                    <i class="bi bi-youtube"></i> Video Lessons
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-3">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/03-python-1.jpg" alt="Python Workshop" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/03-python-2.webp" alt="Course Curriculum and Slide Deck" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 04: YES Leader -->
+            <li class="achievement-story-item" id="story-4" data-index="4" data-slug="yes-leader">
+              <span id="yes-leader" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">04</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 4: YES Leader">
+                  <h2 class="story-title">YES Leader</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="yes-leader" title="Copy link to YES Leader" aria-label="Copy direct link to YES Leader">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Volunteer Coordinator &amp; Team Leader</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">Oct 2024 – May 2025</span>
+                <span class="story-tag-pill">Community &amp; Leadership</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Igniting young imaginations through Scratch block-based visual programming and creative computational thinking.
+                </p>
+                <p class="story-narrative">
+                  As Volunteer Coordinator for Youth Empowering Society (YES), I led a vibrant team of volunteer trainers delivering weekend programming workshops for young students at the Phnom Penh Teacher Education College (PTEC). We created a playful curriculum using Scratch, introducing computational thinking, logic branching, and game design. Watching students with no prior computer access proudly present their own animated stories and games was deeply inspiring. Our team's dedication and social impact were officially recognized with a <strong>Certificate of Honor</strong> from the PTEC Director.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Coordinated a team of 10+ volunteer trainers conducting weekly hands-on programming labs.</li>
+                  <li>Designed visual Scratch lessons introducing loops, variables, and event-driven interactivity.</li>
+                  <li>Awarded Certificate of Honor from PTEC Director for outstanding volunteer leadership.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Scratch</span>
+                  <span class="tech-tag">Computational Thinking</span>
+                  <span class="tech-tag">Youth Mentorship</span>
+                  <span class="tech-tag">Leadership</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../journey/p4_volunteer.html#yes" class="story-btn story-btn-primary">
+                    <i class="bi bi-award"></i> Volunteer Journey &amp; Certificate
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-4">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/04-yes-1.png" alt="YES Leader Scratch Workshop" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/04-yes-2.jpg" alt="Computational Thinking & Code Flow" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 05: Sister of Code -->
+            <li class="achievement-story-item" id="story-5" data-index="5" data-slug="sister-of-code">
+              <span id="sister-of-code" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">05</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 5: Sister of Code">
+                  <h2 class="story-title">Sister of Code (SoC)</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="sister-of-code" title="Copy link to Sister of Code" aria-label="Copy direct link to Sister of Code">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Web Developer &amp; UI/UX Designer</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">Apr 2026 – Aug 2026</span>
+                <span class="story-tag-pill">Web &amp; UI/UX Craft</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Harmonizing analytical systems with clean, responsive, human-centered digital experiences and design systems.
+                </p>
+                <p class="story-narrative">
+                  To ensure my technical systems provide seamless human experiences, I joined Sister of Code to master professional web development and modern UI/UX design. I explored color theory, typography scale, accessibility standards, and responsive frontends with HTML5, CSS3, and Bootstrap 5. Through hands-on collaboration, I co-created <strong>NextStep</strong> (an educational guidance portal) and crafted <strong>Chhnang Khmer</strong> (a digital exhibition celebrating traditional Cambodian pottery in Kampong Chhnang), blending technical precision with storytelling.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Built comprehensive UI design systems and high-fidelity clickable wireframes in Figma.</li>
+                  <li>Developed fully responsive, accessible web applications adhering to mobile-first standards.</li>
+                  <li>Successfully launched Team Project "NextStep" and cultural heritage project "Chhnang Khmer".</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Bootstrap 5</span>
+                  <span class="tech-tag">Figma</span>
+                  <span class="tech-tag">Framer</span>
+                  <span class="tech-tag">Responsive UI/UX</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../projects/nextstep.html?id=10" class="story-btn story-btn-primary">
+                    <i class="bi bi-window-stack"></i> NextStep Project
+                  </a>
+                  <a href="../projects/chhnangKhmer.html?id=6" class="story-btn story-btn-outline">
+                    <i class="bi bi-palette"></i> Chhnang Khmer Project
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-5">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/05-soc-1.webp" alt="NextStep Platform Showcase" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/05-soc-2.webp" alt="Chhnang Khmer Cultural Platform" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="2">
+                          <img src="assets/images/05-soc-3.webp" alt="Responsive Web Viewports" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                        <span class="slider-dot" data-slide-to="2"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 06: Techpreneur -->
+            <li class="achievement-story-item" id="story-6" data-index="6" data-slug="techpreneur">
+              <span id="techpreneur" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">06</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 6: Techpreneur Bootcamp">
+                  <h2 class="story-title">Techpreneur Bootcamp</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="techpreneur" title="Copy link to Techpreneur Bootcamp" aria-label="Copy direct link to Techpreneur Bootcamp">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Full-Stack Developer &amp; Innovator</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">Jun 2024 – Mar 2025</span>
+                <span class="story-tag-pill">Agile &amp; Full-Stack</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Rapid MVP prototyping and cross-disciplinary product engineering under USAID and Dichi Academy.
+                </p>
+                <p class="story-narrative">
+                  Selected for the competitive, fully funded Techpreneur Bootcamp supported by Dichi Academy and USAID, I collaborated within cross-functional squads to tackle authentic corporate challenge briefs. We engaged in intensive user research, problem framing, and agile sprint delivery. Over 9 months, I bridged frontend interfaces with backend databases and REST APIs, working across engineering, design, and business strategy to deliver complete working MVPs and pitch to seasoned tech judges.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Collaborated in cross-functional agile teams delivering rapid software MVPs for company partners.</li>
+                  <li>Conducted user interviews, mapped pain points, and designed high-converting UX flows.</li>
+                  <li>Developed full-stack prototypes incorporating responsive frontends, backend APIs, and databases.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Figma</span>
+                  <span class="tech-tag">Agile / Scrum</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../journey/p3_techpreneur.html" class="story-btn story-btn-primary">
+                    <i class="bi bi-rocket-takeoff"></i> Techpreneur Journey
+                  </a>
+                  <a href="../projects/neuroDrive.html" class="story-btn story-btn-outline">
+                    <i class="bi bi-cpu"></i> NeuroDrive Challenge
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-6">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/06-tech-1.webp" alt="UniSeek Venture Product Dashboard" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/06-tech-2.webp" alt="NeuroDrive Challenge Case Study" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 07: AWS Cloud -->
+            <li class="achievement-story-item" id="story-7" data-index="7" data-slug="aws-cloud">
+              <span id="aws-cloud" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">07</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 7: AWS Cloud Journey">
+                  <h2 class="story-title">AWS Cloud Journey</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="aws-cloud" title="Copy link to AWS Cloud Journey" aria-label="Copy direct link to AWS Cloud Journey">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Cloud Architecture &amp; Infrastructure</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">2025 – Present</span>
+                <span class="story-tag-pill">Cloud &amp; DevOps</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Building scalable, resilient serverless backends and automated AI pipelines in the cloud.
+                </p>
+                <p class="story-narrative">
+                  Recognizing that impactful AI models and data pipelines require dependable, production-grade cloud infrastructure, I embarked on a deep AWS cloud architecture journey. I designed serverless event-driven backends using AWS Lambda and API Gateway, configured scalable S3 buckets for large dataset extraction, and implemented secure IAM role configurations. This cloud skillset enables me to deploy resilient, enterprise-ready machine learning solutions with automated monitoring and cost optimization.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Architected serverless microservice pipelines utilizing AWS Lambda, API Gateway, and Amazon S3.</li>
+                  <li>Implemented cloud security best practices with fine-grained IAM policies and CloudWatch logging.</li>
+                  <li>Optimized document extraction and retrieval latency for AI applications in the cloud.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">AWS Lambda</span>
+                  <span class="tech-tag">Amazon S3</span>
+                  <span class="tech-tag">API Gateway</span>
+                  <span class="tech-tag">DynamoDB</span>
+                  <span class="tech-tag">CloudWatch</span>
+                  <span class="tech-tag">Python Boto3</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../about/aboutme_insystem.html" class="story-btn story-btn-primary">
+                    <i class="bi bi-cloud-check"></i> Cloud &amp; System Architecture
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-7">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/07-aws-1.jpg" alt="AWS Serverless Architecture" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/07-aws-2.jpg" alt="Cloud Infrastructure Architecture" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 08: Korea Camp -->
+            <li class="achievement-story-item" id="story-8" data-index="8" data-slug="korea-camp">
+              <span id="korea-camp" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">08</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 8: Global Korea Camp">
+                  <h2 class="story-title">Global Korea Camp</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="korea-camp" title="Copy link to Global Korea Camp" aria-label="Copy direct link to Global Korea Camp">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">International Delegate &amp; Tech Fellow</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">2024</span>
+                <span class="story-tag-pill">Global Exchange</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Representing Cambodia in cross-border tech innovation, smart city solutions, and intercultural teamwork in Seoul.
+                </p>
+                <p class="story-narrative">
+                  Representing Cambodia as an international youth delegate in Seoul, South Korea was a landmark milestone that expanded my world view. Working alongside passionate technologists and student leaders from across Asia, I engaged in collaborative innovation challenges, explored South Korea's world-leading tech ecosystem and smart city solutions, and exchanged cultural perspectives. The experience affirmed that great technology transcends borders when driven by curiosity, diverse thinking, and shared human purpose.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Represented Cambodia in international tech innovation workshops and collaborative team sprints.</li>
+                  <li>Explored smart city infrastructure, AI innovation hubs, and cutting-edge digital governance in Seoul.</li>
+                  <li>Built enduring international networks with student founders, researchers, and global mentors.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Global Collaboration</span>
+                  <span class="tech-tag">Cross-Cultural Innovation</span>
+                  <span class="tech-tag">Smart City Tech</span>
+                  <span class="tech-tag">Leadership</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../about/aboutme_indata.html" class="story-btn story-btn-primary">
+                    <i class="bi bi-globe"></i> About Me &amp; Global Mindset
+                  </a>
+                  <a href="../../index.html#journey" class="story-btn story-btn-outline">
+                    <i class="bi bi-compass"></i> View Full Journey
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-8">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/08-korea-1.jpg" alt="Korea Camp Youth Tech Exchange" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/08-korea-2.jpg" alt="Global Leadership & Student Exchange" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <!-- STORY 09: Youth & Their Future Career Talk -->
+            <li class="achievement-story-item" id="story-9" data-index="9" data-slug="career-talk">
+              <span id="career-talk" class="story-anchor-target" aria-hidden="true"></span>
+              <div class="story-header-wrap">
+                <span class="story-number" aria-hidden="true">09</span>
+                <button type="button" class="story-title-btn" aria-label="View Story 9: Youth and their Future Career Talk">
+                  <h2 class="story-title">Youth &amp; Their Future Career Talk</h2>
+                </button>
+                <button type="button" class="story-copy-link-btn" data-slug="career-talk" title="Copy link to Youth & Their Future Career Talk" aria-label="Copy direct link to Youth & Their Future Career Talk">
+                  <i class="bi bi-link-45deg"></i>
+                  <span class="copy-tooltip">Copy link</span>
+                </button>
+              </div>
+
+              <div class="story-meta-row">
+                <span class="story-role">Team Leader &amp; Project Coordinator</span>
+                <span class="text-muted">•</span>
+                <span class="story-period">2024</span>
+                <span class="story-tag-pill">IFL Final Project · YRDP Funded</span>
+              </div>
+
+              <div class="story-content-wrap">
+                <p class="story-tagline">
+                  Empowering Grade 11 high school students through a youth-led career panel discussion and guidance initiative.
+                </p>
+                <p class="story-narrative">
+                  For our Institute of Foreign Languages (IFL) final project, I served as Team Leader directing a 6-member team in conceptualizing, fundraising, and executing the <strong>"Youth and Their Future Career Talk"</strong>. We drafted and successfully defended a formal grant proposal to the Youth Resource Development Program (YRDP) to secure project sponsorship. Coordinating with Indratevi High School administration, we hosted an impactful career panel session for Grade 11 students. We invited inspiring guest speakers and industry practitioners across diverse sectors, facilitating an engaging dialogue that equipped high schoolers with essential criteria, self-awareness frameworks, and practical keys for selecting university majors and future careers.
+                </p>
+
+                <ul class="story-highlights-list">
+                  <li>Led a 6-member team to draft, pitch, and secure grant funding from YRDP (Youth Resource Development Program).</li>
+                  <li>Coordinated with Indratevi High School administration to deliver an interactive career orientation talk for Grade 11 students.</li>
+                  <li>Curated and moderated a panel of guest speakers sharing practical guidance on academic and career pathways.</li>
+                </ul>
+
+                <div class="story-tech-tags">
+                  <span class="tech-tag">Project Leadership</span>
+                  <span class="tech-tag">Grant Writing</span>
+                  <span class="tech-tag">Event Coordination</span>
+                  <span class="tech-tag">Public Speaking</span>
+                  <span class="tech-tag">Community Engagement</span>
+                </div>
+
+                <div class="story-actions">
+                  <a href="../../assets/pdf/grant_proposal_to_yrdp.pdf" target="_blank" rel="noopener noreferrer" class="story-btn story-btn-primary">
+                    <i class="bi bi-file-earmark-pdf"></i> Grant Proposal (YRDP)
+                  </a>
+                  <a href="../../assets/pdf/activity_report_to_yrdp_from_event.pdf" target="_blank" rel="noopener noreferrer" class="story-btn story-btn-outline">
+                    <i class="bi bi-file-earmark-check"></i> Event Activity Report
+                  </a>
+                  <a href="../../assets/pdf/youth_and_their_future_career.pdf" target="_blank" rel="noopener noreferrer" class="story-btn story-btn-outline">
+                    <i class="bi bi-file-earmark-slides"></i> Career Talk Deck
+                  </a>
+                </div>
+
+                <!-- Mobile Inline Showcase with Nested Slider -->
+                <div class="mobile-story-showcase d-lg-none mt-4">
+                  <div class="mobile-img-box">
+                    <div class="panel-slider" data-story-slider="m-9">
+                      <div class="slider-track">
+                        <div class="slider-slide active" data-slide-index="0">
+                          <img src="assets/images/09-career-talk-1.webp" alt="Youth and their Future Career Talk at Indratevi High School" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="1">
+                          <img src="assets/images/09-career-talk-2.webp" alt="Career Panel Discussion with Guest Speakers" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="2">
+                          <img src="assets/images/09-career-talk-3.webp" alt="Grade 11 Students Interactive Workshop Session" loading="lazy" />
+                        </div>
+                        <div class="slider-slide" data-slide-index="3">
+                          <img src="assets/images/09-career-talk-4.webp" alt="Team and High School Community Exchange" loading="lazy" />
+                        </div>
+                      </div>
+
+                      <!-- Nested Prev & Next Buttons -->
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                        <i class="bi bi-chevron-left"></i>
+                      </button>
+                      <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                        <i class="bi bi-chevron-right"></i>
+                      </button>
+
+                      <!-- Indicators -->
+                      <div class="slider-indicators">
+                        <span class="slider-dot active" data-slide-to="0"></span>
+                        <span class="slider-dot" data-slide-to="1"></span>
+                        <span class="slider-dot" data-slide-to="2"></span>
+                        <span class="slider-dot" data-slide-to="3"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+        <!-- RIGHT COLUMN: Sticky Visual Display Stage (Desktop Only) -->
+        <div class="col-lg-6 col-xl-6 d-none d-lg-block">
+          <div class="achievement-sticky-wrapper">
+            <div class="achievement-sticky-stage">
+
+              <!-- Stage Top Bar -->
+              <div class="stage-top-bar">
+                <div class="stage-tracker-badge">
+                  <span class="stage-step-tag" id="stage-tracker-num">01</span>
+                  <span id="stage-tracker-title" class="text-truncate" style="max-width: 250px;">Bamnang Holdings</span>
+                </div>
+
+                <!-- Interactive Dot Nav -->
+                <div class="stage-dots-nav" aria-label="Story direct selector">
+                  <button type="button" class="stage-dot-btn active" data-index="1" title="Story 1: Bamnang"></button>
+                  <button type="button" class="stage-dot-btn" data-index="2" title="Story 2: MEF"></button>
+                  <button type="button" class="stage-dot-btn" data-index="3" title="Story 3: Python Trainer"></button>
+                  <button type="button" class="stage-dot-btn" data-index="4" title="Story 4: YES Leader"></button>
+                  <button type="button" class="stage-dot-btn" data-index="5" title="Story 5: Sister of Code"></button>
+                  <button type="button" class="stage-dot-btn" data-index="6" title="Story 6: Techpreneur"></button>
+                  <button type="button" class="stage-dot-btn" data-index="7" title="Story 7: AWS"></button>
+                  <button type="button" class="stage-dot-btn" data-index="8" title="Story 8: Korea Camp"></button>
+                  <button type="button" class="stage-dot-btn" data-index="9" title="Story 9: Youth Career Talk"></button>
+                </div>
+              </div>
+
+              <!-- Stage Viewport (Holds all 9 panels, cross-faded dynamically) -->
+              <div class="stage-viewport">
+
+                <!-- PANEL 1: Bamnang -->
+                <div class="stage-preview-panel active" data-index="1">
+                  <div class="panel-slider" data-story-slider="1">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/01-bamnang-1.webp" alt="PiPi AI Chatbot at Bamnang" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/01-bamnang-2.webp" alt="Major Compass Test (MCT) Assessment" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="2">
+                        <img src="assets/images/01-bamnang-3.webp" alt="Major Compass Test Recommendation Engine" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                      <span class="slider-dot" data-slide-to="2"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 2: MEF -->
+                <div class="stage-preview-panel" data-index="2">
+                  <div class="panel-slider" data-story-slider="2">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/02-mef-1.webp" alt="Document Extraction OCR at MEF" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/02-mef-2.webp" alt="Modern OCR Logical Backend Pipeline" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 3: Python Trainer -->
+                <div class="stage-preview-panel" data-index="3">
+                  <div class="panel-slider" data-story-slider="3">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/03-python-1.jpg" alt="Python Workshop Classroom" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/03-python-2.webp" alt="Python Curriculum and Slide Decks" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 4: YES Leader -->
+                <div class="stage-preview-panel" data-index="4">
+                  <div class="panel-slider" data-story-slider="4">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/04-yes-1.png" alt="YES Leader Scratch Workshop Banner" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/04-yes-2.jpg" alt="Computational Logic & Workshop Flow" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 5: Sister of Code -->
+                <div class="stage-preview-panel" data-index="5">
+                  <div class="panel-slider" data-story-slider="5">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/05-soc-1.webp" alt="NextStep Platform Showcase" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/05-soc-2.webp" alt="Chhnang Khmer Cultural Platform" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="2">
+                        <img src="assets/images/05-soc-3.webp" alt="Responsive Web Viewport Layouts" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                      <span class="slider-dot" data-slide-to="2"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 6: Techpreneur -->
+                <div class="stage-preview-panel" data-index="6">
+                  <div class="panel-slider" data-story-slider="6">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/06-tech-1.webp" alt="UniSeek Venture Product Dashboard" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/06-tech-2.webp" alt="NeuroDrive Challenge Case Study" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 7: AWS -->
+                <div class="stage-preview-panel" data-index="7">
+                  <div class="panel-slider" data-story-slider="7">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/07-aws-1.jpg" alt="AWS Serverless Architecture" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/07-aws-2.jpg" alt="System Architecture & Pipelines" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 8: Korea Camp -->
+                <div class="stage-preview-panel" data-index="8">
+                  <div class="panel-slider" data-story-slider="8">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/08-korea-1.jpg" alt="Korea Camp Youth Tech Exchange" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/08-korea-2.jpg" alt="Global Student Leadership & Exchange" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- PANEL 9: Career Talk -->
+                <div class="stage-preview-panel" data-index="9">
+                  <div class="panel-slider" data-story-slider="9">
+                    <div class="slider-track">
+                      <div class="slider-slide active" data-slide-index="0">
+                        <img src="assets/images/09-career-talk-1.webp" alt="Youth &amp; Their Future Career Talk at Indratevi High School" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="1">
+                        <img src="assets/images/09-career-talk-2.webp" alt="Career Panel Discussion with Guest Speakers" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="2">
+                        <img src="assets/images/09-career-talk-3.webp" alt="Grade 11 Students Interactive Career Discussion" class="panel-backdrop-img" />
+                      </div>
+                      <div class="slider-slide" data-slide-index="3">
+                        <img src="assets/images/09-career-talk-4.webp" alt="Team and High School Community Exchange" class="panel-backdrop-img" />
+                      </div>
+                    </div>
+
+                    <!-- Nested Prev & Next Buttons -->
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+                      <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+                      <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="slider-indicators">
+                      <span class="slider-dot active" data-slide-to="0"></span>
+                      <span class="slider-dot" data-slide-to="1"></span>
+                      <span class="slider-dot" data-slide-to="2"></span>
+                      <span class="slider-dot" data-slide-to="3"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Direct Anchor Link Copied Toast Notification -->
+    <div class="achievement-copy-toast" id="achievement-copy-toast" role="status" aria-live="polite">
+      <i class="bi bi-check-circle-fill"></i>
+      <span id="achievement-toast-msg">Direct link copied to clipboard!</span>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Achievements Scrollytelling Engine -->
+    <script src="assets/achievements.js"></script>
+  </body>
 </html>

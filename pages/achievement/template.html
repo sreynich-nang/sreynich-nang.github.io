@@ -1,0 +1,106 @@
+<!--
+  Achievement Scrollytelling Single Story Item Template
+  Use this template to add new stories to the left column and sticky stage.
+-->
+
+<!-- Left Column Item Template -->
+<li class="achievement-story-item" id="story-{{INDEX}}" data-index="{{INDEX}}" data-slug="{{SLUG}}">
+  <span id="{{SLUG}}" class="story-anchor-target" aria-hidden="true"></span>
+  <div class="story-header-wrap">
+    <span class="story-number" aria-hidden="true">{{NUMBER}}</span>
+    <button type="button" class="story-title-btn" aria-label="View Story {{INDEX}}: {{TITLE}}">
+      <h2 class="story-title">{{TITLE}}</h2>
+    </button>
+    <button type="button" class="story-copy-link-btn" data-slug="{{SLUG}}" title="Copy link to {{TITLE}}" aria-label="Copy direct link to {{TITLE}}">
+      <i class="bi bi-link-45deg"></i>
+      <span class="copy-tooltip">Copy link</span>
+    </button>
+  </div>
+
+  <div class="story-meta-row">
+    <span class="story-role">{{ROLE}}</span>
+    <span class="text-muted">•</span>
+    <span class="story-period">{{PERIOD}}</span>
+    <span class="story-tag-pill">{{TAG}}</span>
+  </div>
+
+  <div class="story-content-wrap">
+    <p class="story-tagline">{{TAGLINE}}</p>
+    <p class="story-narrative">{{NARRATIVE}}</p>
+
+    <ul class="story-highlights-list">
+      <li>{{HIGHLIGHT_1}}</li>
+      <li>{{HIGHLIGHT_2}}</li>
+      <li>{{HIGHLIGHT_3}}</li>
+    </ul>
+
+    <div class="story-tech-tags">
+      <span class="tech-tag">{{TECH_1}}</span>
+      <span class="tech-tag">{{TECH_2}}</span>
+    </div>
+
+    <div class="story-actions">
+      <a href="{{LINK_URL}}" class="story-btn story-btn-primary">
+        <i class="bi bi-arrow-up-right-circle"></i> {{LINK_LABEL}}
+      </a>
+    </div>
+
+    <!-- Mobile Inline Showcase with Nested Slider -->
+    <div class="mobile-story-showcase d-lg-none mt-4">
+      <div class="mobile-img-box">
+        <div class="panel-slider" data-story-slider="m-{{INDEX}}">
+          <div class="slider-track">
+            <div class="slider-slide active" data-slide-index="0">
+              <img src="{{IMAGE_1_SRC}}" alt="{{TITLE}}" loading="lazy" />
+            </div>
+            <div class="slider-slide" data-slide-index="1">
+              <img src="{{IMAGE_2_SRC}}" alt="{{TITLE}} alternate view" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Nested Prev & Next Buttons -->
+          <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Indicators -->
+          <div class="slider-indicators">
+            <span class="slider-dot active" data-slide-to="0"></span>
+            <span class="slider-dot" data-slide-to="1"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<!-- Right Sticky Stage Panel Template with Nested Slider -->
+<div class="stage-preview-panel" data-index="{{INDEX}}">
+  <div class="panel-slider" data-story-slider="{{INDEX}}">
+    <div class="slider-track">
+      <div class="slider-slide active" data-slide-index="0">
+        <img src="{{IMAGE_1_SRC}}" alt="{{TITLE}}" class="panel-backdrop-img" />
+      </div>
+      <div class="slider-slide" data-slide-index="1">
+        <img src="{{IMAGE_2_SRC}}" alt="{{TITLE}} alternate view" class="panel-backdrop-img" />
+      </div>
+    </div>
+
+    <!-- Nested Prev & Next Buttons -->
+    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-prev" aria-label="Previous slide" tabindex="0">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+    <button type="button" class="btn sec-testimonials-nav-btn sec-testimonials-next" aria-label="Next slide" tabindex="0">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <!-- Indicators -->
+    <div class="slider-indicators">
+      <span class="slider-dot active" data-slide-to="0"></span>
+      <span class="slider-dot" data-slide-to="1"></span>
+    </div>
+  </div>
+</div>

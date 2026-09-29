@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "slug": "bamnang",
+    "title": "Bamnang Holdings",
+    "role": "Data & Applied ML Engineer",
+    "organization": "Bamnang Holdings Pte. Ltd.",
+    "period": "Feb 2026 - Present",
+    "badge": "AI & Recommendation Systems",
+    "tagline": "Empowering students through bilingual conversational AI & career intelligence.",
+    "summary": "Architected bilingual multi-agent AI chatbot (PiPi) and the end-to-end backend for the Major Compass Test (MCT) recommendation engine.",
+    "story": "At Bamnang, students often struggle to discover the right university major because educational resources were scattered across multiple platforms and languages. I architected and built the end-to-end backend for the Major Recommendation Engine (Major Compass Test - MCT), translating psychological assessment models and student questionnaires into data-driven career recommendations. In parallel, I developed PiPi, a bilingual multi-agent AI chatbot capable of seamlessly understanding queries in English, Khmer, and Khmer Latin to provide instant answers on universities, scholarships, and academic pathways with 98% accuracy.",
+    "highlights": [
+      "Designed and deployed the Major Recommendation Engine (MCT) scoring algorithms and backend APIs.",
+      "Engineered a bilingual Multi-Agent RAG system handling Khmer script, Khmer Latin, and English queries.",
+      "Built the Bamnang User Intelligence executive dashboard utilizing PostgreSQL, PGVector, and Metabase."
+    ],
+    "techStack": ["Python", "PGVector", "PostgreSQL", "LangChain", "Metabase", "FastAPI"],
+    "image": "assets/images/01-bamnang.webp",
+    "links": [
+      { "label": "Chatbot Case Study", "url": "../projects/chatbot.html?id=2", "icon": "bi-robot" },
+      { "label": "MCT Project", "url": "../projects/MCT.html?id=3", "icon": "bi-compass" },
+      { "label": "Bamnang App", "url": "https://app.bamnang.com/", "external": true, "icon": "bi-box-arrow-up-right" }
+    ],
+    "cardData": {
+      "type": "audio-chat",
+      "title": "PiPi — AI Education Assistant",
+      "status": "98% accuracy",
+      "badgeColor": "success",
+      "khmerQuery": "តើខ្ញុំគួររៀនជំនាញអ្វី ប្រសិនបើខ្ញុំចូលចិត្តវិភាគទិន្នន័យ?",
+      "englishQuery": "Which major should I choose if I love analyzing data?",
+      "khmerAnswer": "អ្នកអាចពិចារណាលើជំនាញ Data Science ឬ Computer Science នៅ ITC ឬ RUPP។",
+      "englishAnswer": "Consider Data Science or Computer Science at ITC or RUPP based on your analytical profile.",
+      "meta": "Bilingual AI · Multi-Agent RAG"
+    }
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "slug": "mef",
+    "title": "Ministry of Economy & Finance",
+    "role": "Junior Data Scientist",
+    "organization": "Ministry of Economy and Finance (MEF)",
+    "period": "Aug 2025 - Jan 2026",
+    "badge": "Public Sector Data & Modern OCR",
+    "tagline": "Unlocking macroeconomic publications from scanned PDFs into analytics-ready tidy data.",
+    "summary": "Engineered automated document table extraction using Datalab/Marker and an LLM-assisted cleaning pipeline following Hadley Wickham's Tidy Data principles.",
+    "story": "Crucial macroeconomic reports and public sector budgets are often published as locked scanned PDFs and complex tables with merged headers. At the Ministry of Economy and Finance, I engineered an automated, modern Document Extraction system leveraging Datalab/Marker to extract tabular structures and text from scanned PDF reports. To solve structural anomalies, I designed a pipeline powered by LLM services to clean, normalize, and validate messy extracted outputs into structured datasets based on Hadley Wickham’s Tidy Data principles, saving days of manual transcription work.",
+    "highlights": [
+      "Engineered automated modern OCR table extraction pipeline converting complex PDF reports to structured data.",
+      "Implemented LLM validation pipelines to resolve merged headers, footnotes, and multi-currency formats.",
+      "Standardized macroeconomic data workflows according to Tidy Data principles for downstream economic modeling."
+    ],
+    "techStack": ["Python", "Datalab / Marker", "LLM Normalization", "Pandas", "Tidy Data", "Streamlit"],
+    "image": "assets/images/02-mef.webp",
+    "links": [
+      { "label": "Document Extraction OCR", "url": "../projects/OCR.html?id=4", "icon": "bi-file-earmark-text" }
+    ],
+    "cardData": {
+      "type": "ocr-table",
+      "title": "Macro Table Extraction Pipeline",
+      "status": "Tidy Data Verified",
+      "badgeColor": "primary",
+      "fileName": "National_Budget_Q3_Report.pdf",
+      "extractedCells": "1,420 cells parsed",
+      "accuracy": "99.2% cell fidelity",
+      "meta": "Modern OCR · LLM Tidy Data Normalization"
+    }
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "slug": "python-trainer",
+    "title": "Python Trainer",
+    "role": "Lead Python Instructor & Mentor",
+    "organization": "Bamnang Housing & Community",
+    "period": "2025 - 2026",
+    "badge": "Tech Education & Community",
+    "tagline": "Demystifying programming fundamentals and empowering learners to build real tools.",
+    "summary": "Authored comprehensive beginner-friendly Python curricula, lecture slide decks, and hands-on weekend coding workshops.",
+    "story": "Believing that programming literacy should be welcoming rather than intimidating, I authored a practical, beginner-friendly Python training program for community members and aspiring developers. I designed structured slide decks and real-world exercises covering syntax, conditional logic, loops, functions, and file handling. During weekly workshops, I guided students through building their own automation scripts, debugging challenges, and discovering the joy of problem-solving with Python.",
+    "highlights": [
+      "Authored 10+ comprehensive training slide decks and practical weekend coding exercises.",
+      "Trained and mentored 40+ enthusiastic learners with zero prior coding background.",
+      "Guided students through writing automation scripts, data parsers, and web scraping prototypes."
+    ],
+    "techStack": ["Python", "Jupyter", "Interactive Slides", "Automation Scripts", "VS Code"],
+    "image": "assets/images/03-python-trainer.jpg",
+    "links": [
+      { "label": "Python Slide Deck", "url": "../sharing/index.html", "icon": "bi-file-earmark-slides" },
+      { "label": "Video Tutorials", "url": "../sharing/main_youtubeCourse.html", "icon": "bi-youtube" }
+    ],
+    "cardData": {
+      "type": "code-editor",
+      "title": "python_workshop_lesson.py",
+      "status": "Output: Success",
+      "badgeColor": "info",
+      "codeSnippet": "def analyze_growth(scores):\n    average = sum(scores) / len(scores)\n    return f'Team Mastery: {average:.1f}%'\n\n# Weekend Challenge: 40+ Students Enrolled\nresults = [92, 88, 96, 94, 98]\nprint(analyze_growth(results))",
+      "meta": "Interactive Workshop · Bamnang Housing"
+    }
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "slug": "yes-leader",
+    "title": "YES Leader",
+    "role": "Volunteer Coordinator & Team Leader",
+    "organization": "Youth Empowering Society (YES) & PTEC",
+    "period": "Oct 2024 - May 2025",
+    "badge": "Leadership & Social Impact",
+    "tagline": "Igniting young imaginations through Scratch block-based visual programming.",
+    "summary": "Coordinated volunteer trainers to teach Scratch programming at PTEC, honored with Certificate of Honor by the PTEC Director.",
+    "story": "As Volunteer Coordinator for Youth Empowering Society (YES), I led a vibrant team of volunteer trainers delivering weekend programming workshops for young students at the Phnom Penh Teacher Education College (PTEC). We created a playful curriculum using Scratch, introducing computational thinking, logic branching, and game design. Watching students with no prior computer access proudly present their own animated stories and games was deeply inspiring. Our team's dedication and social impact were officially recognized with a Certificate of Honor from the PTEC Director.",
+    "highlights": [
+      "Coordinated a team of 10+ volunteer trainers conducting weekly hands-on programming labs.",
+      "Designed visual Scratch lessons introducing loops, variables, and event-driven interactivity.",
+      "Awarded Certificate of Honor from PTEC Director for outstanding volunteer leadership."
+    ],
+    "techStack": ["Scratch", "Computational Thinking", "Youth Mentorship", "Workshop Coordination"],
+    "image": "assets/images/04-yes-leader.png",
+    "links": [
+      { "label": "Volunteer Story", "url": "../journey/p4_volunteer.html#yes", "icon": "bi-award" }
+    ],
+    "cardData": {
+      "type": "scratch-blocks",
+      "title": "PTEC Young Creators Workshop",
+      "status": "Certificate of Honor",
+      "badgeColor": "warning",
+      "block1": "when green flag clicked",
+      "block2": "repeat until <mission_complete?>",
+      "block3": "  create_interactive_game()",
+      "meta": "Youth Empowering Society · PTEC Honor"
+    }
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "slug": "soc",
+    "title": "Sister of Code (SoC)",
+    "role": "Web Developer & UI/UX Designer",
+    "organization": "Sister of Code (SoC)",
+    "period": "Apr 2026 - Aug 2026",
+    "badge": "Frontend & UI/UX Design",
+    "tagline": "Harmonizing analytical systems with clean, responsive, user-centered digital craft.",
+    "summary": "Mastered modern responsive web engineering, design systems, and Figma/Framer while shipping NextStep and Chhnang Khmer.",
+    "story": "To ensure my technical systems provide seamless human experiences, I joined Sister of Code to master professional web development and modern UI/UX design. I explored color theory, typography scale, accessibility standards, and responsive frontends with HTML5, CSS3, and Bootstrap 5. Through hands-on collaboration, I co-created 'NextStep' (an educational guidance portal) and crafted 'Chhnang Khmer' (a digital exhibition celebrating traditional Cambodian pottery in Kampong Chhnang), blending technical precision with storytelling.",
+    "highlights": [
+      "Built comprehensive UI design systems and high-fidelity clickable wireframes in Figma.",
+      "Developed fully responsive, accessible web applications adhering to mobile-first standards.",
+      "Successfully launched Team Project 'NextStep' and cultural heritage project 'Chhnang Khmer'."
+    ],
+    "techStack": ["HTML5", "CSS3", "Bootstrap 5", "Figma", "Framer", "Responsive UI/UX"],
+    "image": "assets/images/05-soc.webp",
+    "links": [
+      { "label": "NextStep Platform", "url": "../projects/nextstep.html?id=10", "icon": "bi-window-stack" },
+      { "label": "Chhnang Khmer", "url": "../projects/chhnangKhmer.html?id=6", "icon": "bi-palette" }
+    ],
+    "cardData": {
+      "type": "design-system",
+      "title": "Sister of Code Design Studio",
+      "status": "NextStep & Chhnang Khmer",
+      "badgeColor": "primary",
+      "themeColors": ["#65a6f0", "#93c5fd", "#0f172a", "#f8fafc"],
+      "viewportModes": "Mobile · Tablet · Desktop",
+      "meta": "Responsive UI · Sister of Code Graduate"
+    }
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "slug": "techpreneur",
+    "title": "Techpreneur Bootcamp",
+    "role": "Full-Stack Developer & Innovator",
+    "organization": "Dichi Academy & USAID (Fully Funded)",
+    "period": "Jun 2024 - Mar 2025",
+    "badge": "Full-Stack Development & Agile",
+    "tagline": "Fast-paced agile product sprints delivering MVP solutions for enterprise partner briefs.",
+    "summary": "Intensive 9-month venture bootcamp translating enterprise partner briefs into full-stack MVPs, UI/UX flows, and pitch decks.",
+    "story": "Selected for the competitive, fully funded Techpreneur Bootcamp supported by Dichi Academy and USAID, I collaborated within cross-functional squads to tackle authentic corporate challenge briefs. We engaged in intensive user research, problem framing, and agile sprint delivery. Over 9 months, I bridged frontend interfaces with backend databases and REST APIs, working across engineering, design, and business strategy to deliver complete working MVPs and pitch to seasoned tech judges.",
+    "highlights": [
+      "Collaborated in cross-functional agile teams delivering rapid software MVPs for company partners.",
+      "Conducted user interviews, mapped pain points, and designed high-converting UX flows.",
+      "Developed full-stack prototypes incorporating responsive frontends, backend APIs, and databases."
+    ],
+    "techStack": ["JavaScript", "Node.js", "Express", "MongoDB", "Figma", "Agile / Scrum"],
+    "image": "assets/images/06-techpreneur.webp",
+    "links": [
+      { "label": "Techpreneur Journey", "url": "../journey/p3_techpreneur.html", "icon": "bi-rocket-takeoff" },
+      { "label": "NeuroDrive Challenge", "url": "../projects/neuroDrive.html", "icon": "bi-cpu" }
+    ],
+    "cardData": {
+      "type": "kanban-sprint",
+      "title": "Techpreneur Agile MVP Sprint",
+      "status": "USAID & Dichi Funded",
+      "badgeColor": "success",
+      "sprintGoals": "User Research → Figma Wireframe → Full-Stack MVP → Live Pitch",
+      "meta": "9-Month Venture Bootcamp · Enterprise Challenge"
+    }
+  },
+  {
+    "id": 7,
+    "number": "07",
+    "slug": "aws",
+    "title": "AWS Cloud Journey",
+    "role": "Cloud Architecture & Infrastructure",
+    "organization": "Amazon Web Services (AWS) Practitioner",
+    "period": "2025 - Present",
+    "badge": "Cloud Engineering & DevOps",
+    "tagline": "Building scalable, resilient serverless backends and automated AI pipelines in the cloud.",
+    "summary": "Architected serverless microservices with AWS Lambda, API Gateway, S3, and DynamoDB for high-availability AI deployment.",
+    "story": "Recognizing that impactful AI models and data pipelines require dependable, production-grade cloud infrastructure, I embarked on a deep AWS cloud architecture journey. I designed serverless event-driven backends using AWS Lambda and API Gateway, configured scalable S3 buckets for large dataset extraction, and implemented secure IAM role configurations. This cloud expertise guarantees that data solutions run reliably with automated scaling, sub-50ms latency, and high availability.",
+    "highlights": [
+      "Architected serverless microservice pipelines utilizing AWS Lambda, API Gateway, and Amazon S3.",
+      "Implemented cloud security best practices with fine-grained IAM policies and CloudWatch logging.",
+      "Optimized document extraction and retrieval latency for AI applications in the cloud."
+    ],
+    "techStack": ["AWS Lambda", "Amazon S3", "API Gateway", "DynamoDB", "CloudWatch", "Python Boto3"],
+    "image": "assets/images/07-aws.jpg",
+    "links": [
+      { "label": "Cloud & Data Architecture", "url": "../about/aboutme_insystem.html", "icon": "bi-cloud-check" }
+    ],
+    "cardData": {
+      "type": "cloud-metric",
+      "title": "AWS Serverless AI Architecture",
+      "status": "99.99% Uptime",
+      "badgeColor": "primary",
+      "latency": "24 ms Response",
+      "pipeline": "API Gateway → Lambda → S3 / Vector DB → CloudWatch",
+      "meta": "Serverless · EventBridge · Cloud Scalability"
+    }
+  },
+  {
+    "id": 8,
+    "number": "08",
+    "slug": "korea-camp",
+    "title": "Global Korea Camp",
+    "role": "International Delegate & Tech Fellow",
+    "organization": "International Youth Tech & Cultural Camp (Seoul)",
+    "period": "2024",
+    "badge": "Global Leadership & Innovation",
+    "tagline": "Representing Cambodia in cross-border tech innovation and multicultural teamwork in Seoul.",
+    "summary": "Selected as international delegate in Seoul, collaborating on smart technology challenges and intercultural leadership.",
+    "story": "Representing Cambodia as an international youth delegate in Seoul, South Korea was a landmark milestone that expanded my world view. Working alongside passionate technologists and student leaders from across Asia, I engaged in collaborative innovation challenges, explored South Korea's world-leading tech ecosystem and smart city solutions, and exchanged cultural perspectives. The experience affirmed that great technology transcends borders when driven by curiosity, diverse thinking, and shared human purpose.",
+    "highlights": [
+      "Represented Cambodia in international tech innovation workshops and collaborative team sprints.",
+      "Explored smart city infrastructure, AI innovation hubs, and cutting-edge digital governance in Seoul.",
+      "Built enduring international networks with student founders, researchers, and global mentors."
+    ],
+    "techStack": ["Global Collaboration", "Cross-Cultural Innovation", "Smart City Tech", "Leadership"],
+    "image": "assets/images/08-korea-camp.jpg",
+    "links": [
+      { "label": "About Me & Global Mindset", "url": "../about/aboutme_indata.html", "icon": "bi-globe" }
+    ],
+    "cardData": {
+      "type": "passport-badge",
+      "title": "International Delegate — Seoul, Korea",
+      "status": "Cambodia Youth Delegate",
+      "badgeColor": "info",
+      "city": "Seoul, South Korea",
+      "focus": "Smart Tech · Cross-Border Innovation · Global Leadership",
+      "meta": "International Youth Tech Camp"
+    }
+  },
+  {
+    "id": 9,
+    "number": "09",
+    "slug": "career-talk",
+    "title": "Youth & Their Future Career Talk",
+    "role": "Team Leader & Project Coordinator",
+    "organization": "IFL Final Project · Funded by YRDP",
+    "period": "2024",
+    "badge": "IFL Capstone & YRDP Funded",
+    "tagline": "Empowering Grade 11 high school students through a youth-led career panel discussion and guidance initiative.",
+    "summary": "Led a 6-member team to secure grant funding from YRDP and organize a comprehensive career orientation panel at Indratevi High School.",
+    "story": "For our Institute of Foreign Languages (IFL) final project, I served as Team Leader directing a 6-member team in conceptualizing, fundraising, and executing the 'Youth and Their Future Career Talk'. We drafted and successfully defended a formal grant proposal to the Youth Resource Development Program (YRDP) to secure project sponsorship. Coordinating with Indratevi High School administration, we hosted an impactful career panel session for Grade 11 students. We invited inspiring guest speakers and industry practitioners across diverse sectors, facilitating an engaging dialogue that equipped high schoolers with essential criteria, self-awareness frameworks, and practical keys for selecting university majors and future careers.",
+    "highlights": [
+      "Led a 6-member team to draft, pitch, and secure grant funding from YRDP (Youth Resource Development Program).",
+      "Coordinated with Indratevi High School to deliver an interactive career orientation talk for Grade 11 students.",
+      "Curated and moderated a panel of guest speakers sharing practical guidance on academic and career pathways."
+    ],
+    "techStack": ["Project Leadership", "Grant Writing", "Event Coordination", "Public Speaking", "Community Engagement"],
+    "images": [
+      "assets/images/09-career-talk-1.webp",
+      "assets/images/09-career-talk-2.webp",
+      "assets/images/09-career-talk-3.webp",
+      "assets/images/09-career-talk-4.webp"
+    ],
+    "links": [
+      { "label": "Grant Proposal (PDF)", "url": "../../assets/pdf/grant_proposal_to_yrdp.pdf", "icon": "bi-file-earmark-pdf" },
+      { "label": "Activity Report (PDF)", "url": "../../assets/pdf/activity_report_to_yrdp_from_event.pdf", "icon": "bi-file-earmark-check" },
+      { "label": "Youth Career Deck (PDF)", "url": "../../assets/pdf/youth_and_their_future_career.pdf", "icon": "bi-file-earmark-slides" }
+    ]
+  }
+]
