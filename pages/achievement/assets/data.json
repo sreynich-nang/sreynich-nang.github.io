@@ -175,16 +175,16 @@
     "organization": "Dichi Academy & USAID (Fully Funded)",
     "period": "Jun 2024 - Mar 2025",
     "badge": "Full-Stack Development & Agile",
-    "tagline": "Fast-paced agile product sprints delivering MVP solutions for enterprise partner briefs.",
-    "summary": "Intensive 9-month venture bootcamp translating enterprise partner briefs into full-stack MVPs, UI/UX flows, and pitch decks.",
-    "story": "Selected for the competitive, fully funded Techpreneur Bootcamp supported by Dichi Academy and USAID, I collaborated within cross-functional squads to tackle authentic corporate challenge briefs. We engaged in intensive user research, problem framing, and agile sprint delivery. Over 9 months, I bridged frontend interfaces with backend databases and REST APIs, working across engineering, design, and business strategy to deliver complete working MVPs and pitch to seasoned tech judges.",
+    "tagline": "A dynamic program that inspires top university students to innovate and tackle real-world challenges through cutting-edge technology and entrepreneurial expertise.",
+    "summary": "A dynamic 9-month program inspiring top university students to innovate and tackle real-world challenges through cutting-edge full-stack technology and entrepreneurial expertise.",
+    "story": "Techpreneur Bootcamp is a dynamic program that inspires top university students to innovate and tackle real-world challenges through cutting-edge technology and entrepreneurial expertise. Supported by USAID Digital Workforce Development, DICHI Academy, and ELIX in partnership with Qwasar Silicon Valley, the program immersed us in intensive software engineering, user-centric product discovery, and agile venture sprints. Over the course of the bootcamp, I completed 52 intensive engineering projects, mastered full-stack architecture, and led technical development for Team 4 'NeuroDrive'—earning 1st Place / Grand Prize at the final showcase.",
     "highlights": [
-      "Collaborated in cross-functional agile teams delivering rapid software MVPs for company partners.",
-      "Conducted user interviews, mapped pain points, and designed high-converting UX flows.",
-      "Developed full-stack prototypes incorporating responsive frontends, backend APIs, and databases."
+      "Selected as a founding cohort fellow for the 9-month Techpreneur Bootcamp under USAID DWD, DICHI Academy, and ELIX.",
+      "Completed 52 rigorous software engineering projects certified by Qwasar Silicon Valley covering advanced full-stack web and backend engineering.",
+      "Spearheaded technical development for Team 4 NeuroDrive, winning 1st Place / Grand Prize in the corporate venture innovation showcase."
     ],
-    "techStack": ["JavaScript", "Node.js", "Express", "MongoDB", "Figma", "Agile / Scrum"],
-    "image": "assets/images/06-techpreneur.webp",
+    "techStack": ["Full-Stack Engineering", "Qwasar Silicon Valley", "USAID DWD & DICHI", "JavaScript & Node.js", "Express & MongoDB", "Agile MVP Sprints"],
+    "image": "assets/images/06-tech1.png",
     "links": [
       { "label": "Techpreneur Journey", "url": "../journey/p3_techpreneur.html", "icon": "bi-rocket-takeoff" },
       { "label": "NeuroDrive Challenge", "url": "../projects/neuroDrive.html", "icon": "bi-cpu" }
@@ -202,32 +202,33 @@
     "id": 7,
     "number": "07",
     "slug": "aws",
-    "title": "AWS Cloud Journey",
+    "title": "AWS Cloud Foundation",
     "role": "Cloud Architecture & Infrastructure",
-    "organization": "Amazon Web Services (AWS) Practitioner",
-    "period": "2025 - Present",
-    "badge": "Cloud Engineering & DevOps",
-    "tagline": "Building scalable, resilient serverless backends and automated AI pipelines in the cloud.",
-    "summary": "Architected serverless microservices with AWS Lambda, API Gateway, S3, and DynamoDB for high-availability AI deployment.",
-    "story": "Recognizing that impactful AI models and data pipelines require dependable, production-grade cloud infrastructure, I embarked on a deep AWS cloud architecture journey. I designed serverless event-driven backends using AWS Lambda and API Gateway, configured scalable S3 buckets for large dataset extraction, and implemented secure IAM role configurations. This cloud expertise guarantees that data solutions run reliably with automated scaling, sub-50ms latency, and high availability.",
+    "organization": "USAID Digital Workforce Development & AWS Academy",
+    "period": "2024 - 2025",
+    "badge": "AWS Cloud Foundation",
+    "tagline": "Selected for Cloud4Cambodia—an intensive AWS Cloud Foundation bootcamp under the USAID Digital Workforce Development project in partnership with Amazon Web Services.",
+    "summary": "Completed Cloud4Cambodia 3-week intensive bootcamp, mastering AWS Cloud Foundation curriculum and cloud infrastructure labs.",
+    "story": "Selected to participate in and successfully completed Cloud4Cambodia, a 3-week intensive cloud computing bootcamp implemented under the USAID Digital Workforce Development project in partnership with Amazon Web Services (AWS) and partnering Higher Education Institutions (HEIs). Throughout the bootcamp, I completed intensive learning on the AWS Cloud Foundation curriculum, engaging in hands-on lab practices and learning materials hosted on the AWS Academy platform. The program aims to eliminate access barriers to cloud computing resources, empowering participants to attain international industrial certifications and excel in the rapidly evolving ICT sector.",
     "highlights": [
-      "Architected serverless microservice pipelines utilizing AWS Lambda, API Gateway, and Amazon S3.",
-      "Implemented cloud security best practices with fine-grained IAM policies and CloudWatch logging.",
-      "Optimized document extraction and retrieval latency for AI applications in the cloud."
+      "Selected among top tech students to join the Cloud4Cambodia AWS Cloud Foundation bootcamp hosted at the National University of Management.",
+      "Completed extensive hands-on labs and curriculum on the AWS Academy platform covering core cloud infrastructure, security, networking, and compute.",
+      "Awarded the official Certificate of Completion recognized by USAID, UC Berkeley Blum Center, elix, and AWS Academy."
     ],
-    "techStack": ["AWS Lambda", "Amazon S3", "API Gateway", "DynamoDB", "CloudWatch", "Python Boto3"],
-    "image": "assets/images/07-aws.jpg",
+    "techStack": ["AWS Cloud Foundation", "AWS Academy", "Cloud Infrastructure", "USAID Digital Workforce", "Cloud Security & IAM"],
+    "image": "assets/images/07-aws1.png",
     "links": [
+      { "label": "Program Guidebook", "url": "https://drive.google.com/file/d/1hxoVVz6Gx7mnHc52NAjeb9G0y8eNAZCR/view", "icon": "bi-journal-text", "external": true },
       { "label": "Cloud & Data Architecture", "url": "../about/aboutme_insystem.html", "icon": "bi-cloud-check" }
     ],
     "cardData": {
       "type": "cloud-metric",
-      "title": "AWS Serverless AI Architecture",
-      "status": "99.99% Uptime",
+      "title": "Cloud4Cambodia — AWS Foundation",
+      "status": "USAID & AWS Certified",
       "badgeColor": "primary",
-      "latency": "24 ms Response",
-      "pipeline": "API Gateway → Lambda → S3 / Vector DB → CloudWatch",
-      "meta": "Serverless · EventBridge · Cloud Scalability"
+      "latency": "AWS Academy Labs",
+      "pipeline": "USAID DWD → UC Berkeley Blum Center → AWS Academy",
+      "meta": "Cloud Foundation · Industry Certification"
     }
   },
   {
