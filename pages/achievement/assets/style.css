@@ -1128,6 +1128,65 @@
   flex-shrink: 0;
 }
 
+/* Custom fit & framing for Story 8 Certificates (08-korea1 and 08-korea2) */
+.slider-slide.cert-slide,
+[data-story-slider="8"] .slider-slide:nth-child(1),
+[data-story-slider="8"] .slider-slide:nth-child(2),
+[data-story-slider="m-8"] .slider-slide:nth-child(1),
+[data-story-slider="m-8"] .slider-slide:nth-child(2) {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1e293b 0%, #0b1120 100%);
+  padding: 3rem 3.75rem 2.25rem 3.75rem;
+}
+
+.cert-contain-img,
+[data-story-slider="8"] .slider-slide:nth-child(1) img,
+[data-story-slider="8"] .slider-slide:nth-child(2) img,
+[data-story-slider="m-8"] .slider-slide:nth-child(1) img,
+[data-story-slider="m-8"] .slider-slide:nth-child(2) img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+.stage-preview-panel.active .slider-slide.active .cert-contain-img,
+.stage-preview-panel.active [data-story-slider="8"] .slider-slide.active:nth-child(1) img,
+.stage-preview-panel.active [data-story-slider="8"] .slider-slide.active:nth-child(2) img {
+  transform: scale(1) !important;
+}
+
+.cert-contain-img:hover,
+[data-story-slider="8"] .slider-slide:nth-child(1) img:hover,
+[data-story-slider="8"] .slider-slide:nth-child(2) img:hover,
+[data-story-slider="m-8"] .slider-slide:nth-child(1) img:hover,
+[data-story-slider="m-8"] .slider-slide:nth-child(2) img:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 22px 48px -6px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 991.98px) {
+  .mobile-story-showcase .slider-slide.cert-slide,
+  [data-story-slider="m-8"] .slider-slide:nth-child(1),
+  [data-story-slider="m-8"] .slider-slide:nth-child(2) {
+    padding: 0.85rem 2.75rem;
+  }
+  .mobile-story-showcase .cert-contain-img,
+  [data-story-slider="m-8"] .slider-slide:nth-child(1) img,
+  [data-story-slider="m-8"] .slider-slide:nth-child(2) img {
+    border-radius: 6px;
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.12);
+  }
+}
+
+
 /* Mobile Inline Showcase (Under each left story on smaller screens) */
 .mobile-story-showcase {
   margin-top: 1.5rem;

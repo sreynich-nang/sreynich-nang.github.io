@@ -236,30 +236,30 @@
     "slug": "korea-camp",
     "title": "Global Korea Camp",
     "role": "International Delegate & Tech Fellow",
-    "organization": "International Youth Tech & Cultural Camp (Seoul)",
-    "period": "2024",
-    "badge": "Global Leadership & Innovation",
-    "tagline": "Representing Cambodia in cross-border tech innovation and multicultural teamwork in Seoul.",
-    "summary": "Selected as international delegate in Seoul, collaborating on smart technology challenges and intercultural leadership.",
-    "story": "Representing Cambodia as an international youth delegate in Seoul, South Korea was a landmark milestone that expanded my world view. Working alongside passionate technologists and student leaders from across Asia, I engaged in collaborative innovation challenges, explored South Korea's world-leading tech ecosystem and smart city solutions, and exchanged cultural perspectives. The experience affirmed that great technology transcends borders when driven by curiosity, diverse thinking, and shared human purpose.",
+    "organization": "UNESCO UNITWIN & Handong Global University",
+    "period": "2023 & 2024",
+    "badge": "Data Analytics & Data Science",
+    "tagline": "Selected to join the UNESCO UNITWIN Data Analytics & Data Science Camps in Cambodia, certified by the Korean Ministry of Education.",
+    "summary": "Selected to join the 2023 UNESCO UNITWIN Data Analytics Camp and 2024 Data Science Camp in Cambodia, mastering data analysis and AI challenges.",
+    "story": "Selected to join the 2023 UNESCO UNITWIN Data Analytics Camp in Cambodia (February 13 to February 17, 2023) and subsequently completed the 2024 UNESCO UNITWIN Data Science Camp, organized jointly by UNESCO UNITWIN and Handong Global University and certified by the Ministry of Education, Republic of Korea. This intensive camp equipped us with practical data analysis and modeling skills, exposed us to real-world data challenges, and enhanced our communication and international networking opportunities.",
     "highlights": [
-      "Represented Cambodia in international tech innovation workshops and collaborative team sprints.",
-      "Explored smart city infrastructure, AI innovation hubs, and cutting-edge digital governance in Seoul.",
-      "Built enduring international networks with student founders, researchers, and global mentors."
+      "Selected among top students from the Department of Applied Mathematics and Statistics (ITC) to participate in the UNESCO UNITWIN Joint Education Program.",
+      "Completed intensive hands-on training in Regression, Simulation, AI, and Big Data problem-solving with professors from Handong Global University.",
+      "Earned official Certificates of Completion certified by Handong Global University and the Ministry of Education, Republic of Korea for both 2023 and 2024 camps."
     ],
-    "techStack": ["Global Collaboration", "Cross-Cultural Innovation", "Smart City Tech", "Leadership"],
-    "image": "assets/images/08-korea-camp.jpg",
+    "techStack": ["Data Analytics", "Data Science", "Regression & Simulation", "AI & Big Data", "UNESCO UNITWIN"],
+    "image": "assets/images/08-korea3.png",
     "links": [
-      { "label": "About Me & Global Mindset", "url": "../about/aboutme_indata.html", "icon": "bi-globe" }
+      { "label": "View Facebook Announcement", "url": "https://www.facebook.com/share/p/1BufjrZXz1/", "icon": "bi-facebook", "external": true }
     ],
     "cardData": {
       "type": "passport-badge",
-      "title": "International Delegate — Seoul, Korea",
-      "status": "Cambodia Youth Delegate",
+      "title": "UNESCO UNITWIN Camp Fellow",
+      "status": "Handong Global University Certified",
       "badgeColor": "info",
-      "city": "Seoul, South Korea",
-      "focus": "Smart Tech · Cross-Border Innovation · Global Leadership",
-      "meta": "International Youth Tech Camp"
+      "city": "Phnom Penh, Cambodia (Korea Certified)",
+      "focus": "Data Analytics · Regression · Simulation · AI & Big Data",
+      "meta": "UNESCO UNITWIN Joint Education Program"
     }
   },
   {
