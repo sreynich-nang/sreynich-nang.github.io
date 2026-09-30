@@ -6,21 +6,19 @@
     "title": "Python Trainer",
     "shortTitle": "Python Trainer",
     "role": "Lead Python Instructor & Mentor",
-    "period": "2025 – 2026",
-    "badge": "Tech Education",
-    "tagline": "Demystifying programming fundamentals and empowering learners to build real tools and automation scripts.",
-    "narrative": "Believing that programming literacy should be welcoming rather than intimidating, I authored a practical, beginner-friendly Python training program for community members and aspiring developers. I designed structured slide decks and real-world exercises covering syntax, conditional logic, loops, functions, and file handling. During weekly workshops, I guided students through building their own automation scripts, debugging challenges, and discovering the joy of problem-solving with Python.",
+    "period": "2025",
+    "badge": "Bamnang Coding Club",
+    "tagline": "A beginner-friendly and project-based coding program empowering learners to build practical digital skills and real-world projects.",
+    "narrative": "Bamnang Coding Club – Cohort 2 is a beginner-friendly and project-based coding program designed based on the interests and learning preferences collected from the Cohort 2 participant survey. The program aims to help students build practical digital skills while exploring different pathways in technology including Python programming and collaborative project development. The club will focus on step-by-step learning, hands-on coding practice, and group collaboration to ensure participants with little or no prior coding experience can confidently follow along and apply their knowledge in real-world projects. Throughout the training modules, participants will gradually build their own portfolio website and beginner-level tech project while learning how modern digital products are designed, developed, and published.",
     "highlights": [
-      "Authored 10+ comprehensive training slide decks and practical weekend coding exercises.",
-      "Trained and mentored 40+ enthusiastic learners with zero prior coding background.",
-      "Guided students through writing automation scripts, data parsers, and web scraping prototypes."
+      "Designed a project-based curriculum tailored to participant survey preferences and practical coding needs.",
+      "Delivered hands-on coding labs, step-by-step exercises, and collaborative mentorship for beginners with zero prior experience.",
+      "Guided students through hands-on coding practice and developing real-world beginner tech prototypes."
     ],
     "techStack": [
       "Python",
-      "Jupyter",
       "Interactive Slides",
-      "Automation",
-      "VS Code"
+      "Collaborative Projects"
     ],
     "links": [
       {
@@ -31,22 +29,29 @@
         "external": false
       },
       {
-        "label": "Video Lessons",
-        "url": "../sharing/main_youtubeCourse.html",
-        "icon": "bi-youtube",
+        "label": "Bamnang Facebook Post",
+        "url": "https://www.facebook.com/share/p/1Bkbw26Snb/",
+        "icon": "bi-facebook",
         "type": "outline",
-        "external": false
+        "external": true
+      },
+      {
+        "label": "Cohort 2 Event Details",
+        "url": "https://app.bamnang.com/event/bamnang-coding-club-cohort-2",
+        "icon": "bi-globe",
+        "type": "outline",
+        "external": true
       }
     ],
     "images": [
       {
-        "src": "assets/images/03-python-1.jpg",
-        "alt": "Python Workshop Classroom",
-        "contain": false
+        "src": "assets/images/03-python1.png",
+        "alt": "Bamnang Coding Club Cohort 2 Facebook Announcement & Teaching Slides",
+        "contain": true
       },
       {
-        "src": "assets/images/03-python-2.webp",
-        "alt": "Python Curriculum and Slide Decks",
+        "src": "assets/images/03-python2.jpg",
+        "alt": "Bamnang Coding Club Hands-on Python & Tech Workshop Session",
         "contain": false
       }
     ]
@@ -54,44 +59,75 @@
   {
     "id": 2,
     "number": "02",
-    "slug": "yes-leader",
-    "title": "YES Leader",
-    "shortTitle": "YES Leader",
-    "role": "Volunteer Coordinator & Team Leader",
-    "period": "Oct 2024 – May 2025",
-    "badge": "Community & Leadership",
-    "tagline": "Igniting young imaginations through Scratch block-based visual programming and creative computational thinking.",
-    "narrative": "As Volunteer Coordinator for Youth Empowering Society (YES), I led a vibrant team of volunteer trainers delivering weekend programming workshops for young students at the Phnom Penh Teacher Education College (PTEC). We created a playful curriculum using Scratch, introducing computational thinking, logic branching, and game design. Watching students with no prior computer access proudly present their own animated stories and games was deeply inspiring. Our team's dedication and social impact were officially recognized with a <strong>Certificate of Honor</strong> from the PTEC Director.",
+    "slug": "youth-education-support",
+    "title": "Youth Education Support (YES)",
+    "shortTitle": "Youth Education Support",
+    "role": "Volunteer Coordinator & Scratch Mentor",
+    "period": "Oct 2024 – Mar 2025",
+    "badge": "Youth Education Support · PTEC",
+    "tagline": "Empowering trainee teachers and young learners through computational thinking, hands-on Scratch programming, and an official STEM partnership with PTEC.",
+    "narrative": "As Volunteer Coordinator and Project Leader for Youth Education Support (YES), I had the privilege of establishing a landmark partnership with the Phnom Penh Teacher Education College (PTEC) through a formal Memorandum of Understanding (MoU) signed on October 28, 2024. Over several intensive months from December 2024 through March 2025, our volunteer team led weekend Scratch programming workshops, introducing computational logic, block-based development, and creative problem-solving to students and future educators. The program culminated in a vibrant final presentation showcase where students proudly demonstrated their original interactive games and animations, followed by a formal graduation ceremony where both our student cohort and volunteer mentors were awarded official Certificates of Appreciation by Dr. Set Seng, Director of PTEC. Reflecting back, I am deeply grateful to have led this project to such a successful and memorable conclusion.",
     "highlights": [
-      "Coordinated a team of 10+ volunteer trainers conducting weekly hands-on programming labs.",
-      "Designed visual Scratch lessons introducing loops, variables, and event-driven interactivity.",
-      "Awarded Certificate of Honor from PTEC Director for outstanding volunteer leadership."
+      "Facilitated the formal Memorandum of Understanding (MoU) signing between Youth Education Support (YES) and Phnom Penh Teacher Education College (PTEC).",
+      "Coordinated a team of volunteer trainers conducting weekly hands-on Scratch programming labs and computational thinking workshops.",
+      "Successfully guided PTEC students to complete and present final coding projects, earning official Certificates of Appreciation from the PTEC Director."
     ],
     "techStack": [
       "Scratch",
       "Computational Thinking",
       "Youth Mentorship",
-      "Leadership"
+      "PTEC Partnership",
+      "Project Leadership",
+      "STEM Education"
     ],
     "links": [
       {
-        "label": "Volunteer Journey & Certificate",
-        "url": "../journey/p4_volunteer.html#yes",
-        "icon": "bi-award",
+        "label": "PTEC & YES MoU Day",
+        "url": "https://www.facebook.com/share/p/1DrYhaTA3N/",
+        "icon": "bi-facebook",
         "type": "primary",
+        "external": true
+      },
+      {
+        "label": "Final Presentation & Ceremony",
+        "url": "https://www.facebook.com/share/p/19TPaPCrxq/",
+        "icon": "bi-award",
+        "type": "outline",
+        "external": true
+      },
+      {
+        "label": "Volunteer Story",
+        "url": "../journey/p4_volunteer.html#yes",
+        "icon": "bi-journal-bookmark",
+        "type": "outline",
         "external": false
       }
     ],
     "images": [
       {
-        "src": "assets/images/04-yes-1.png",
-        "alt": "YES Leader Scratch Workshop Banner",
-        "contain": false
+        "src": "assets/images/04-yes0.png",
+        "alt": "PTEC and Youth Education Support (YES) MoU Signing Ceremony",
+        "contain": true
       },
       {
-        "src": "assets/images/04-yes-2.jpg",
-        "alt": "Computational Logic & Workshop Flow",
-        "contain": false
+        "src": "assets/images/04-yes1.png",
+        "alt": "Official Certificate of Appreciation Awarded to Nang Sreynich by PTEC Director Dr. Set Seng",
+        "contain": true
+      },
+      {
+        "src": "assets/images/04-yes2.png",
+        "alt": "PTEC Scratch Course Final Presentation Showcase & Cohort Celebration",
+        "contain": true
+      },
+      {
+        "src": "assets/images/04-yes3.png",
+        "alt": "Volunteer Mentor Team Award Ceremony with PTEC Director",
+        "contain": true
+      },
+      {
+        "src": "assets/images/04-yes4.png",
+        "alt": "Hands-on Scratch Programming Classroom Workshop at PTEC",
+        "contain": true
       }
     ]
   },
@@ -137,19 +173,19 @@
     ],
     "images": [
       {
-        "src": "assets/images/05-soc-1.webp",
-        "alt": "NextStep Platform Showcase",
-        "contain": false
+        "src": "assets/images/05-soc1.jpg",
+        "alt": "Sister of Code Graduation Ceremony — Receiving Certificate of Completion on Stage",
+        "contain": true
       },
       {
-        "src": "assets/images/05-soc-2.webp",
-        "alt": "Chhnang Khmer Cultural Platform",
-        "contain": false
+        "src": "assets/images/05-soc2.jpg",
+        "alt": "Sister of Code Top Students Award in Website Development & UX/UI Design",
+        "contain": true
       },
       {
-        "src": "assets/images/05-soc-3.webp",
-        "alt": "Responsive Web Viewport Layouts",
-        "contain": false
+        "src": "assets/images/05-soc3.jpg",
+        "alt": "Deloitte Certificate of Participation Award at Sister of Code Exclusive Workshop",
+        "contain": true
       }
     ]
   },
@@ -377,5 +413,65 @@
         "contain": false
       }
     ]
+  },
+  {
+    "id": 8,
+    "number": "08",
+    "slug": "ifl-graduation",
+    "title": "IFL Graduate — Professional Communication",
+    "shortTitle": "IFL Graduate",
+    "role": "Bachelor of Arts in Professional Communication",
+    "period": "2021 – 2025",
+    "badge": "Dual Degree & Academic Resilience",
+    "tagline": "Mastering the science of human interaction, language, and soft skills while triumphing over sleepless nights and dual-degree rigor across IFL and ITC.",
+    "narrative": "Graduating from the 4-year program at the <strong>Institute of Foreign Languages (IFL)</strong>, Royal University of Phnom Penh, majoring in <strong>Professional Communication</strong>, was one of the most transformative chapters of my academic and personal journey. At IFL, my education reached far beyond English fluency—it deepened my grasp of soft skills, interpersonal psychology, and a genuine understanding of how people connect and interact in society.<br><br>Pursuing IFL concurrently with my rigorous 5-year engineering degree at ITC meant enduring countless sleepless nights, tight deadlines, and intense dual commitments. The ultimate crucible arrived in my 4th year at IFL—which coincided with my 5th and final year at ITC: balancing an intensive engineering internship and thesis defense while simultaneously sprinting through the 9-month Techpreneur Bootcamp venture accelerator. Somehow, these three colossal challenges could not defeat me. Graduating and achieving success across all three is a victory I look back on with boundless gratitude, lifelong appreciation, and enduring pride.",
+    "highlights": [
+      "Earned Bachelor of Arts in Professional Communication from the Institute of Foreign Languages (IFL), RUPP.",
+      "Cultivated deep interpersonal psychology, societal communication dynamics, and high-impact soft skills beyond language fluency.",
+      "Overcame sleepless nights and demanding workloads to concurrently complete 4 years at IFL and 5 years of engineering at ITC.",
+      "Triumphed simultaneously through the Year 4 IFL graduation, Year 5 ITC engineering internship & thesis defense, and the 9-month Techpreneur Bootcamp."
+    ],
+    "techStack": [
+      "Professional Communication",
+      "Interpersonal Psychology",
+      "Public Speaking & Presentation",
+      "Societal Interaction Dynamics",
+      "Dual-Degree Resilience",
+      "Empathetic Leadership"
+    ],
+    "links": [
+      {
+        "label": "IFL Final Project (Career Talk)",
+        "url": "#career-talk",
+        "icon": "bi-people",
+        "type": "primary",
+        "external": false
+      },
+      {
+        "label": "Techpreneur Bootcamp",
+        "url": "#techpreneur",
+        "icon": "bi-rocket-takeoff",
+        "type": "outline",
+        "external": false
+      }
+    ],
+    "images": [
+      {
+        "src": "assets/images/graudate-ifl1.jpg",
+        "alt": "IFL Official Stage Ceremony — Receiving Bachelor of Arts Degree",
+        "contain": false
+      },
+      {
+        "src": "assets/images/graudate-ifl2.jpg",
+        "alt": "IFL Campus Courtyard Celebration with Degree and Congratulations Cake",
+        "contain": false
+      },
+      {
+        "src": "assets/images/graudate-ifl3.jpg",
+        "alt": "Graduation Cap, Diploma, and Flower Bouquet Portrait on IFL Campus Lawn",
+        "contain": false
+      }
+    ]
   }
 ]
+

@@ -1128,8 +1128,10 @@
   flex-shrink: 0;
 }
 
-/* Custom fit & framing for Certificates & Showcase Media (Story 4 Techpreneur, Story 5 AWS, Story 6 Korea Camp) */
+/* Custom fit & framing for Certificates & Showcase Media (Story 2 YES, Story 4 Techpreneur, Story 5 AWS, Story 6 Korea Camp) */
 .slider-slide.cert-slide,
+[data-story-slider="2"] .slider-slide,
+[data-story-slider="m-2"] .slider-slide,
 [data-story-slider="4"] .slider-slide,
 [data-story-slider="m-4"] .slider-slide,
 [data-story-slider="5"] .slider-slide,
@@ -1142,10 +1144,12 @@
   align-items: center;
   justify-content: center;
   background: radial-gradient(circle at center, #1e293b 0%, #0b1120 100%);
-  padding: 3rem 3.75rem 2.25rem 3.75rem;
+  padding: 2.25rem 3.5rem 1.75rem 3.5rem;
 }
 
 .cert-contain-img,
+[data-story-slider="2"] .slider-slide img,
+[data-story-slider="m-2"] .slider-slide img,
 [data-story-slider="4"] .slider-slide img,
 [data-story-slider="m-4"] .slider-slide img,
 [data-story-slider="5"] .slider-slide img,
@@ -1160,12 +1164,13 @@
   height: auto !important;
   object-fit: contain !important;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: transparent;
   box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.12);
   transition: transform 0.35s ease, box-shadow 0.35s ease !important;
 }
 
 .stage-preview-panel.active .slider-slide.active .cert-contain-img,
+.stage-preview-panel.active [data-story-slider="2"] .slider-slide.active img,
 .stage-preview-panel.active [data-story-slider="4"] .slider-slide.active img,
 .stage-preview-panel.active [data-story-slider="5"] .slider-slide.active img,
 .stage-preview-panel.active [data-story-slider="6"] .slider-slide.active:nth-child(1) img,
@@ -1174,6 +1179,8 @@
 }
 
 .cert-contain-img:hover,
+[data-story-slider="2"] .slider-slide img:hover,
+[data-story-slider="m-2"] .slider-slide img:hover,
 [data-story-slider="4"] .slider-slide img:hover,
 [data-story-slider="m-4"] .slider-slide img:hover,
 [data-story-slider="5"] .slider-slide img:hover,
@@ -1188,6 +1195,8 @@
 
 @media (max-width: 991.98px) {
   .mobile-story-showcase .slider-slide.cert-slide,
+  [data-story-slider="2"] .slider-slide,
+  [data-story-slider="m-2"] .slider-slide,
   [data-story-slider="4"] .slider-slide,
   [data-story-slider="m-4"] .slider-slide,
   [data-story-slider="m-5"] .slider-slide,
@@ -1196,6 +1205,7 @@
     padding: 0.85rem 2.75rem;
   }
   .mobile-story-showcase .cert-contain-img,
+  [data-story-slider="m-2"] .slider-slide img,
   [data-story-slider="m-4"] .slider-slide img,
   [data-story-slider="m-5"] .slider-slide img,
   [data-story-slider="m-6"] .slider-slide:nth-child(1) img,
@@ -1203,6 +1213,44 @@
     border-radius: 6px;
     box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.12);
   }
+}
+
+/* Story 8: IFL Graduation Photography Full-Bleed Showcase */
+[data-story-slider="8"] .slider-slide,
+[data-story-slider="m-8"] .slider-slide {
+  background: #0f172a;
+  padding: 0 !important;
+  display: block !important;
+}
+
+[data-story-slider="8"] .slider-slide img,
+[data-story-slider="m-8"] .slider-slide img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+[data-story-slider="8"] .slider-slide:nth-child(1) img,
+[data-story-slider="m-8"] .slider-slide:nth-child(1) img {
+  object-position: center 30% !important;
+}
+
+[data-story-slider="8"] .slider-slide:nth-child(2) img,
+[data-story-slider="m-8"] .slider-slide:nth-child(2) img {
+  object-position: center 35% !important;
+}
+
+[data-story-slider="8"] .slider-slide:nth-child(3) img,
+[data-story-slider="m-8"] .slider-slide:nth-child(3) img {
+  object-position: center center !important;
+}
+
+#story-8 .mobile-img-box {
+  aspect-ratio: 4 / 5 !important;
 }
 
 
